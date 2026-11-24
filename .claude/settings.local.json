@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Read(//home/aizen/Downloads/**)",
-      "Bash(xxd \"Corgi \\(2\\).pdf\")"
-    ]
-  }
-}

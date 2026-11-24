@@ -20,3 +20,42 @@ artifacts/commit-schedule/
 # Local release history and portable copy.
 artifacts/policypilot-release.git/
 artifacts/policypilot-release.bundle
+
+# Python / test caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Env files (keep the examples)
+.env.*
+!.env.example
+deploy/live.env
+*.env
+!*.env.example
+
+# Node / editors / OS
+node_modules/
+.idea/
+.vscode/
+*.swp
+Thumbs.db
+
+# Logs and local tool settings
+*.log
+.claude/settings.local.json
+
+# Model weights and large local artifacts
+*.gguf
+*.safetensors
+*.bin
+*.pt
+*.onnx
+
+# Secrets
+*.pem
+*.key
