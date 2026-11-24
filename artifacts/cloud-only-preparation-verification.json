@@ -1,0 +1,23 @@
+{
+  "recorded_at": "2026-11-16T21:56:39.241002+00:00",
+  "kind": "cloud_only_preparation_not_a_deployed_model",
+  "local_model_execution_allowed": false,
+  "cloud_rss_cap_bytes": null,
+  "cloud_memory_usage_recorded": true,
+  "requires_provider_pod_id": true,
+  "runtime_bundle": "policypilot-training-v3.tar.gz",
+  "runtime_bundle_sha256": "b739a65c0103a340bc0c9200e354748cc6497f479dc88537e79366003c6b3f11",
+  "all_member_hashes_verified": true,
+  "isolated_plan_only_verified": true,
+  "local_execute_rejected_before_gpu_imports": true,
+  "training_tool_tests_passed": 24,
+  "model_downloaded": false,
+  "gpu_used": false,
+  "resources_created": false,
+  "financial_allowances_changed": false,
+  "cloud_backup_automation_implemented": false,
+  "local_preparation_files_migrated_or_deleted": false,
+  "owner_source_bundle": "policypilot-training-owner-source-v3.tar.gz",
+  "owner_source_sha256": "baf2ed3f9befd8a9cb859e626b6f1a21263c6bcd727fe65df0465f0f3303717e",
+  "owner_source_is_not_the_gpu_upload_bundle": true
+}

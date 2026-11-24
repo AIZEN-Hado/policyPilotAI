@@ -1,0 +1,27 @@
+{
+  "endpoint_id": "tjkkm5pkp7lrej",
+  "recorded_at": "2026-11-15T16:47:34.492991+00:00",
+  "apply_requested": true,
+  "jobs_submitted": 0,
+  "compute_started": false,
+  "storage_deleted": false,
+  "deleted": [
+    {
+      "kind": "endpoint",
+      "id": "tjkkm5pkp7lrej"
+    },
+    {
+      "kind": "registry",
+      "id": "cmwbwglxi000mqnesh01w6j76"
+    }
+  ],
+  "endpoint_absent_verified": true,
+  "result": "PASS",
+  "worker_limits": {
+    "min": 0,
+    "max": 0
+  },
+  "zero_workers_verified": true,
+  "owned_template_ids": [],
+  "registry_id": "cmwbwglxi000mqnesh01w6j76"
+}

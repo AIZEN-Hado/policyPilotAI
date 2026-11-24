@@ -1,0 +1,34 @@
+{
+  "artifact_type": "user_reported_live_web_verification",
+  "recorded_at_utc": "2026-11-11T08:13:08Z",
+  "origin": "https://policypilot-demo.onrender.com",
+  "command": "python deploy/smoke.py https://policypilot-demo.onrender.com",
+  "evidence_source": "User supplied terminal output; not independently executed by this agent",
+  "result": "PASS",
+  "verified_by_report": [
+    "session authentication",
+    "missing-origin mutation rejection",
+    "synthetic PDF upload",
+    "byte-for-byte PDF download",
+    "case deletion",
+    "logout and rejection of subsequent authenticated access"
+  ],
+  "inference_invoked_by_check": false,
+  "follow_up_user_report": {
+    "session_username": "reviewer",
+    "auth_mode": "session",
+    "model_operator": true,
+    "cleanup_queue": {"pending": 0, "eligible": 0},
+    "bucket_object_absence_independently_verified": false,
+    "cleanup_ui_visibility": "user reports section missing; unresolved"
+  },
+  "remaining_unverified": [
+    "queued object removal and bucket absence",
+    "browser visual and interaction checks",
+    "record persistence after restart",
+    "Runpod private-image pull and CUDA",
+    "model generation and model-process RAM",
+    "fine-tuning and trained artifact verification",
+    "GPU start, billing, stop and cleanup"
+  ]
+}

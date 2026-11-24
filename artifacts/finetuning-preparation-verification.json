@@ -1,0 +1,54 @@
+{
+  "recorded_at": "2026-11-15T18:45:17.831711+00:00",
+  "scope": "approved_local_synthetic_preparation",
+  "synthetic_records": {
+    "train": 144,
+    "validation": 72,
+    "test": 72
+  },
+  "disjoint_family_counts": {
+    "train": 8,
+    "validation": 4,
+    "test": 4
+  },
+  "tests_passed": {
+    "new_training_tools": 17,
+    "existing_deployment": 21,
+    "existing_core_transport_storage": 51,
+    "total": 89
+  },
+  "full_http_integration_claimed": false,
+  "runtime_bundle": {
+    "path": "artifacts/policypilot-training-v1.tar.gz",
+    "bytes": 34979,
+    "sha256": "1c02d256e8eb649b813f8d3c4ba5962ddca85fa90b2a9407928146128663544f",
+    "members": 15,
+    "all_member_hashes_read_back": true,
+    "isolated_dry_run_verified": true,
+    "host_execute_rejected_before_gpu_imports": true,
+    "raised_ram_target_rejected": true,
+    "held_out_labels_included": false,
+    "test_prompts_included": false,
+    "generator_or_scorer_included": false
+  },
+  "owner_local_source_bundle": {
+    "path": "artifacts/policypilot-training-owner-source-v1.tar.gz",
+    "sha256": "8e049e66bd6d3d82060c42f5078930decc4ffad3784b17746dd019f8a2c1f355",
+    "upload_to_gpu": false
+  },
+  "corpus_manifest_sha256": "98c53cd4dcf46cbd48af0a3d79cb70e47a9755fc064b298abfde33200eaa7ea4",
+  "reference_checker_scope": "Authored-answer self-check only; not model accuracy",
+  "training_config_sha256": "c1aed339eeac53796172094a951c5019fe0c4aefa7111b93b1881172a1021071",
+  "python_and_shell_syntax_passed": true,
+  "model_downloaded": false,
+  "gpu_used": false,
+  "training_executed": false,
+  "gpu_native_dependencies_verified": false,
+  "independent_gpu_model_reload_verified": false,
+  "model_process_ram_target_verified": false,
+  "model_accuracy_verified": false,
+  "live_app_changed": false,
+  "provider_resources_created": false,
+  "financial_reservations_changed": false,
+  "next_step": "Use Runpod console to verify current billing/stock/volume quote before creating storage or running bounded GPU preflight."
+}

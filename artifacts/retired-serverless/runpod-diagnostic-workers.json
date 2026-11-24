@@ -1,0 +1,172 @@
+{
+  "endpoint_id": "tjkkm5pkp7lrej",
+  "requests_submitted": 0,
+  "resources_changed": false,
+  "raw_logs_saved": false,
+  "workers": {
+    "p96kpy0cd8vwma": {
+      "first_observed_at": "2026-11-15T13:49:20.656808+00:00",
+      "last_observed_at": "2026-11-15T13:53:11.444299+00:00",
+      "last_status": "RUNNING"
+    }
+  },
+  "log_sources": [
+    {
+      "worker_id": "p96kpy0cd8vwma",
+      "source": "system",
+      "records_seen": 200,
+      "events": [
+        {
+          "signals": [
+            "image_pull_activity"
+          ],
+          "source": "system",
+          "timestamp": "2026-11-15T13:52:13+00:00"
+        }
+      ],
+      "raw_logs_saved": false,
+      "read_complete": false,
+      "first_observed_timestamp": "2026-11-15T13:50:59+00:00",
+      "last_observed_timestamp": "2026-11-15T13:52:16+00:00",
+      "read_verified": true
+    },
+    {
+      "worker_id": "p96kpy0cd8vwma",
+      "source": "container",
+      "records_seen": 30,
+      "events": [
+        {
+          "signals": [
+            "sdk_start_banner"
+          ],
+          "source": "container",
+          "timestamp": "2026-11-15T13:52:19.527915+00:00"
+        },
+        {
+          "signals": [
+            "worker_diagnostic"
+          ],
+          "worker_diagnostic": {
+            "event": "stage",
+            "stage": "validate_input"
+          },
+          "source": "container",
+          "timestamp": "2026-11-15T13:52:19.765609+00:00"
+        },
+        {
+          "signals": [
+            "worker_diagnostic"
+          ],
+          "worker_diagnostic": {
+            "event": "stage",
+            "stage": "import_torch"
+          },
+          "source": "container",
+          "timestamp": "2026-11-15T13:52:19.768526+00:00"
+        },
+        {
+          "signals": [
+            "worker_diagnostic"
+          ],
+          "worker_diagnostic": {
+            "event": "stage",
+            "stage": "import_libraries"
+          },
+          "source": "container",
+          "timestamp": "2026-11-15T13:52:21.609932+00:00"
+        },
+        {
+          "signals": [
+            "worker_diagnostic"
+          ],
+          "worker_diagnostic": {
+            "event": "stage",
+            "stage": "validate_config"
+          },
+          "source": "container",
+          "timestamp": "2026-11-15T13:52:22.179519+00:00"
+        },
+        {
+          "signals": [
+            "worker_diagnostic"
+          ],
+          "worker_diagnostic": {
+            "event": "stage",
+            "stage": "cuda_check"
+          },
+          "source": "container",
+          "timestamp": "2026-11-15T13:52:22.179648+00:00"
+        },
+        {
+          "signals": [
+            "worker_diagnostic"
+          ],
+          "worker_diagnostic": {
+            "event": "stage",
+            "stage": "download_model"
+          },
+          "source": "container",
+          "timestamp": "2026-11-15T13:52:22.348165+00:00"
+        },
+        {
+          "signals": [
+            "worker_diagnostic"
+          ],
+          "worker_diagnostic": {
+            "event": "stage",
+            "stage": "load_tokenizer"
+          },
+          "source": "container",
+          "timestamp": "2026-11-15T13:53:06.938465+00:00"
+        },
+        {
+          "signals": [
+            "worker_diagnostic"
+          ],
+          "worker_diagnostic": {
+            "event": "stage",
+            "stage": "load_model"
+          },
+          "source": "container",
+          "timestamp": "2026-11-15T13:53:07.136430+00:00"
+        },
+        {
+          "signals": [
+            "error_or_traceback",
+            "worker_diagnostic"
+          ],
+          "worker_diagnostic": {
+            "event": "failure",
+            "stage": "load_model",
+            "category": "processing_failure",
+            "exception_type": "RuntimeError",
+            "peak_rss_bytes": 735907840
+          },
+          "source": "container",
+          "timestamp": "2026-11-15T13:53:07.975591+00:00"
+        },
+        {
+          "signals": [
+            "error_or_traceback"
+          ],
+          "source": "container",
+          "timestamp": "2026-11-15T13:53:07.976062+00:00"
+        },
+        {
+          "signals": [
+            "error_or_traceback"
+          ],
+          "source": "container",
+          "timestamp": "2026-11-15T13:53:07.976089+00:00"
+        }
+      ],
+      "raw_logs_saved": false,
+      "read_complete": false,
+      "first_observed_timestamp": "2026-11-15T13:52:19.527915+00:00",
+      "last_observed_timestamp": "2026-11-15T13:53:08.289829+00:00",
+      "stream_timed_out": true,
+      "read_verified": true
+    }
+  ],
+  "last_sample_at": "2026-11-15T13:53:11.444299+00:00"
+}

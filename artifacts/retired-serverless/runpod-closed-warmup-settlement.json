@@ -1,0 +1,64 @@
+{
+  "proposal": {
+    "endpoint_id": "tjkkm5pkp7lrej",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "rows": [
+      {
+        "report": "runpod-warmup-activation.json",
+        "recorded_at": "2026-11-15T09:28:18.797408+00:00",
+        "elapsed_seconds": "97.52",
+        "padded_seconds": 158,
+        "original_reserved_usd": "0.118750",
+        "retained_bound_usd": "0.032917",
+        "required_job_state": "STARTUP_FAILED"
+      },
+      {
+        "report": "runpod-warmup-long-startup.json",
+        "recorded_at": "2026-11-15T12:56:21.334724+00:00",
+        "elapsed_seconds": "102.27",
+        "padded_seconds": 163,
+        "original_reserved_usd": "0.118750",
+        "retained_bound_usd": "0.033959",
+        "required_job_state": "FAILED"
+      }
+    ],
+    "source_sha256": {
+      "runpod-warmup-activation.json": "23d6dae0d868c6e1542938346c0fb79c28f3ba8eee8fc332e77358ec58c58ee7",
+      "runpod-warmup-long-startup.json": "7d4c50e5fea84825959937924bb942faa9a63444170bb37addb1120b5c23f82a"
+    },
+    "reserved_before_usd": "0.700000",
+    "reserved_after_usd": "0.529376",
+    "released_unused_hold_usd": "0.170624",
+    "original_job_reservations_preserved": true,
+    "compute_limit_usd": "0.700000",
+    "inference_total_usd": "1.000000",
+    "bounds_are_invoice_amounts": false
+  },
+  "recorded_at": "2026-11-15T13:47:11.543189+00:00",
+  "endpoint_id": "tjkkm5pkp7lrej",
+  "result": "PASS",
+  "database_committed": true,
+  "provider_resources_changed": false,
+  "jobs_submitted": 0,
+  "apply_requested": true,
+  "account_30day_reported_usd": "0.6084335183986695",
+  "already_applied": false,
+  "audit_action": "closed_warmup_settlement_v1:23eb1a2a9b03a5ee11645574fda9e54e71827b5afac29b1ebf28bd13f223f882",
+  "database_update_prepared": true,
+  "job_ids": [
+    "d32932fb-19c1-4f5f-afa2-53d7c23a825d",
+    "22dc3e2a-260d-4d56-b467-7b707ec3979e"
+  ],
+  "observed_reserved_usd": "0.529376",
+  "app_after": {
+    "configured": true,
+    "enabled": false,
+    "can_start": true,
+    "operator": true,
+    "state": "off",
+    "startup_protocol": "invoke-worker-v2",
+    "compute_allowance_usd": "0.7",
+    "demo_inference_allowance_usd": "1.0",
+    "demo_compute_reserved_usd": "0.529376"
+  }
+}

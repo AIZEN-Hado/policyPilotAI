@@ -1,0 +1,33 @@
+{
+  "authorization": "user_extra_usd1_compiler_fix_20261115",
+  "endpoint_id": "tjkkm5pkp7lrej",
+  "recorded_at": "2026-11-15T14:56:00.412083+00:00",
+  "additional_allowance_usd": "1.00",
+  "planning_ceiling_usd": "2.99",
+  "inference_allowance_usd": "2.00",
+  "compute_limit_usd": "1.70",
+  "overhead_provision_usd": "0.30",
+  "reserved_compute_usd": "0.678335",
+  "compiler_image": "ghcr.io/aizen-hado/policypilot-gpu@sha256:537c877f3c2fce36265cf360f4e9ff8e2ff92d19fe81680e5a55313672a105c2",
+  "provider_resources_changed": false,
+  "jobs_submitted": 0,
+  "holds_released_usd": "0",
+  "database_committed": true,
+  "result": "PASS",
+  "apply_requested": true,
+  "account_30day_reported_usd": "0.6341043521679239",
+  "already_applied": false,
+  "audit_action": "one_extra_dollar_compiler_fix:tjkkm5pkp7lrej",
+  "database_update_prepared": true,
+  "app_after": {
+    "configured": true,
+    "enabled": false,
+    "can_start": true,
+    "operator": true,
+    "state": "off",
+    "startup_protocol": "invoke-worker-v2",
+    "compute_allowance_usd": "1.7",
+    "demo_inference_allowance_usd": "2.0",
+    "demo_compute_reserved_usd": "0.678335"
+  }
+}

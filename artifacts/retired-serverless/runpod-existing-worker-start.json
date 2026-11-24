@@ -1,0 +1,61 @@
+{
+  "endpoint_id": "tjkkm5pkp7lrej",
+  "recorded_at": "2026-11-14T21:42:39.194523+00:00",
+  "operation": "d91b5ac9-2505-4c0b-a6a0-e0de352f2a8b",
+  "start_attempted": true,
+  "reservation_committed": true,
+  "reserved_compute_usd": "0.14375",
+  "prior_compute_reserved_usd": "0.31875",
+  "account_billing_before_usd": "0.5064673366287025",
+  "rate_usd_per_hour": "0.75",
+  "deadline_seconds": 360,
+  "requests_submitted": 0,
+  "generation_verified": false,
+  "worker_allocation_observed": true,
+  "provider_shutdown_verified": true,
+  "financial_hard_cap": false,
+  "reservation_commit_outcome": "committed",
+  "total_compute_reserved_usd": "0.46250",
+  "last_worker_summary": {
+    "running": 1,
+    "idle": 0,
+    "initializing": 0,
+    "throttled": 0,
+    "unhealthy": 0,
+    "total": 1
+  },
+  "elapsed_seconds": 362.49,
+  "account_billing_after_usd": "0.5064673366287025",
+  "billing_may_lag": true,
+  "app_after": {
+    "configured": true,
+    "enabled": false,
+    "can_start": true,
+    "operator": true,
+    "state": "off",
+    "compute_allowance_usd": "0.7",
+    "demo_inference_allowance_usd": "1.0",
+    "demo_compute_reserved_usd": "0.4625"
+  },
+  "app_off_verified": true,
+  "app_after_first_check": {
+    "configured": true,
+    "enabled": false,
+    "can_start": true,
+    "operator": true,
+    "state": "stopping",
+    "compute_allowance_usd": "0.7",
+    "demo_inference_allowance_usd": "1.0",
+    "demo_compute_reserved_usd": "0.4625"
+  },
+  "shutdown_rechecked_at": "2026-11-14T21:54:51.967696+00:00",
+  "provider_shutdown_recheck_verified": true,
+  "last_app_worker_counters": {
+    "idle": 0,
+    "initializing": 0,
+    "ready": 0,
+    "running": 0,
+    "throttled": 0,
+    "unhealthy": 0
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "archive": "policypilot-training-owner-source-v3.tar.gz",
+  "sha256": "baf2ed3f9befd8a9cb859e626b6f1a21263c6bcd727fe65df0465f0f3303717e",
+  "files": {
+    "training/artifacts.py": "99c8b9ec0a3ab41892ea82acd5850dae7f6564be07f976e9f1b92481720f8cf5",
+    "training/__init__.py": "6c4baad9b7767bf31e47f4a05abdb7bb04e57b810a0c28224a7aa894ee1fc619",
+    "training/README.md": "425803f5f353a1fa75715002caed5e01b9eea605247b22401c44e519e5e0a106",
+    "training/requirements.txt": "dc7296b4444add75de696a540288ca6c4e49e17913e1701458ee86a786ea464c",
+    "training/run.py": "5800a3782770740354cd2684fd9a737818996f1ed28fd655d5a1b58ca469f566",
+    "training/config.json": "52a9107860e8e6af1a0999a707073544a36382d7d5457ac9c02974aad658f930",
+    "training/prepare.py": "625801209f722ac7741e818d9f71ff1f86f32178743089da1263a7593dffc78b",
+    "training/score.py": "6483b934906442c8404d9407263b6e813a2575d88c28e34bf6a58c57e2a765c8",
+    "training/common.py": "dc0284ee63b61c2c7bf1f8e8e0afa9fe78191e5e061ed81063cd160106bc4168",
+    "training/pod.sh": "796a4b2d21ee6b3fc43f862b3999dcf48d18e1ce34a56429310bc5d9de8547d6",
+    "training/data.py": "a564261e47dcb5150339fc7696f74ee35a6f8b4ef8136107007d315ed34d3067",
+    "training/requirements-cu128.txt": "31c8169f3fb2ef987533015844a247b71e66428b161671a7fd73a14599620a82",
+    "training/runtime.py": "4312d63d808fb784ae3e734a3df575464813f9e6d7fe0fdf41eb0ba9c724c4a0",
+    "training/tests/__init__.py": "89727431ad60613d9fe0f1dafa4ce7f79b60542b85d765288e6e9b4a11cde720",
+    "training/tests/test_pipeline.py": "5d3f443ef367cc6f6d427f30d97b3d0535971e7f78d1bb8ad0054fd74ea80cc5",
+    "pilot/__init__.py": "ad167eca9aa817632d580aa13e20b6e3732c5640a17c84f40b9d257daa7cda0b",
+    "pilot/core.py": "1c618d8320c6ab784f2473f19cc9e8b19b4220c37b517913c6853b5d34e03197",
+    "pilot/review_prompt.py": "253d1d873fad3377c48a1bae3839f6054e6f4bb9e46f59f3558d9ddf4865b3e6",
+    "docs/FINETUNING_PREPARATION.md": "333bcdca86e188325cc4f663543c46a489a76b362a3b48e57ade6544bec21c76",
+    "docs/PERSISTENT_STORAGE_PLAN.md": "050fede5f9dde49993b6288ebb86ff3c3f58f44cc1b3baf55c2b90143fb5162a"
+  },
+  "verified": "All archived members were read back and hash-matched; no extraction used."
+}

@@ -1,0 +1,75 @@
+{
+  "split": "validation",
+  "method": "rules_and_lexical_overlap",
+  "dataset_manifest_sha256": "488fad1d89d8508bd8712be9afd6e8d415da2bdf7982f9413c0343596c502739",
+  "neural_model_executed": false,
+  "span": {
+    "exact_span": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 704
+    },
+    "exact_span_by_label": {
+      "POLICY_ID": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 128
+      },
+      "MEMBER_ID": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 128
+      },
+      "ADMISSION_DATE": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 160
+      },
+      "DISCHARGE_DATE": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 160
+      },
+      "ROOM_LIMIT": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 64
+      },
+      "SUM_INSURED": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 64
+      }
+    },
+    "entity_token": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 2582
+    },
+    "token_accuracy": 0.7906599643262526,
+    "rows": 384,
+    "tokens": 12334
+  },
+  "rank": {
+    "classification": {
+      "precision": 0.5,
+      "recall": 0.75,
+      "f1": 0.6,
+      "support": 128
+    },
+    "accuracy": 0.5,
+    "threshold": 0.5,
+    "group_top1_accuracy": 0.75,
+    "pairwise_accuracy": 0.75,
+    "groups": 128,
+    "rows": 256
+  }
+}

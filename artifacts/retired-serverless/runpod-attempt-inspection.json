@@ -1,0 +1,51 @@
+{
+  "endpoint_id": "tjkkm5pkp7lrej",
+  "recorded_at": "2026-11-11T14:28:19.832252+00:00",
+  "read_only": true,
+  "resources_changed": false,
+  "requests_submitted": 0,
+  "management_credential_role": "local_setup_key",
+  "runtime_credential_role": "dedicated_inference_key_entered_at_hidden_prompt",
+  "historical_absence_proven": false,
+  "dedicated_inference_key_permissions_verified": false,
+  "configuration": {
+    "workers": {
+      "min": 0,
+      "max": 0,
+      "idleTimeout": 300
+    }
+  },
+  "allocated_workers": {
+    "summary": {
+      "running": 0,
+      "idle": 0,
+      "initializing": 0,
+      "throttled": 0,
+      "unhealthy": 0,
+      "total": 0
+    }
+  },
+  "reported_account_30day_usd": "0.5064673366287025",
+  "health": {
+    "workers": {
+      "idle": 0,
+      "initializing": 0,
+      "ready": 0,
+      "running": 0,
+      "throttled": 0,
+      "unhealthy": 0
+    },
+    "jobs": {
+      "completed": 0,
+      "failed": 0,
+      "inProgress": 0,
+      "inQueue": 0,
+      "retried": 0
+    }
+  },
+  "request_history": {
+    "history_completeness_verified": false,
+    "raw_inputs_outputs_errors_saved": false,
+    "list_shape_recognized": false
+  }
+}

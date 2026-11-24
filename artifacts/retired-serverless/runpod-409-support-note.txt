@@ -1,0 +1,92 @@
+PolicyPilot Serverless submission conflict — request for read-only investigation
+
+Endpoint: tjkkm5pkp7lrej
+
+LATEST REQUEST: worker startup investigation, not another job-submission test
+
+At 2026-11-15T09:28:18.797408+00:00 we ran a supervised startup that committed
+its allowance, requested min=max=1, verified the management read-back and then
+polled the inference API's health before submitting any model request.
+The inference API never reported a running/ready worker within 60 seconds.
+No model job was submitted. The overall attempt took 97.52 seconds including
+shutdown; management zero workers and the app off were verified afterward.
+
+Please inspect worker system/container lifecycle logs for roughly 09:28–09:31 UTC.
+Was image pulling, scheduling or container startup still in progress when our
+60-second activation deadline elapsed? Did the handler connect to the job service?
+Please provide the worker ID, lifecycle/error lines and the supported readiness
+signal and startup allowance for this image. Do not start compute or test jobs.
+
+The console shows no worker logs in that interval. The only startup banner we
+could view is from 2026-11-15 03:15:01.574 UTC (SDK 1.7.9), a different timestamp.
+That banner is informational and does not establish the 09:28 worker's outcome.
+
+Our helper retained counters but not the worker IDs during that attempt. The
+REST v2 workers list includes only currently active workers; it is now empty.
+
+Additional read-only log retrieval at 2026-11-15T12:35:51.472376+00:00:
+GET /v2/serverless/tjkkm5pkp7lrej/workers/4j7vz8qc17crnj/logs?source=system&tail=200
+returned HTTP 404, zero records. ID 4j7vz8qc17crnj was copied from the console's
+03:15 startup log entry; it is NOT established as the worker for 09:28.
+Please locate the actual worker ID for the 09:28 activation attempt and explain
+whether logs for that worker remain accessible, including the correct ID namespace
+and retrieval route. We do not infer a startup cause or credential problem from 404.
+
+EARLIER EVIDENCE
+
+Attempt began: 2026-11-14T12:45:47.027556+00:00 UTC
+Submission: POST https://api.runpod.ai/v2/tjkkm5pkp7lrej/run
+Original response: HTTP 409. Its error code was not retained.
+
+Latest supervised verification began 2026-11-14T18:52:01.768865+00:00 UTC.
+It now confirms the exact rejection: HTTP 409, code ENDPOINT_PAUSED.
+The startup handler makes at most three POST attempts, repeating only explicit
+ENDPOINT_PAUSED refusals, with five seconds between them and a fresh management
+min=0/max=1 read before each repeat. It still ended in ENDPOINT_PAUSED.
+Total verification duration including shutdown: 24.08 seconds.
+No accepted provider job ID or generation was observed. App off and provider
+disabled/zero allocated workers were both verified afterward.
+
+Before submission, application code PATCHes REST v2 workers to min=0, max=1,
+idleTimeout=300 and separately GETs configuration to verify those values.
+The application reached submission; no provider job ID was recorded.
+
+The account audit read succeeded and returned these endpoint updates:
+2026-11-14T12:45:48Z: workersMin=0, workersMax=1, idleTimeout=300
+2026-11-14T12:45:51Z: workersMin=0, workersMax=0, idleTimeout=300
+2026-11-14T12:45:53Z: workersMin=0, workersMax=0, idleTimeout=300
+The latter two are shutdown after the submission failure. The audit query covered
+12:43:47.027556Z through 12:55:47.027556Z, with complete pagination.
+This confirms the enable update was recorded before shutdown; it does not prove
+the invoke service had observed the enable update when the POST arrived.
+
+The dedicated inference key has endpoint Read / Write selected and health GET
+has succeeded. No private keys or credentials are included here.
+
+After the failure the supervised helper PATCHed min=max=0 and verified disabled
+configuration and zero allocated workers. The endpoint should stay disabled.
+Generation and image pull have not been verified.
+
+Please inspect why the runtime returns ENDPOINT_PAUSED after the management
+read-back confirms max=1, including during the latest verification above.
+Is there another pause flag, a sync fault, or an account-level condition?
+What is the supported fix, and is there a read-only readiness check for acceptance
+of work after changing max workers from zero to one?
+
+Attempted a control comparison using the documented legacy endpoint:
+GET https://rest.runpod.io/v1/endpoints/tjkkm5pkp7lrej
+It returns HTTP 403 with both the local setup credential and the dedicated
+management credential. Those same roles can read REST v2 configuration (and the
+dedicated management credential was verified for REST v2 PATCH). Legacy error
+bodies were not retained, so this does not establish which scope or gateway
+caused 403. Both comparison attempts stopped before any scaling write or job.
+Please confirm whether legacy access is supported for this endpoint/account and
+the exact required permission, rather than asking us to broaden keys blindly.
+
+The first two local app jobs were reconciled after TTL expiry without refunding
+their reservations. The latest explicit refusal was recorded as REJECTED_PAUSED,
+and the app returned to off automatically. Total app reservation is $0.318750;
+this is not a provider invoice. No further test should be submitted.
+
+Please do not launch workers or submit test jobs: the demo has a strict spending
+limit. This request asks for inspection of existing evidence only.

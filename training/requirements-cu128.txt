@@ -1,0 +1,4 @@
+# Install this first on a reviewed Blackwell Pod, then requirements.txt.
+# No CPU/PyPI fallback for this installation command.
+--index-url https://download.pytorch.org/whl/cu128
+torch==2.7.1+cu128

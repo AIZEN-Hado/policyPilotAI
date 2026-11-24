@@ -1,0 +1,58 @@
+{
+  "additional_families": {
+    "rank": 18,
+    "span": 16
+  },
+  "additional_rows": {
+    "rank": 864,
+    "span": 512
+  },
+  "additional_span_labels": {
+    "ADMISSION_DATE": 192,
+    "DISCHARGE_DATE": 160,
+    "MEMBER_ID": 192,
+    "POLICY_ID": 256,
+    "ROOM_LIMIT": 128,
+    "SUM_INSURED": 160
+  },
+  "config_sha256": "cce846af72661a79b34cdf234070df8d89e89da116f753ea3ebc71d7488b2074",
+  "counts": {
+    "train": {
+      "rank": 1888,
+      "span": 2176
+    },
+    "validation": {
+      "rank": 512,
+      "span": 512
+    }
+  },
+  "evaluation": {
+    "bytes": 55949,
+    "path": "policypilot-specialists-quality-v1-evaluation.tar.gz",
+    "sha256": "0824c0400d3eb2529b6d11b280f5f80c0cc42582e01fd2b9421677e00da50dd3"
+  },
+  "experiment": "specialists-quality-v1",
+  "holdout_manifest_sha256": "d0c6f7d3fc2b6c45833f17b1176876df9dece5d6e48e7cb1c43688d5675b20e0",
+  "model_execution_performed": false,
+  "parameters": {
+    "fp32_bytes": 2573496,
+    "rank": 24705,
+    "span": 618669,
+    "total": 643374
+  },
+  "previous_training_manifest_sha256": "33d9e8d0a8a46922f75b7d165165f6138876c0372bc0c1bb99c024a2fc2d7b7c",
+  "runtime": {
+    "bytes": 184100,
+    "path": "policypilot-specialists-quality-v1-runtime.tar.gz",
+    "sha256": "ef51b1dc9d8bccabdfd72903a4ba5495a0c58a8da040b0d09a0e32ed391f57d8"
+  },
+  "training_manifest_sha256": "c092bf90efe1829df7fcbb1af26032cbca737f3ecf7fd7969c29e508bd8ad54a",
+  "training_steps": {
+    "rank": 380,
+    "span": 1360
+  },
+  "unchanged_validation_sha256": {
+    "validation-rank.jsonl": "645842467141b914032ef1757e6d88a7cdec67d48cf3930d8f84ed430592b533",
+    "validation-span.jsonl": "b9b6cb21a4778a4a30749aebe91fe04cbbdb635680dabc6313de454ce427c772"
+  }
+}

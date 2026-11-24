@@ -1,0 +1,43 @@
+{
+  "files": {
+    "train-rank.jsonl": {
+      "bytes": 196136,
+      "rows": 512,
+      "sha256": "73ef41f9cabdc30cbde7690e83cdf9d2240183418406320ee0abcb4e90fb33fc"
+    },
+    "train-span.jsonl": {
+      "bytes": 370167,
+      "rows": 768,
+      "sha256": "a88847ada06465805c41d9d60826ea1b51ebf976577ca825f0f89e099efe46da"
+    },
+    "validation-rank.jsonl": {
+      "bytes": 100835,
+      "rows": 256,
+      "sha256": "93fa8e7f99830306b0f9e7915ddf59506318a9c017e3c6aec7412f2d26058b33"
+    },
+    "validation-span.jsonl": {
+      "bytes": 182350,
+      "rows": 384,
+      "sha256": "936e5d0bb573b33d67b59afc332c283221843a5fe93594dec6a55fd890ddb898"
+    }
+  },
+  "limitations": [
+    "Original English synthetic text only; no PDF, layout-coordinate, OCR or real-world accuracy benchmark.",
+    "Wording/layout families and cases are split, but synthetic generation semantics are shared.",
+    "Oracle/source-label consistency is not trained model accuracy.",
+    "Final test labels and their reconstructing generator are excluded from the training runtime archive."
+  ],
+  "schema_version": 1,
+  "seed": 20261118,
+  "splits": {
+    "train": {
+      "rank": 512,
+      "span": 768
+    },
+    "validation": {
+      "rank": 256,
+      "span": 384
+    }
+  },
+  "synthetic_only": true
+}

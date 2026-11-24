@@ -1,0 +1,37 @@
+{
+  "endpoint_id": "tjkkm5pkp7lrej",
+  "recorded_at": "2026-11-14T18:37:14.887544+00:00",
+  "read_only": true,
+  "resources_changed": false,
+  "requests_submitted": 0,
+  "window": {
+    "startTime": "2026-11-14T12:43:47.027556+00:00",
+    "endTime": "2026-11-14T12:55:47.027556+00:00"
+  },
+  "audit_entries": [
+    {
+      "timestamp": "2026-11-14T12:45:53+00:00",
+      "action": "update",
+      "workersMin": 0,
+      "workersMax": 0,
+      "idleTimeout": 300
+    },
+    {
+      "timestamp": "2026-11-14T12:45:51+00:00",
+      "action": "update",
+      "workersMin": 0,
+      "workersMax": 0,
+      "idleTimeout": 300
+    },
+    {
+      "timestamp": "2026-11-14T12:45:48+00:00",
+      "action": "update",
+      "workersMin": 0,
+      "workersMax": 1,
+      "idleTimeout": 300
+    }
+  ],
+  "audit_complete": true,
+  "original_rejection_reason_verified": false,
+  "audit_read_verified": true
+}

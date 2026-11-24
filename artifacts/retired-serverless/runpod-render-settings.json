@@ -1,0 +1,11 @@
+{
+  "RUNPOD_ENDPOINT_ID": "tjkkm5pkp7lrej",
+  "RUNPOD_MODEL": "Qwen/Qwen2.5-7B-Instruct",
+  "RUNPOD_ARTIFACT_REVISION": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "ENABLE_MODEL_CONTROL": "0",
+  "RUNPOD_INFERENCE_BUDGET_APPROVED": "0",
+  "RUNPOD_VERIFIED_HOURLY_RATE_USD": "0.75",
+  "RUNPOD_SESSION_COMPUTE_LIMIT_USD": "0.70",
+  "PROCESSING_BACKEND": "runpod",
+  "note": "Separate endpoint invocation/control keys are still required. Do not put the broad setup key in Render."
+}

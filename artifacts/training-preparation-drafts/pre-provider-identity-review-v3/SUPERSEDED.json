@@ -1,0 +1,5 @@
+{
+  "kind": "source_preparation_checkpoint",
+  "trained_model": false,
+  "reason": "Preserved before adding explicit provider-identity guard; use current root artifacts v3 bundle."
+}

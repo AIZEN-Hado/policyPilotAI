@@ -1,0 +1,11 @@
+#evidence-search { padding: 1rem 1.25rem; border-block-end: 1px solid var(--line); }
+#evidence-search label { display: block; font-weight: 600; margin: 0 0 .375rem; }
+.evidence-search-controls { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .5rem; }
+.evidence-search-controls input { margin: 0; min-width: 0; }
+#evidence-search p { margin: .4rem 0 0; }
+#evidence-search p:empty, .evidence-matches:empty { display: none; }
+.evidence-matches { padding: 0; list-style: none; margin: .75rem 0 0; max-height: 18rem; overflow: auto; }
+.evidence-matches li { padding-block: .65rem; border-top: 1px solid var(--line); overflow-wrap: anywhere; }
+.evidence-matches button { text-align: start; white-space: normal; }
+.evidence-matches p { font-size: .875rem; }
+.evidence-matches mark { background: #a8f0ce; color: #141816; padding: 0 .1em; }

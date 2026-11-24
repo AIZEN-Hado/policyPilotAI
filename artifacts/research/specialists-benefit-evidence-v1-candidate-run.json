@@ -1,0 +1,106 @@
+{
+  "experiment": "specialists-benefit-evidence-v1",
+  "status": "SYNTHETIC_GATE_FAILED",
+  "inputs": {
+    "runtime_archive_sha256": "a7f1f64336902f2e40cb4beb847dc42600f098cf370914ef74a949a5f61bca5f",
+    "evaluation_archive_sha256": "57f92a70c3c051ca6b3f36fc6aafd2ec0225e483d8f6808ce2b46ff4d7e07566",
+    "training_manifest_sha256": "7537a55381eac44b19b9059efadd1929ab17e88474c408fbecc6b6b9b4af32d9",
+    "config_sha256": "23d0772c27998347aaf881addc08b358817d2c6390c37c5ec3bfda246dc1fb5e",
+    "holdout_manifest_sha256": "65b829b0d293f7cc38db905607bd2cb85db19c096548c8cc9082f3bc40538577"
+  },
+  "archive": {
+    "path": "/workspace/specialist-benefit-evidence-v1-runs/run-b10c31f2fdc4493b9731e23709c03cc2.tar.gz",
+    "sha256": "d08f721fbede2b8c05df62b71df675996e771f76bda328afca44cb263f072d84",
+    "bytes": 2432146,
+    "independent_reload_predictions_match": true,
+    "r2_readback_verified": false
+  },
+  "reference": {
+    "archive": "/workspace/specialist-balanced-fields-runs/run-19733ac7ab6844e399122727d299a1b4.tar.gz",
+    "config_sha256": "5de21b39664a6775655d2aae006cae20780ad8d4720c1533f8b3328760d726a0",
+    "sha256": "45fa92d4a30ba041cb37119f85d0797b9aacfd52101fedd6073e9b5d3dfd00d4",
+    "training_manifest_sha256": "b332817ca02ae390c84bd9d08a0cb6d9da511d5cb1bb6347e13b7bec12c79b6b"
+  },
+  "training": {
+    "started_at": "2026-11-20T20:36:28.121591+00:00",
+    "stages": {
+      "baseline": {
+        "exit_code": 0,
+        "deadline_reached": false,
+        "wall_seconds": 0.754,
+        "sampled_peak_rss_bytes": 44417024,
+        "rss_scope": "child VmHWM samples; short exits may not be sampled",
+        "passed": true
+      },
+      "train": {
+        "exit_code": 0,
+        "deadline_reached": false,
+        "wall_seconds": 43.201,
+        "sampled_peak_rss_bytes": 871895040,
+        "rss_scope": "child VmHWM samples; short exits may not be sampled",
+        "passed": true
+      },
+      "reload": {
+        "exit_code": 0,
+        "deadline_reached": false,
+        "wall_seconds": 2.11,
+        "sampled_peak_rss_bytes": 571076608,
+        "rss_scope": "child VmHWM samples; short exits may not be sampled",
+        "passed": true
+      }
+    }
+  },
+  "heldout": {
+    "report": "specialists-benefit-evidence-v1-heldout-evaluation.json",
+    "report_sha256": "bf3030a2aeacd691e0814c7f63c61db02402ca995f95e5184679f12d81b25665",
+    "bytes": 87375,
+    "groups": 242,
+    "unique_question_wordings": 12,
+    "target": 0.99,
+    "passed": false,
+    "target_failures": {
+      "POLICY_ID": [
+        "precision",
+        "recall"
+      ],
+      "MEMBER_ID": [
+        "precision",
+        "recall"
+      ],
+      "ADMISSION_DATE": [
+        "precision",
+        "recall"
+      ],
+      "DISCHARGE_DATE": [
+        "precision",
+        "recall"
+      ],
+      "ROOM_LIMIT": [
+        "precision",
+        "recall"
+      ],
+      "SUM_INSURED": [
+        "precision",
+        "recall"
+      ],
+      "ranking": [
+        "strict_group_top1_accuracy"
+      ]
+    }
+  },
+  "runpod": {
+    "pod_id": "4a9pdhks3z76lo",
+    "data_center": "EU-RO-1",
+    "cpu_type": "cpu5c",
+    "vcpus": 4,
+    "provider_hourly_usd": 0.14,
+    "created_at": "2026-11-20T20:35:27.942Z",
+    "stop_verified_at": "2026-11-20 20:38:23 UTC",
+    "pod_removed": true,
+    "volume_id": "c9iaje0u23",
+    "volume_retained": true,
+    "estimated_compute_usd": 0.00681,
+    "confirmed_charge_usd": null
+  },
+  "live_deployment_performed": false
+}

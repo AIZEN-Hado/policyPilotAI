@@ -1,0 +1,562 @@
+%PDF-1.4
+%‚„œ”
+3 0 obj
+<</Type /Font /Subtype /Type1 /BaseFont /Helvetica >> 
+endobj
+4 0 obj
+<</Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >> 
+endobj
+5 0 obj
+<</Length 2098 >> stream
+0.12 0.16 0.20 rg
+BT /F2 17 Tf 1 0 0 1 40 800 Tm (SYN Meridian Benefits) Tj ET
+BT /F2 13 Tf 1 0 0 1 40 775 Tm (Policy schedule / member certificate) Tj ET
+BT /F1 8 Tf 1 0 0 1 40 735 Tm (Case SYN-C002  |  Bengaluru  |  Records: records@example.invalid) Tj ET
+0.65 G 40 721 m 555 721 l S
+BT /F2 10 Tf 1 0 0 1 40 683 Tm (CONTRACT IDENTIFICATION) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 664 Tm (Patient: Arjun Menon / age 42) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 648 Tm (Member / policy: SYN-M202-A / SYN-P202) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 632 Tm (Product identifier: SYN-FAM-2026-V1) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 616 Tm (Contract type: Family floater) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 600 Tm (Coverage period: 2026-01-01 to 2026-12-31 inclusive) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 584 Tm (Continuous coverage since: 2023-01-01) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 568 Tm (Sum insured: INR 10,00,000.00) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 552 Tm (Currency: INR) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 536 Tm (Wording version: 2026.1) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 504 Tm (INSURED MEMBERS) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 485 Tm (SYN-M202-A | Arjun Menon | Self | Active throughout coverage period) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 469 Tm (SYN-M202-B | Isha Menon | Spouse | Active throughout coverage period) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 437 Tm (SELECTED BENEFIT TERMS) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 418 Tm (Room benefit: single standard room; daily cap INR 4,000.00.) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 402 Tm (Per-admission deductible: INR 5,000.00. Copayment: 10 percent after deductible.) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 386 Tm (Endorsements attached: SYN-END-202 dated 2026-06-01.) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 354 Tm (RECORD ADMINISTRATION) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 335 Tm (Fictional contract for software testing only. No premium has been collected. Member and) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 319 Tm (issuer identifiers cannot be used with any insurer or public registry.) Tj ET
+BT /F2 8 Tf 1 0 0 1 40 31 Tm (SYNTHETIC - NOT VALID FOR CLAIM SUBMISSION) Tj ET
+BT /F1 7 Tf 1 0 0 1 40 18 Tm (Fictional issuer and patient | SYN-C002 | Page 1) Tj ET
+endstream
+
+endobj
+10 0 obj
+<</Type /Font /Subtype /Type1 /BaseFont /Helvetica >> 
+endobj
+11 0 obj
+<</Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >> 
+endobj
+12 0 obj
+<</Length 2578 >> stream
+0.12 0.16 0.20 rg
+BT /F2 17 Tf 1 0 0 1 40 800 Tm (SYN Meridian Benefits) Tj ET
+BT /F2 13 Tf 1 0 0 1 40 775 Tm (Policy wording / version 2026.1) Tj ET
+BT /F1 8 Tf 1 0 0 1 40 735 Tm (Case SYN-C002  |  Bengaluru  |  Records: records@example.invalid) Tj ET
+0.65 G 40 721 m 555 721 l S
+BT /F2 10 Tf 1 0 0 1 40 683 Tm (1. SCOPE AND DEFINITIONS) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 664 Tm (An eligible admission is inpatient treatment of illness during the scheduled coverage period) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 648 Tm (for a listed member. The schedule, this wording and applicable dated endorsements form the) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 632 Tm (fictional contract.) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 600 Tm (2. ELIGIBLE INPATIENT EXPENSES) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 581 Tm (Billed room accommodation, nursing, treating clinician fees, anaesthesia, theatre,) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 565 Tm (investigations, inpatient pharmacy and procedure materials are eligible when supported by) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 549 Tm (the admission record and final itemized bill. This fixture imposes no separate clinical) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 533 Tm (sublimit.) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 501 Tm (3. ADMINISTRATIVE EXCLUSION) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 482 Tm (Patient registration charges are excluded. No other administrative exclusion may be) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 466 Tm (inferred. Missing evidence is a request for verification, not an excluded expense.) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 434 Tm (4. ROOM BENEFIT) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 415 Tm (For individual certificates, single standard room is paid at actual cost. For family) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 399 Tm (certificates the cap is INR 4,000.00 per billed day unless changed by endorsement. Deduct) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 383 Tm (only room charges above the cap; no proportionate reduction of other items applies in this) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 367 Tm (fixture.) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 335 Tm (5. DEDUCTIBLE AND COPAYMENT) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 316 Tm (Individual certificates have no deductible or copayment. Family certificates have an INR) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 300 Tm (5,000.00 per-admission deductible, followed by a 10 percent copayment on the remaining) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 284 Tm (eligible amount. These are fictional product terms, not general rules for Indian insurance.) Tj ET
+BT /F2 8 Tf 1 0 0 1 40 31 Tm (SYNTHETIC - NOT VALID FOR CLAIM SUBMISSION) Tj ET
+BT /F1 7 Tf 1 0 0 1 40 18 Tm (Fictional issuer and patient | SYN-C002 | Page 1) Tj ET
+endstream
+
+endobj
+14 0 obj
+<</Length 2424 >> stream
+0.12 0.16 0.20 rg
+BT /F2 17 Tf 1 0 0 1 40 800 Tm (SYN Meridian Benefits) Tj ET
+BT /F2 13 Tf 1 0 0 1 40 775 Tm (Policy wording / version 2026.1) Tj ET
+BT /F1 8 Tf 1 0 0 1 40 735 Tm (Case SYN-C002  |  Bengaluru  |  Records: records@example.invalid) Tj ET
+0.65 G 40 721 m 555 721 l S
+BT /F2 10 Tf 1 0 0 1 40 683 Tm (6. WAITING PERIOD) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 664 Tm (A 30-day initial waiting period applies from continuous coverage inception. The listed) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 648 Tm (exemplar members began continuous coverage on 2023-01-01. No additional disease-specific) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 632 Tm (waiting period is defined for these fixture admissions.) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 600 Tm (7. UTILIZATION AND BENEFIT CEILING) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 581 Tm (The annual ceiling is the sum insured less previously paid benefits across listed members.) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 565 Tm (Family cover shares that ceiling. No restoration benefit is provided. Unknown utilization) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 549 Tm (blocks a final payable amount.) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 517 Tm (8. ORDER OF OPERATIONS) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 498 Tm (First reconcile the supported gross bill. Remove registration and any room-cap excess.) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 482 Tm (Subtract the deductible, flooring at zero. Apply the copayment to that balance. Round to) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 466 Tm (paise, half up. Finally cap the amount at verified remaining annual cover.) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 434 Tm (9. ENDORSEMENT PRECEDENCE) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 415 Tm (An endorsement applies only to its named policy and effective period. Its explicitly) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 399 Tm (replaced clause takes precedence; all unrelated terms remain unchanged.) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 367 Tm (10. EVIDENCE AND REVIEW) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 348 Tm (Require a matching schedule, itemized final bill, payment evidence and admission/discharge) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 332 Tm (record. Contradictory dates or incomplete bill pages require clarification. An assessment is) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 316 Tm (a draft until an authorized human review; it is not a payment instruction.) Tj ET
+BT /F2 8 Tf 1 0 0 1 40 31 Tm (SYNTHETIC - NOT VALID FOR CLAIM SUBMISSION) Tj ET
+BT /F1 7 Tf 1 0 0 1 40 18 Tm (Fictional issuer and patient | SYN-C002 | Page 2) Tj ET
+endstream
+
+endobj
+19 0 obj
+<</Type /Font /Subtype /Type1 /BaseFont /Helvetica >> 
+endobj
+20 0 obj
+<</Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >> 
+endobj
+21 0 obj
+<</Length 1322 >> stream
+0.12 0.16 0.20 rg
+BT /F2 17 Tf 1 0 0 1 40 800 Tm (SYN Meridian Benefits) Tj ET
+BT /F2 13 Tf 1 0 0 1 40 775 Tm (Endorsement / SYN-END-202) Tj ET
+BT /F1 8 Tf 1 0 0 1 40 735 Tm (Case SYN-C002  |  Bengaluru  |  Records: records@example.invalid) Tj ET
+0.65 G 40 721 m 555 721 l S
+BT /F1 10 Tf 1 0 0 1 40 699 Tm (Patient: Arjun Menon / age 42) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 683 Tm (Member / policy: SYN-M202-A / SYN-P202) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 667 Tm (Issued / effective: 2026-06-01 / 2026-06-01 through 2026-12-31) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 635 Tm (AMENDMENT TO CLAUSE 4) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 616 Tm (The daily room limit is increased from INR 4,000.00 to INR 6,000.00 for policy SYN-P202.) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 600 Tm (This applies to each listed member. All other terms, including deductible and copayment,) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 584 Tm (remain unchanged.) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 552 Tm (VERSION CONTROL) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 533 Tm (Schedule reference SYN-P202; product SYN-FAM-2026-V1; wording 2026.1. This endorsement is) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 517 Tm (not transferable to another policy.) Tj ET
+BT /F2 8 Tf 1 0 0 1 40 31 Tm (SYNTHETIC - NOT VALID FOR CLAIM SUBMISSION) Tj ET
+BT /F1 7 Tf 1 0 0 1 40 18 Tm (Fictional issuer and patient | SYN-C002 | Page 1) Tj ET
+endstream
+
+endobj
+26 0 obj
+<</Type /Font /Subtype /Type1 /BaseFont /Helvetica >> 
+endobj
+27 0 obj
+<</Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >> 
+endobj
+28 0 obj
+<</Length 2261 >> stream
+0.12 0.16 0.20 rg
+BT /F2 17 Tf 1 0 0 1 40 800 Tm (SYN Meridian Benefits) Tj ET
+BT /F2 13 Tf 1 0 0 1 40 775 Tm (Reimbursement claim form) Tj ET
+BT /F1 8 Tf 1 0 0 1 40 735 Tm (Case SYN-C002  |  Bengaluru  |  Records: records@example.invalid) Tj ET
+0.65 G 40 721 m 555 721 l S
+BT /F2 10 Tf 1 0 0 1 40 683 Tm (A / MEMBER DECLARATION) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 664 Tm (Patient: Arjun Menon / age 42) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 648 Tm (Member / policy: SYN-M202-A / SYN-P202) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 632 Tm (Contact: patient@example.invalid / phone not collected in synthetic fixture) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 616 Tm (Other insurance declared: None) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 600 Tm (Bank/KYC details: Not supplied; no payment execution in this fixture) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 568 Tm (B / HOSPITALIZATION) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 549 Tm (Hospital: SYN Cedarfield Surgical Centre) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 533 Tm (Admission: 2026-09-07) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 517 Tm (Discharge: 2026-09-10) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 501 Tm (Diagnosis as recorded: Symptomatic cholelithiasis) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 485 Tm (Admission type: Planned) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 453 Tm (C / EXPENSE STATEMENT) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 434 Tm (Inpatient expenses claimed: INR 1,19,000.00) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 418 Tm (Pre-hospitalization: INR 0.00 | Post-hospitalization: INR 0.00 | Other: INR 0.00) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 386 Tm (D / ATTACHMENT CHECKLIST) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 367 Tm (Schedule; wording; discharge summary; final hospital bill; payment receipt. Endorsement) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 351 Tm (included where applicable. Supporting investigation record attached.) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 319 Tm (E / DECLARATION) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 300 Tm (This record represents a fictional submission for software evaluation. No real signature,) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 284 Tm (bank mandate or legal declaration has been collected.) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 268 Tm (Submission date: 2026-09-15) Tj ET
+BT /F2 8 Tf 1 0 0 1 40 31 Tm (SYNTHETIC - NOT VALID FOR CLAIM SUBMISSION) Tj ET
+BT /F1 7 Tf 1 0 0 1 40 18 Tm (Fictional issuer and patient | SYN-C002 | Page 1) Tj ET
+endstream
+
+endobj
+33 0 obj
+<</Type /Font /Subtype /Type1 /BaseFont /Helvetica >> 
+endobj
+34 0 obj
+<</Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >> 
+endobj
+35 0 obj
+<</Length 2087 >> stream
+0.12 0.16 0.20 rg
+BT /F2 17 Tf 1 0 0 1 40 800 Tm (DISCHARGE SUMMARY) Tj ET
+BT /F1 11 Tf 1 0 0 1 40 777 Tm (SYN Cedarfield Surgical Centre) Tj ET
+BT /F1 8 Tf 1 0 0 1 40 735 Tm (Case SYN-C002  |  Bengaluru  |  Records: records@example.invalid) Tj ET
+0.65 G 40 721 m 555 721 l S
+BT /F1 10 Tf 1 0 0 1 40 699 Tm (Patient: Arjun Menon / age 42) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 683 Tm (Member / policy: SYN-M202-A / SYN-P202) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 667 Tm (Inpatient record: SYN-IP002) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 651 Tm (Admission: 2026-09-07) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 635 Tm (Discharge: 2026-09-10) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 619 Tm (Discharge status: Stable / home) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 587 Tm (DIAGNOSIS) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 568 Tm (Symptomatic cholelithiasis) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 536 Tm (PRESENTATION AND INPATIENT COURSE) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 517 Tm (Admitted for planned management after outpatient surgical review. Laparoscopic) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 501 Tm (cholecystectomy performed on 8 September. Recovery documented without an inpatient) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 485 Tm (complication; discharged stable.) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 453 Tm (INVESTIGATIONS) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 434 Tm (See attached investigation record. Findings are fictional narrative content and have not) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 418 Tm (been clinically validated.) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 386 Tm (FOLLOW-UP RECORD) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 367 Tm (Outpatient review was advised. Medication names and dosing are intentionally omitted; this) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 351 Tm (fixture is not a treatment guide.) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 319 Tm (RECORD AUTHORIZATION) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 300 Tm (SYN-CLINICIAN-01 / synthetic record author; no medical registration or signature) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 284 Tm (represented.) Tj ET
+BT /F2 8 Tf 1 0 0 1 40 31 Tm (SYNTHETIC - NOT VALID FOR CLAIM SUBMISSION) Tj ET
+BT /F1 7 Tf 1 0 0 1 40 18 Tm (Fictional issuer and patient | SYN-C002 | Page 1) Tj ET
+endstream
+
+endobj
+40 0 obj
+<</Type /Font /Subtype /Type1 /BaseFont /Helvetica >> 
+endobj
+41 0 obj
+<</Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >> 
+endobj
+42 0 obj
+<</Length 2918 >> stream
+0.12 0.16 0.20 rg
+BT /F2 17 Tf 1 0 0 1 40 800 Tm (FINAL INPATIENT BILL) Tj ET
+BT /F1 11 Tf 1 0 0 1 40 777 Tm (SYN Cedarfield Surgical Centre) Tj ET
+BT /F1 8 Tf 1 0 0 1 40 735 Tm (Case SYN-C002  |  Bengaluru  |  Records: records@example.invalid) Tj ET
+0.65 G 40 721 m 555 721 l S
+BT /F1 10 Tf 1 0 0 1 40 699 Tm (Patient: Arjun Menon / age 42) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 683 Tm (Member / policy: SYN-M202-A / SYN-P202) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 667 Tm (Bill number: SYN-BILL002) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 651 Tm (Service period: 2026-09-07 to 2026-09-10) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 635 Tm (Final invoice total: INR 1,19,000.00) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 619 Tm (All amounts in INR. No tax or discount is modeled in this fictional invoice.) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 587 Tm (SERVICE CHARGES / SHEET 1 OF 2) Tj ET
+0.85 G 40 561 m 555 561 l S
+BT /F2 9 Tf 1 0 0 1 40 568 Tm (No.) Tj ET
+BT /F2 9 Tf 1 0 0 1 70 568 Tm (Description) Tj ET
+BT /F2 9 Tf 1 0 0 1 300 568 Tm (Amount) Tj ET
+BT /F2 9 Tf 1 0 0 1 390 568 Tm (Qty) Tj ET
+BT /F2 9 Tf 1 0 0 1 435 568 Tm (Rate) Tj ET
+0.85 G 40 536 m 555 536 l S
+BT /F1 9 Tf 1 0 0 1 40 543 Tm (1) Tj ET
+BT /F1 9 Tf 1 0 0 1 70 543 Tm (Room - single standard) Tj ET
+BT /F1 9 Tf 1 0 0 1 300 543 Tm (15,000.00) Tj ET
+BT /F1 9 Tf 1 0 0 1 390 543 Tm (3) Tj ET
+BT /F1 9 Tf 1 0 0 1 435 543 Tm (5,000.00) Tj ET
+0.85 G 40 511 m 555 511 l S
+BT /F1 9 Tf 1 0 0 1 40 518 Tm (2) Tj ET
+BT /F1 9 Tf 1 0 0 1 70 518 Tm (Nursing services) Tj ET
+BT /F1 9 Tf 1 0 0 1 300 518 Tm (3,600.00) Tj ET
+BT /F1 9 Tf 1 0 0 1 390 518 Tm (3) Tj ET
+BT /F1 9 Tf 1 0 0 1 435 518 Tm (1,200.00) Tj ET
+0.85 G 40 486 m 555 486 l S
+BT /F1 9 Tf 1 0 0 1 40 493 Tm (3) Tj ET
+BT /F1 9 Tf 1 0 0 1 70 493 Tm (Surgeon fee) Tj ET
+BT /F1 9 Tf 1 0 0 1 300 493 Tm (42,000.00) Tj ET
+BT /F1 9 Tf 1 0 0 1 390 493 Tm (1) Tj ET
+BT /F1 9 Tf 1 0 0 1 435 493 Tm (42,000.00) Tj ET
+0.85 G 40 461 m 555 461 l S
+BT /F1 9 Tf 1 0 0 1 40 468 Tm (4) Tj ET
+BT /F1 9 Tf 1 0 0 1 70 468 Tm (Anaesthesia fee) Tj ET
+BT /F1 9 Tf 1 0 0 1 300 468 Tm (12,000.00) Tj ET
+BT /F1 9 Tf 1 0 0 1 390 468 Tm (1) Tj ET
+BT /F1 9 Tf 1 0 0 1 435 468 Tm (12,000.00) Tj ET
+0.85 G 40 436 m 555 436 l S
+BT /F1 9 Tf 1 0 0 1 40 443 Tm (5) Tj ET
+BT /F1 9 Tf 1 0 0 1 70 443 Tm (Operating theatre) Tj ET
+BT /F1 9 Tf 1 0 0 1 300 443 Tm (18,000.00) Tj ET
+BT /F1 9 Tf 1 0 0 1 390 443 Tm (1) Tj ET
+BT /F1 9 Tf 1 0 0 1 435 443 Tm (18,000.00) Tj ET
+0.85 G 40 411 m 555 411 l S
+BT /F1 9 Tf 1 0 0 1 40 418 Tm (6) Tj ET
+BT /F1 9 Tf 1 0 0 1 70 418 Tm (Medical consultations) Tj ET
+BT /F1 9 Tf 1 0 0 1 300 418 Tm (3,600.00) Tj ET
+BT /F1 9 Tf 1 0 0 1 390 418 Tm (4) Tj ET
+BT /F1 9 Tf 1 0 0 1 435 418 Tm (900.00) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 385 Tm (Remaining services and invoice reconciliation on sheet 2.) Tj ET
+BT /F2 8 Tf 1 0 0 1 40 31 Tm (SYNTHETIC - NOT VALID FOR CLAIM SUBMISSION) Tj ET
+BT /F1 7 Tf 1 0 0 1 40 18 Tm (Fictional issuer and patient | SYN-C002 | Page 1) Tj ET
+endstream
+
+endobj
+44 0 obj
+<</Length 2767 >> stream
+0.12 0.16 0.20 rg
+BT /F2 17 Tf 1 0 0 1 40 800 Tm (FINAL INPATIENT BILL) Tj ET
+BT /F1 11 Tf 1 0 0 1 40 777 Tm (SYN Cedarfield Surgical Centre) Tj ET
+BT /F1 8 Tf 1 0 0 1 40 735 Tm (Case SYN-C002  |  Bengaluru  |  Records: records@example.invalid) Tj ET
+0.65 G 40 721 m 555 721 l S
+BT /F1 10 Tf 1 0 0 1 40 699 Tm (Bill number: SYN-BILL002) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 683 Tm (Patient: Arjun Menon / age 42) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 667 Tm (Member / policy: SYN-M202-A / SYN-P202) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 635 Tm (SERVICE CHARGES / SHEET 2 OF 2) Tj ET
+0.85 G 40 609 m 555 609 l S
+BT /F2 9 Tf 1 0 0 1 40 616 Tm (No.) Tj ET
+BT /F2 9 Tf 1 0 0 1 70 616 Tm (Description) Tj ET
+BT /F2 9 Tf 1 0 0 1 300 616 Tm (Amount) Tj ET
+BT /F2 9 Tf 1 0 0 1 390 616 Tm (Qty) Tj ET
+BT /F2 9 Tf 1 0 0 1 435 616 Tm (Rate) Tj ET
+0.85 G 40 584 m 555 584 l S
+BT /F1 9 Tf 1 0 0 1 40 591 Tm (7) Tj ET
+BT /F1 9 Tf 1 0 0 1 70 591 Tm (Laboratory investigations) Tj ET
+BT /F1 9 Tf 1 0 0 1 300 591 Tm (4,800.00) Tj ET
+BT /F1 9 Tf 1 0 0 1 390 591 Tm (1) Tj ET
+BT /F1 9 Tf 1 0 0 1 435 591 Tm (4,800.00) Tj ET
+0.85 G 40 559 m 555 559 l S
+BT /F1 9 Tf 1 0 0 1 40 566 Tm (8) Tj ET
+BT /F1 9 Tf 1 0 0 1 70 566 Tm (Ultrasound review) Tj ET
+BT /F1 9 Tf 1 0 0 1 300 566 Tm (2,800.00) Tj ET
+BT /F1 9 Tf 1 0 0 1 390 566 Tm (1) Tj ET
+BT /F1 9 Tf 1 0 0 1 435 566 Tm (2,800.00) Tj ET
+0.85 G 40 534 m 555 534 l S
+BT /F1 9 Tf 1 0 0 1 40 541 Tm (9) Tj ET
+BT /F1 9 Tf 1 0 0 1 70 541 Tm (Inpatient pharmacy) Tj ET
+BT /F1 9 Tf 1 0 0 1 300 541 Tm (9,200.00) Tj ET
+BT /F1 9 Tf 1 0 0 1 390 541 Tm (1) Tj ET
+BT /F1 9 Tf 1 0 0 1 435 541 Tm (9,200.00) Tj ET
+0.85 G 40 509 m 555 509 l S
+BT /F1 9 Tf 1 0 0 1 40 516 Tm (10) Tj ET
+BT /F1 9 Tf 1 0 0 1 70 516 Tm (Procedure materials) Tj ET
+BT /F1 9 Tf 1 0 0 1 300 516 Tm (7,500.00) Tj ET
+BT /F1 9 Tf 1 0 0 1 390 516 Tm (1) Tj ET
+BT /F1 9 Tf 1 0 0 1 435 516 Tm (7,500.00) Tj ET
+0.85 G 40 484 m 555 484 l S
+BT /F1 9 Tf 1 0 0 1 40 491 Tm (11) Tj ET
+BT /F1 9 Tf 1 0 0 1 70 491 Tm (Patient registration) Tj ET
+BT /F1 9 Tf 1 0 0 1 300 491 Tm (500.00) Tj ET
+BT /F1 9 Tf 1 0 0 1 390 491 Tm (1) Tj ET
+BT /F1 9 Tf 1 0 0 1 435 491 Tm (500.00) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 458 Tm (Gross / net invoice: INR 1,19,000.00) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 442 Tm (Deposit received: INR 50,000.00) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 426 Tm (Final collection: INR 69,000.00) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 410 Tm (Balance outstanding: INR 0.00) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 394 Tm (Receipt references: SYN-C002-R1 and SYN-C002-R2. Payments settle the hospital bill, not) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 378 Tm (insurer liability.) Tj ET
+BT /F2 8 Tf 1 0 0 1 40 31 Tm (SYNTHETIC - NOT VALID FOR CLAIM SUBMISSION) Tj ET
+BT /F1 7 Tf 1 0 0 1 40 18 Tm (Fictional issuer and patient | SYN-C002 | Page 2) Tj ET
+endstream
+
+endobj
+49 0 obj
+<</Type /Font /Subtype /Type1 /BaseFont /Helvetica >> 
+endobj
+50 0 obj
+<</Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >> 
+endobj
+51 0 obj
+<</Length 1689 >> stream
+0.12 0.16 0.20 rg
+BT /F2 17 Tf 1 0 0 1 40 800 Tm (PAYMENT RECEIPT / CONSOLIDATED LEDGER) Tj ET
+BT /F1 11 Tf 1 0 0 1 40 777 Tm (SYN Cedarfield Surgical Centre) Tj ET
+BT /F1 8 Tf 1 0 0 1 40 735 Tm (Case SYN-C002  |  Bengaluru  |  Records: records@example.invalid) Tj ET
+0.65 G 40 721 m 555 721 l S
+BT /F1 10 Tf 1 0 0 1 40 699 Tm (Patient: Arjun Menon / age 42) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 683 Tm (Member / policy: SYN-M202-A / SYN-P202) Tj ET
+0.85 G 40 660 m 555 660 l S
+BT /F2 9 Tf 1 0 0 1 40 667 Tm (Receipt) Tj ET
+BT /F2 9 Tf 1 0 0 1 145 667 Tm (Date) Tj ET
+BT /F2 9 Tf 1 0 0 1 235 667 Tm (Description) Tj ET
+BT /F2 9 Tf 1 0 0 1 405 667 Tm (Amount) Tj ET
+0.85 G 40 635 m 555 635 l S
+BT /F1 9 Tf 1 0 0 1 40 642 Tm (SYN-C002-R1) Tj ET
+BT /F1 9 Tf 1 0 0 1 145 642 Tm (2026-09-07) Tj ET
+BT /F1 9 Tf 1 0 0 1 235 642 Tm (Admission deposit) Tj ET
+BT /F1 9 Tf 1 0 0 1 405 642 Tm (INR 50,000.00) Tj ET
+0.85 G 40 610 m 555 610 l S
+BT /F1 9 Tf 1 0 0 1 40 617 Tm (SYN-C002-R2) Tj ET
+BT /F1 9 Tf 1 0 0 1 145 617 Tm (2026-09-10) Tj ET
+BT /F1 9 Tf 1 0 0 1 235 617 Tm (Final collection) Tj ET
+BT /F1 9 Tf 1 0 0 1 405 617 Tm (INR 69,000.00) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 584 Tm (Total paid: INR 1,19,000.00) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 568 Tm (Refund: INR 0.00) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 552 Tm (Outstanding balance: INR 0.00) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 536 Tm (Payment mode: synthetic ledger entry. No bank account, transaction network identifier or) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 520 Tm (actual transfer is represented.) Tj ET
+BT /F2 8 Tf 1 0 0 1 40 31 Tm (SYNTHETIC - NOT VALID FOR CLAIM SUBMISSION) Tj ET
+BT /F1 7 Tf 1 0 0 1 40 18 Tm (Fictional issuer and patient | SYN-C002 | Page 1) Tj ET
+endstream
+
+endobj
+56 0 obj
+<</Type /Font /Subtype /Type1 /BaseFont /Helvetica >> 
+endobj
+57 0 obj
+<</Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >> 
+endobj
+58 0 obj
+<</Length 1264 >> stream
+0.12 0.16 0.20 rg
+BT /F2 17 Tf 1 0 0 1 40 800 Tm (INVESTIGATION RECORD) Tj ET
+BT /F1 11 Tf 1 0 0 1 40 777 Tm (SYN Cedarfield Surgical Centre) Tj ET
+BT /F1 8 Tf 1 0 0 1 40 735 Tm (Case SYN-C002  |  Bengaluru  |  Records: records@example.invalid) Tj ET
+0.65 G 40 721 m 555 721 l S
+BT /F1 10 Tf 1 0 0 1 40 699 Tm (Patient: Arjun Menon / age 42) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 683 Tm (Member / policy: SYN-M202-A / SYN-P202) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 667 Tm (Record date: 2026-09-07) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 651 Tm (Requesting service: Inpatient treating team) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 619 Tm (RECORDED EXAMINATION) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 600 Tm (Abdominal ultrasound review: gallstones described in the clinical record.) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 568 Tm (LIMITATIONS) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 549 Tm (Fictional supporting narrative. No real image, laboratory measurement or clinical) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 533 Tm (interpretation is supplied. This document tests linkage and evidence handling, not) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 517 Tm (diagnostic accuracy.) Tj ET
+BT /F2 8 Tf 1 0 0 1 40 31 Tm (SYNTHETIC - NOT VALID FOR CLAIM SUBMISSION) Tj ET
+BT /F1 7 Tf 1 0 0 1 40 18 Tm (Fictional issuer and patient | SYN-C002 | Page 1) Tj ET
+endstream
+
+endobj
+63 0 obj
+<</Type /Font /Subtype /Type1 /BaseFont /Helvetica >> 
+endobj
+64 0 obj
+<</Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >> 
+endobj
+65 0 obj
+<</Length 1034 >> stream
+0.12 0.16 0.20 rg
+BT /F2 17 Tf 1 0 0 1 40 800 Tm (SYN Meridian Benefits) Tj ET
+BT /F2 13 Tf 1 0 0 1 40 775 Tm (Benefit utilization statement) Tj ET
+BT /F1 8 Tf 1 0 0 1 40 735 Tm (Case SYN-C002  |  Bengaluru  |  Records: records@example.invalid) Tj ET
+0.65 G 40 721 m 555 721 l S
+BT /F1 10 Tf 1 0 0 1 40 699 Tm (Patient: Arjun Menon / age 42) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 683 Tm (Member / policy: SYN-M202-A / SYN-P202) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 667 Tm (As of: 2026-09-07) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 651 Tm (Previously paid benefits: INR 1,20,000.00) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 635 Tm (Remaining annual cover: INR 8,80,000.00) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 619 Tm (Statement applies to the annual policy period and all members listed on the schedule. It) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 603 Tm (precedes the current admission; no restoration is assumed.) Tj ET
+BT /F2 8 Tf 1 0 0 1 40 31 Tm (SYNTHETIC - NOT VALID FOR CLAIM SUBMISSION) Tj ET
+BT /F1 7 Tf 1 0 0 1 40 18 Tm (Fictional issuer and patient | SYN-C002 | Page 1) Tj ET
+endstream
+
+endobj
+67 0 obj
+<< /Type /Catalog /Pages 68 0 R>>
+endobj
+68 0 obj
+<< /Type /Pages /Kids [ 69 0 R 70 0 R 71 0 R 72 0 R 73 0 R 74 0 R 75 0 R 76 0 R 77 0 R 78 0 R 79 0 R ] /Count 11 >>
+endobj
+69 0 obj
+<< /Type /Page  /Parent 68 0 R /Contents 5 0 R  /Resources <</Font <</F1 3 0 R /F2 4 0 R >> >>  /MediaBox [0 0 595 842 ]  /TrimBox [0 0 595 842 ]  /Rotate 0  >>
+endobj
+70 0 obj
+<< /Type /Page  /Parent 68 0 R /Contents 12 0 R  /Resources <</Font <</F1 10 0 R /F2 11 0 R >> >>  /MediaBox [0 0 595 842 ]  /TrimBox [0 0 595 842 ]  /Rotate 0  >>
+endobj
+71 0 obj
+<< /Type /Page  /Parent 68 0 R /Contents 14 0 R  /Resources <</Font <</F1 10 0 R /F2 11 0 R >> >>  /MediaBox [0 0 595 842 ]  /TrimBox [0 0 595 842 ]  /Rotate 0  >>
+endobj
+72 0 obj
+<< /Type /Page  /Parent 68 0 R /Contents 21 0 R  /Resources <</Font <</F1 19 0 R /F2 20 0 R >> >>  /MediaBox [0 0 595 842 ]  /TrimBox [0 0 595 842 ]  /Rotate 0  >>
+endobj
+73 0 obj
+<< /Type /Page  /Parent 68 0 R /Contents 28 0 R  /Resources <</Font <</F1 26 0 R /F2 27 0 R >> >>  /MediaBox [0 0 595 842 ]  /TrimBox [0 0 595 842 ]  /Rotate 0  >>
+endobj
+74 0 obj
+<< /Type /Page  /Parent 68 0 R /Contents 35 0 R  /Resources <</Font <</F1 33 0 R /F2 34 0 R >> >>  /MediaBox [0 0 595 842 ]  /TrimBox [0 0 595 842 ]  /Rotate 0  >>
+endobj
+75 0 obj
+<< /Type /Page  /Parent 68 0 R /Contents 42 0 R  /Resources <</Font <</F1 40 0 R /F2 41 0 R >> >>  /MediaBox [0 0 595 842 ]  /TrimBox [0 0 595 842 ]  /Rotate 0  >>
+endobj
+76 0 obj
+<< /Type /Page  /Parent 68 0 R /Contents 44 0 R  /Resources <</Font <</F1 40 0 R /F2 41 0 R >> >>  /MediaBox [0 0 595 842 ]  /TrimBox [0 0 595 842 ]  /Rotate 0  >>
+endobj
+77 0 obj
+<< /Type /Page  /Parent 68 0 R /Contents 51 0 R  /Resources <</Font <</F1 49 0 R /F2 50 0 R >> >>  /MediaBox [0 0 595 842 ]  /TrimBox [0 0 595 842 ]  /Rotate 0  >>
+endobj
+78 0 obj
+<< /Type /Page  /Parent 68 0 R /Contents 58 0 R  /Resources <</Font <</F1 56 0 R /F2 57 0 R >> >>  /MediaBox [0 0 595 842 ]  /TrimBox [0 0 595 842 ]  /Rotate 0  >>
+endobj
+79 0 obj
+<< /Type /Page  /Parent 68 0 R /Contents 65 0 R  /Resources <</Font <</F1 63 0 R /F2 64 0 R >> >>  /MediaBox [0 0 595 842 ]  /TrimBox [0 0 595 842 ]  /Rotate 0  >>
+endobj
+xref
+0 80
+0000000001 65535 f
+0000000002 00000 f
+0000000006 00000 f
+0000000015 00000 n
+0000000088 00000 n
+0000000166 00000 n
+0000000007 00000 f
+0000000008 00000 f
+0000000009 00000 f
+0000000013 00000 f
+0000002322 00000 n
+0000002396 00000 n
+0000002475 00000 n
+0000000015 00000 f
+0000005112 00000 n
+0000000016 00000 f
+0000000017 00000 f
+0000000018 00000 f
+0000000022 00000 f
+0000007595 00000 n
+0000007669 00000 n
+0000007748 00000 n
+0000000023 00000 f
+0000000024 00000 f
+0000000025 00000 f
+0000000029 00000 f
+0000009129 00000 n
+0000009203 00000 n
+0000009282 00000 n
+0000000030 00000 f
+0000000031 00000 f
+0000000032 00000 f
+0000000036 00000 f
+0000011602 00000 n
+0000011676 00000 n
+0000011755 00000 n
+0000000037 00000 f
+0000000038 00000 f
+0000000039 00000 f
+0000000043 00000 f
+0000013901 00000 n
+0000013975 00000 n
+0000014054 00000 n
+0000000045 00000 f
+0000017031 00000 n
+0000000046 00000 f
+0000000047 00000 f
+0000000048 00000 f
+0000000052 00000 f
+0000019857 00000 n
+0000019931 00000 n
+0000020010 00000 n
+0000000053 00000 f
+0000000054 00000 f
+0000000055 00000 f
+0000000059 00000 f
+0000021758 00000 n
+0000021832 00000 n
+0000021911 00000 n
+0000000060 00000 f
+0000000061 00000 f
+0000000062 00000 f
+0000000066 00000 f
+0000023234 00000 n
+0000023308 00000 n
+0000023387 00000 n
+0000000000 00000 f
+0000024480 00000 n
+0000024530 00000 n
+0000024662 00000 n
+0000024839 00000 n
+0000025019 00000 n
+0000025199 00000 n
+0000025379 00000 n
+0000025559 00000 n
+0000025739 00000 n
+0000025919 00000 n
+0000026099 00000 n
+0000026279 00000 n
+0000026459 00000 n
+trailer
+<</Size 42 /ID [(/\nU-”DLë1üÂªVÔ) (/\nU-”DLë1üÂªVÔ) ] /Root 67 0 R >> 
+startxref
+26639
+%%EOF

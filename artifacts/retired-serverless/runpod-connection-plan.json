@@ -1,0 +1,80 @@
+{
+  "artifact_type": "read_only_connection_plan_not_deployed",
+  "checked_at": "2026-11-11T08:33:15.232271+00:00",
+  "resource_counts": {
+    "pods": 0,
+    "endpoints": 0
+  },
+  "image": "ghcr.io/aizen-hado/policypilot-gpu@sha256:537c877f3c2fce36265cf360f4e9ff8e2ff92d19fe81680e5a55313672a105c2",
+  "model": {
+    "repository": "Qwen/Qwen2.5-7B-Instruct",
+    "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "parameters": 7615616512,
+    "weight_file_bytes": 15231233024,
+    "quantized_weight_bytes_lower_bound": 3807808256,
+    "format": "safetensors",
+    "load_format": "bitsandbytes NF4, 4-bit",
+    "release_kind": "upstream_instruct_baseline_not_PolicyPilot_fine_tune",
+    "model_process_ram_below_2000000000_bytes": "unverified; measurement required"
+  },
+  "gpu": {
+    "pool": "AMPERE_24",
+    "count": 1,
+    "minCudaVersion": "12.8",
+    "conservative_serverless_usd_per_hour": 0.75,
+    "stock": [
+      {
+        "gpu": "RTX 3090",
+        "stock": "LOW"
+      },
+      {
+        "gpu": "L4",
+        "stock": "LOW"
+      },
+      {
+        "gpu": "RTX A5000",
+        "stock": "HIGH"
+      },
+      {
+        "gpu": "PRO 6000 MIG 24GB",
+        "stock": "HIGH"
+      }
+    ]
+  },
+  "proposed_disabled_settings": {
+    "name": "policypilot-demo",
+    "workers": {
+      "min": 0,
+      "max": 0,
+      "idleTimeout": 300
+    },
+    "timeout": 180000,
+    "flashboot": "OFF",
+    "network_volumes": [],
+    "container_disk_gb": 30
+  },
+  "worker_env": {
+    "MODEL_REPOSITORY": "Qwen/Qwen2.5-7B-Instruct",
+    "MODEL_REVISION": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "HF_HOME": "/tmp/huggingface",
+    "RUNPOD_INIT_TIMEOUT": "180",
+    "DOCUMENT_DOWNLOAD_HOST": "7e49cfe64d89569b5e5829ccc329ca53.r2.cloudflarestorage.com"
+  },
+  "budget": {
+    "inference_total_allowance_usd": 1,
+    "compute_reservations_usd": 0.7,
+    "overhead_reserve_usd": 0.3,
+    "combined_experiment_ceiling_usd": 1.99,
+    "provider_hard_dollar_cap_verified": false
+  },
+  "ready_for_paid_execution": false,
+  "remaining_gates": [
+    "review provider schema and disabled endpoint configuration",
+    "verify initialization, retries, storage/tax, account billing and stop controls",
+    "verify private registry pull with a bounded supervised test",
+    "measure model-process RAM; no compliance claim before measurement",
+    "fine-tuning and trained artifact verification remain separate"
+  ],
+  "compute_started": false,
+  "resources_created": false
+}

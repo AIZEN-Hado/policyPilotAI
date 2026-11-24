@@ -1,0 +1,1 @@
+ALTER TABLE model_control ADD COLUMN ended_at TIMESTAMPTZ;

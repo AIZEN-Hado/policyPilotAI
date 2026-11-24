@@ -1,0 +1,53 @@
+{
+  "recorded_date": "2026-11-19",
+  "scope": "Read-only provider checks and local release verification; no deployment, image push, Git push or paid actions.",
+  "pilot_tests": {
+    "passed": 114,
+    "skipped": 0,
+    "runtime": "Recovered Python 3.12.13 environment; FastAPI 0.162.0, httpx 0.28.1, psycopg 3.3.6, boto3 1.43.119; differs from pinned image.",
+    "runner_workaround": "EpollSelector.select timeout capped at 10 ms because sandbox cross-thread event-loop wakeup otherwise hangs. No application code monkeypatches."
+  },
+  "deploy_tests": {
+    "passed": 24,
+    "skipped": 0
+  },
+  "production_native_pdf_review": [
+    {
+      "case": "SYN-C001",
+      "documents": 8,
+      "pages": 10,
+      "admission_status": "found",
+      "citation_candidates": 2,
+      "citation_offsets_exact": true,
+      "warning_pages": 0,
+      "local_storage_cleanup_verified": true
+    },
+    {
+      "case": "SYN-C003",
+      "documents": 7,
+      "pages": 8,
+      "admission_status": "conflicting",
+      "citation_candidates": 2,
+      "citation_offsets_exact": true,
+      "warning_pages": 1,
+      "local_storage_cleanup_verified": true
+    }
+  ],
+  "render_readback": {
+    "service": "policypilot-demo",
+    "url": "https://policypilot-demo.onrender.com",
+    "plan": "free",
+    "region": "singapore",
+    "deployment_id": "dep-dbuemn8m7kps73c6dn40",
+    "status": "live",
+    "created_at": "2026-11-18T00:03:41.588698Z",
+    "image_digest": "sha256:fcc8eca8bd074c0514afb3c547aebfac43bcf4c11d956a75cbe3ce2c32ca36a8",
+    "new_local_changes_deployed": false
+  },
+  "unverified": [
+    "Pinned Docker build/test: Docker socket denied.",
+    "Real HTTP/PostgreSQL integration: local socket bind denied; no PostgreSQL binaries available.",
+    "Public health/login and authenticated smoke: external DNS unavailable.",
+    "OCR execution: installed Tesseract has no language data; native field review intentionally flags image-only pages instead of OCR."
+  ]
+}

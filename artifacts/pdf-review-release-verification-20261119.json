@@ -1,0 +1,178 @@
+{
+  "recorded_at": "2026-11-19T17:37:01.629785+00:00",
+  "status": "LOCAL_CHECKS_PASS_LIVE_RELEASE_BLOCKED",
+  "pilot_gate": {
+    "tests": 121,
+    "passed": 121,
+    "skipped": 0,
+    "final": true,
+    "log": "/tmp/policypilot-master-gate-polling.log",
+    "runtime": "/tmp/policypilot-retirement-tests",
+    "workaround": "Test process only: cap EpollSelector.select wait to 10 ms; no production code change."
+  },
+  "deployment_gate": {
+    "tests": 24,
+    "passed": 24,
+    "failures": 0,
+    "skipped": 0,
+    "final": true,
+    "log": null,
+    "verified_from_fresh_archive": true
+  },
+  "local_asgi_smoke": {
+    "scope": "In-process ASGI; proxy-token authorization; strict in-memory SQL DB double; real uploaded synthetic PDFs; production native parser and LocalStorage; cleanup tick mocked; no PostgreSQL/R2/network/OCR/model execution",
+    "results": [
+      {
+        "case": "SYN-C001",
+        "documents": 8,
+        "pages": 10,
+        "admission_date": "found",
+        "exact_citations_checked": 15,
+        "pages_flagged_for_manual_check": 0,
+        "acknowledgement_revision_checked": true,
+        "download_bytes_matched": true,
+        "delete_revoked_access": true
+      },
+      {
+        "case": "SYN-C003",
+        "documents": 7,
+        "pages": 8,
+        "admission_date": "conflicting",
+        "exact_citations_checked": 12,
+        "pages_flagged_for_manual_check": 1,
+        "acknowledgement_revision_checked": true,
+        "download_bytes_matched": true,
+        "delete_revoked_access": true
+      }
+    ]
+  },
+  "release_wrapper": {
+    "command": "sh deploy/release_web.sh AIZEN-Hado",
+    "syntax_passed": true,
+    "command_double_checks": [
+      "Regenerate the standalone synthetic preview.",
+      "Run the deployment Python suite and both Node DOM suites.",
+      "Build fresh linux/amd64 image before the image gate.",
+      "Run full pilot gate against exact image with --network none.",
+      "Call existing API-only publisher after all checks succeed.",
+      "Stop before publication if any prerequisite fails.",
+      "Missing username exits 2 before running any checks."
+    ],
+    "actual_docker_build_test_publish": false
+  },
+  "infrastructure": {
+    "render_read_only_verified": true,
+    "service_id": "srv-dbq1kqu7bikc73bp4epg",
+    "url": "https://policypilot-demo.onrender.com",
+    "plan": "free",
+    "region": "singapore",
+    "existing_live_deployment": "dep-dbuemn8m7kps73c6dn40",
+    "existing_image": "ghcr.io/aizen-hado/policypilot-api@sha256:fcc8eca8bd074c0514afb3c547aebfac43bcf4c11d956a75cbe3ce2c32ca36a8",
+    "existing_deployment_created": "2026-11-18T00:03:41.588698Z",
+    "health_check_path_readback": "",
+    "new_source_live": false,
+    "provider_mutations": false
+  },
+  "blockers": [
+    "Docker daemon socket access denied; new pinned-runtime image build/test unavailable.",
+    "DNS resolution fails (gaierror -3) for api.github.com, ghcr.io and policypilot-demo.onrender.com; private registry identity/public smoke unavailable.",
+    "Render tools provide no existing-service image-source update; use existing service Settings > Image Source > Edit after fresh image publication."
+  ],
+  "not_verified": [
+    "Pinned production requirements/container runtime",
+    "Live PostgreSQL migration 009 and SQL integration",
+    "R2 physical storage/delete lifecycle",
+    "Public health marker and authenticated live session smoke",
+    "Live frontend browser behavior",
+    "OCR/model quality or any inference"
+  ],
+  "prohibited_actions_performed": {
+    "git_push": false,
+    "old_image_republished": false,
+    "paid_compute_created": false,
+    "inference_invoked": false
+  },
+  "next_steps": [
+    "Run sh deploy/release_web.sh AIZEN-Hado on the owner terminal; hidden token prompt only.",
+    "Apply the newly published full digest to existing Render service, preserving credentials and startup command; set health path /healthz.",
+    "Run both deploy/smoke.py --review-fields synthetic cases against existing HTTPS URL; verify browser citations and storage cleanup separately."
+  ],
+  "local_dependency_versions": {
+    "fastapi": "0.162.0",
+    "starlette": "1.10.0",
+    "httpx": "0.28.1",
+    "psycopg": "3.3.6",
+    "boto3": "1.43.119"
+  },
+  "pinned_image_requirements": [
+    "fastapi==0.115.12",
+    "uvicorn==0.34.2",
+    "httpx==0.28.1",
+    "psycopg[binary]==3.2.9",
+    "boto3==1.43.127"
+  ],
+  "frontend_checks": {
+    "workspace_dom_double": "PASS: node deploy/tests/check_ui.mjs",
+    "evidence_search_dom_double": "PASS: node deploy/tests/check_evidence_search.mjs",
+    "live_browser": false,
+    "offline_preview_regenerated": true,
+    "offline_browser": "Firefox headless exited with signal 11 before capture."
+  },
+  "native_pdf_smoke": {
+    "scope": "Production PDF review and local storage adapter on development exemplars",
+    "cases": [
+      {
+        "case": "SYN-C001",
+        "documents": 8,
+        "pages": 10,
+        "exact_field_citations": 15,
+        "admission_date_status": "found",
+        "room_limit_status": "missing",
+        "original_checks": 0,
+        "seconds": 0.283
+      },
+      {
+        "case": "SYN-C002",
+        "documents": 9,
+        "pages": 11,
+        "exact_field_citations": 17,
+        "admission_date_status": "found",
+        "room_limit_status": "conflicting",
+        "original_checks": 0,
+        "seconds": 0.303
+      },
+      {
+        "case": "SYN-C003",
+        "documents": 7,
+        "pages": 8,
+        "exact_field_citations": 12,
+        "admission_date_status": "conflicting",
+        "room_limit_status": "found",
+        "original_checks": 1,
+        "seconds": 0.233
+      }
+    ]
+  },
+  "source_archive": {
+    "file": "policypilot-live-pilot.tar.gz",
+    "sha256": "30ddeebedf0b9cf3fd4c69547fbf1f02f765ed701a70a5f53b58f978f92d3e22",
+    "files_verified": 120,
+    "fresh_extraction_passed_preview_and_deploy_checks": true
+  },
+  "health_response": {
+    "status": "ok",
+    "deployment_mode": "pdf-field-review"
+  },
+  "git_bundle": {
+    "file": "policypilot-release.bundle",
+    "sha256": "9ee3b1571665edaf615fd419120a71662dc8fd5d53460e78c98972283a3268b7",
+    "branch": "main",
+    "head": "610ea3587ee39674d58c58d4f7ec3866ae577721",
+    "commits": 514,
+    "snapshot_import_commits": 510,
+    "release_preparation_commits": 4,
+    "files_verified": 262,
+    "configured_author_and_committer": "AIZEN-Hado",
+    "verified": "Strict Git object check and clean clone passed. Final tree matched exportable workspace source."
+  }
+}

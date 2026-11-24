@@ -1,0 +1,5 @@
+{
+  "stage": "create endpoint",
+  "status": 400,
+  "detail": "Provider POST failed: HTTP 400. Sanitized validation detail:\ntitle: Bad Request\ndetail: endpoint template names must be unique. check that you do not already have an endpoint with a similar template.\nNo automatic retry."
+}

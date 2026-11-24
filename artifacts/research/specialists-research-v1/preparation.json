@@ -1,0 +1,40 @@
+{
+  "archive": {
+    "bytes": 117328,
+    "path": "policypilot-specialists-research-v1-runtime.tar.gz",
+    "sha256": "9efc2695a49f48513216be80bd4e7cf855e363ed6889157d1f2f8bd42a2aca9b"
+  },
+  "baseline_runtime_sha256": "616df13b7dc1a2851bc64cf79343301d01fbd96f7237732dcc8ccd9132db06fa",
+  "cases_and_families_disjoint": true,
+  "cms_beneficiaries_disjoint": true,
+  "cms_manifest_sha256": "f80e795fbc7703ba62f100be72e1bbd84d1762eed8089e62060c89367b9edb30",
+  "config_sha256": "e21efa897438551f207ad3eeeb98a515d9c208d20dff2c51e3e269b5c3688067",
+  "counts": {
+    "test": {
+      "rank": 256,
+      "span": 384
+    },
+    "train": {
+      "rank": 1024,
+      "span": 1280
+    },
+    "validation": {
+      "rank": 512,
+      "span": 512
+    }
+  },
+  "dataset_version": "specialists-research-v1",
+  "fieldbench_value_only": {
+    "counts": {
+      "insurance_claims": 140,
+      "insurance_policies": 80
+    },
+    "manifest_sha256": "3f6219d3a7aee0ef6b665cbd61eb14a72fec2897ea8053ccfa8a4e4c6c7e1437",
+    "path": "data/outputs/research/fieldbench-v0.4.2/value-only-holdout.jsonl"
+  },
+  "model_execution_performed": false,
+  "runtime_members_verified": true,
+  "test_manifest_sha256": "bf3e352334d01f05461a39931fce2ee932f7924505ae9a866fd64d38173f949f",
+  "trained_weights_created": false,
+  "training_manifest_sha256": "3a44bf598e8190bb4e81f972f2891c5fd688d1334b60196f9e72258ca6329dc3"
+}

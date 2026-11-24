@@ -1,0 +1,76 @@
+{
+  "status": "TRAINING_COMPLETE_GPU_STOPPED_R2_BACKUP_PENDING",
+  "experiment": "specialists-research-v1",
+  "run_id": "run-f0942ed466504f36950f75901fe2dffb",
+  "training_started_at": "2026-11-20T10:45:08.266305+00:00",
+  "inputs": {
+    "archive_sha256": "9efc2695a49f48513216be80bd4e7cf855e363ed6889157d1f2f8bd42a2aca9b",
+    "dataset_manifest_sha256": "3a44bf598e8190bb4e81f972f2891c5fd688d1334b60196f9e72258ca6329dc3"
+  },
+  "candidate": {
+    "archive": "/workspace/specialist-runs/run-f0942ed466504f36950f75901fe2dffb.tar.gz",
+    "sha256": "ce3cd2a62c7da940394ec1d5e8eb009345c1f505f65869c3bcd8035da6734785",
+    "bytes": 2334543,
+    "both_weights_verified": true,
+    "independent_reload_predictions_match": true,
+    "r2_readback_verified": false
+  },
+  "stages": {
+    "baseline": {
+      "exit_code": 0,
+      "deadline_reached": false,
+      "wall_seconds": 0.506,
+      "sampled_peak_rss_bytes": 28639232,
+      "rss_scope": "child VmHWM samples; short exits may not be sampled",
+      "passed": true
+    },
+    "train": {
+      "exit_code": 0,
+      "deadline_reached": false,
+      "wall_seconds": 7.248,
+      "sampled_peak_rss_bytes": 1938964480,
+      "rss_scope": "child VmHWM samples; short exits may not be sampled",
+      "passed": true
+    },
+    "reload": {
+      "exit_code": 0,
+      "deadline_reached": false,
+      "wall_seconds": 3.425,
+      "sampled_peak_rss_bytes": 1407463424,
+      "rss_scope": "child VmHWM samples; short exits may not be sampled",
+      "passed": true
+    }
+  },
+  "validation": {
+    "span_rows": 512,
+    "rank_rows": 512,
+    "span_exact_f1": {
+      "rules": 0,
+      "candidate": 0.019551466359977
+    },
+    "rank_top1_accuracy": {
+      "rules": 0.5,
+      "candidate": 0.65625
+    },
+    "held_out_evaluation_completed": false
+  },
+  "runpod": {
+    "pod_id": "aipx0frlpya5zy",
+    "state": "EXITED",
+    "gpu": "NVIDIA RTX PRO 4500 Blackwell",
+    "datacenter": "EU-RO-1",
+    "image": "runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404",
+    "gpu_hourly_usd": 0.72,
+    "pod_created_at": "2026-11-20T10:43:43.399Z",
+    "stop_confirmed_at": "2026-11-20T11:07:11.902Z",
+    "approximate_gpu_cost_usd": 0.2817,
+    "pod_billing_records_returned": 0,
+    "volume": {
+      "id": "c9iaje0u23",
+      "size_gb": 10,
+      "tier": "STANDARD",
+      "mount": "/workspace",
+      "published_usd_per_month_before_tax": 0.7
+    }
+  }
+}

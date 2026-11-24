@@ -1,0 +1,57 @@
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 15px/1.55 system-ui, sans-serif; }
+button, input, select, textarea { font: inherit; }
+button, a { touch-action: manipulation; }
+button { cursor: pointer; }
+button:disabled { cursor: not-allowed; opacity: .55; }
+a { color: var(--teal); }
+button, a, input, select, textarea, summary { outline-offset: 4px; }
+:focus-visible { outline: 3px solid var(--teal); }
+h1, h2, h3, p, dl, dd { margin: 0; }
+h1, h2, h3 { color: var(--onyx); line-height: 1.1; }
+h2 { font-size: 1.44rem; letter-spacing: -.055em; font-weight: 600; }
+h3 { font-size: 1rem; font-weight: 650; }
+p + p { margin-top: .75rem; }
+label { display: block; font-size: .82rem; font-weight: 570; }
+input, select, textarea { display: block; width: 100%; min-width: 0; margin-top: .4rem; padding: .68rem .8rem; border: 1px solid var(--control); background: var(--white); color: var(--ink); border-radius: .6rem; }
+textarea { resize: vertical; }
+input[type=file] { padding: .4rem; font-size: .78rem; }
+input::file-selector-button { border: 0; padding: .45rem .55rem; margin-right: .5rem; border-radius: .3rem; color: var(--ink); background: var(--soft); cursor: pointer; }
+.primary, .secondary { min-height: 44px; padding: .65rem 1.05rem; border: 1px solid var(--onyx); border-radius: .6rem; font-weight: 600; line-height: 1.3; transition: background-color 160ms ease, border-color 160ms ease; }
+.primary { color: var(--white); background: var(--onyx); }
+.primary:hover:not(:disabled) { background: #34413b; }
+.secondary { background: var(--white); color: var(--ink); border-color: var(--control); }
+.secondary:hover:not(:disabled) { background: var(--soft); }
+.primary:active:not(:disabled), .secondary:active:not(:disabled) { transform: translateY(1px); }
+.textbutton, .danger, .close { display: inline-flex; justify-content: center; align-items: center; min-height: 36px; border: 0; background: transparent; font: inherit; }
+.textbutton { padding: .3rem .1rem; text-align: left; font-size: .83rem; font-weight: 600; text-decoration: underline; text-underline-offset: .2em; color: var(--teal); }
+.textbutton:hover { text-decoration-thickness: .13em; }
+.danger { color: #9d3433; font-size: .85rem; }
+.close { width: 40px; border-radius: 50%; font-size: 1.6rem; color: var(--muted); }
+.close:hover { background: var(--soft); }
+.small, .subtitle { color: var(--muted); }
+.small { font-size: .8rem; }
+.eyebrow { font: 600 .68rem/1.45 ui-monospace, monospace; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.empty { padding: 2.2rem 1.2rem; color: var(--muted); font-size: .9rem; }
+.empty strong { color: var(--ink); }
+.empty p { margin-top: .35rem; }
+.error, .success, .preview-notice { border-radius: .55rem; padding: .8rem 1rem; margin-bottom: 1rem; font-size: .88rem; }
+.error { background: #fff2ef; color: #802a28; }
+.success, .preview-notice { background: var(--mint-soft); color: var(--teal); }
+.sr-only, .skip:not(:focus) { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.skip:focus { position: fixed; top: .5rem; left: 1rem; z-index: 3; padding: .6rem 1rem; background: white; }
+dialog { width: min(470px, calc(100% - 2rem)); max-height: 88dvh; padding: clamp(1.25rem, 4vw, 2rem); border: 1px solid var(--line); border-radius: 1.2rem; color: var(--ink); box-shadow: 0 32px 100px #10261b29; }
+dialog::backdrop { background: #10191277; }
+.dialoghead { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+dialog label, dialog h3, .connection-strip { margin-top: 1.15rem; }
+dialog .primary, dialog .error { margin-top: 1.4rem; }
+dialog p, .connection-strip { font-size: .9rem; color: var(--muted); }
+dialog h3 + p { margin-top: .5rem; }
+.connection-strip { padding: 1rem; border-radius: .65rem; background: var(--soft); }
+.connection-strip p { margin-top: .4rem; }
+.connection-strip strong { color: var(--ink); }
+@media (prefers-reduced-motion: reduce) {
+  .primary, .secondary { transition: none; }
+  .primary:active:not(:disabled), .secondary:active:not(:disabled) { transform: none; }
+}

@@ -1,0 +1,23 @@
+{
+  "files": [
+    {
+      "bytes": 73847,
+      "path": "policypilot-specialists-public-policy-v1-evaluation.tar.gz",
+      "sha256": "05aadc20ec9ca2357ffeef907af2d6c84f0e6c8127519eabb92e3585c6f95dee"
+    },
+    {
+      "bytes": 230568,
+      "path": "policypilot-specialists-public-policy-v1-runtime.tar.gz",
+      "sha256": "3eae9e9d5515a8c617484237c9ddb71e831452d565b5d0ea00dde1ff1eb50b40"
+    },
+    {
+      "bytes": 2770,
+      "path": "preparation.json",
+      "sha256": "c6cb6fa845f8b309a5b9fc5bc2c4ae1f2604e2ca5cd310d5391522929466c5d4"
+    }
+  ],
+  "metadata": {
+    "experiment": "specialists-public-policy-v1"
+  },
+  "version": 1
+}

@@ -1,0 +1,40 @@
+{
+  "checked_at": "2026-11-20T09:36:06.249094+00:00",
+  "status": "VERIFIED_INPUTS_AWAITING_RUNPOD_QUOTE_AND_APPROVAL",
+  "runtime_tar": "artifacts/research/specialists-research-v1/policypilot-specialists-research-v1-runtime.tar.gz",
+  "runtime_archive_sha256": "9efc2695a49f48513216be80bd4e7cf855e363ed6889157d1f2f8bd42a2aca9b",
+  "train_manifest_sha256": "3a44bf598e8190bb4e81f972f2891c5fd688d1334b60196f9e72258ca6329dc3",
+  "test_manifest_sha256": "bf3e352334d01f05461a39931fce2ee932f7924505ae9a866fd64d38173f949f",
+  "fieldbench_manifest_sha256": "3f6219d3a7aee0ef6b665cbd61eb14a72fec2897ea8053ccfa8a4e4c6c7e1437",
+  "counts": {
+    "test": {
+      "rank": 256,
+      "span": 384
+    },
+    "train": {
+      "rank": 1024,
+      "span": 1280
+    },
+    "validation": {
+      "rank": 512,
+      "span": 512
+    }
+  },
+  "first_checkpoint": {
+    "archive_sha256": "3be489352f797be201e069f8dc33d77ca4e145eec257cf41a9238d865805add2",
+    "r2_readback_verified": true
+  },
+  "runtime_plan_validated": true,
+  "local_execute_rejected": true,
+  "candidate_checkpoint_created": false,
+  "runpod_quote_verified": false,
+  "resource_changes": false,
+  "evaluation_bundle": {
+    "path": "artifacts/research/specialists-research-v1-evaluation.tar.gz",
+    "sha256": "5730bdfa757193eae349919ac54945fc2a2c652bd92f9aa245df130a0af78bd1",
+    "verified_extracted": true,
+    "hosted_scoring_run": false
+  },
+  "specialist_tests_passed": 44,
+  "rule_only_baselines": "artifacts/research/specialists-research-v1-initial-rules-baseline.json"
+}

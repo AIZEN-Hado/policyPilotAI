@@ -1,0 +1,9 @@
+{
+  "recorded_at": "2026-11-17T21:42:23.101205+00:00",
+  "read_only": true,
+  "resources_changed": false,
+  "jobs_submitted": 0,
+  "compute_started": false,
+  "access_verified": false,
+  "detail": "Read-only Runpod access unavailable or unconfirmed; one attempt, no retry and no compute started."
+}

@@ -1,0 +1,10 @@
+# The web and worker images share pilot/Dockerfile. Send only their build inputs.
+**
+!pilot/
+!pilot/**
+!deploy/
+!deploy/render-start.sh
+**/__pycache__/
+**/*.pyc
+**/.env
+**/.env.*

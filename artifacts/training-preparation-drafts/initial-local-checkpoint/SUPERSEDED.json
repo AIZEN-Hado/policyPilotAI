@@ -1,0 +1,5 @@
+{
+  "status": "superseded_source_preparation",
+  "trained_model": false,
+  "reason": "Preserved before final runtime-memory and config review; use the root artifacts preparation bundle."
+}

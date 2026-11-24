@@ -1,0 +1,18 @@
+{
+  "files": [
+    {
+      "bytes": 270609,
+      "path": "policypilot-specialists-balanced-fields-v1-runtime.tar.gz",
+      "sha256": "b405976951374a7839a1870efd8068c81b9ecdaa590dfc4235ddd55ef35a8528"
+    },
+    {
+      "bytes": 1262,
+      "path": "preparation.json",
+      "sha256": "2b305b438e0ad6d9684ee5dfedd25a1e50e353f70d1042acb2d386c87e9617d4"
+    }
+  ],
+  "metadata": {
+    "experiment": "specialists-balanced-fields-v1"
+  },
+  "version": 1
+}

@@ -1,0 +1,22 @@
+{
+  "archive": {
+    "bytes": 77768,
+    "path": "specialists-self-learning-calibration-v1-holdout.tar.gz",
+    "sha256": "6d1b0b6453e870e03af63540fe91e123f2821debc71b6595144b4f2f3cf1e2a5"
+  },
+  "calibration_source_sha256": "c5fbb4c5a8b1c4f0829b15d9364219af0c1d2270b1f5748952e0a405e1ab3804",
+  "counts": {
+    "rank": 1248,
+    "span": 520
+  },
+  "experiment": "specialists-self-learning-calibration-v1",
+  "holdout_manifest_sha256": "ca033a95f7ea949aa25c8bfa92438e239c478d19f91322eb8640b3fd040dd34d",
+  "support": {
+    "ADMISSION_DATE": 244,
+    "DISCHARGE_DATE": 272,
+    "MEMBER_ID": 277,
+    "POLICY_ID": 262,
+    "ROOM_LIMIT": 260,
+    "SUM_INSURED": 252
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "config_sha256": "cce846af72661a79b34cdf234070df8d89e89da116f753ea3ebc71d7488b2074",
+  "diagnostic": {
+    "bytes": 74311,
+    "path": "policypilot-specialists-quality-v1-diagnostic.tar.gz",
+    "sha256": "b8281369e3da6ef562feee553b1c3d2bb124c9e6304ffc725a40c71644fd2481"
+  },
+  "experiment": "specialists-quality-v1-diagnostic",
+  "model_execution_performed": false,
+  "rank_probe_groups": 8,
+  "rank_probe_sha256": "cd2ef8c5f6662e45624116cc8c22379cbdfd6180e2e3f3e35ea0ea2a0abafe61",
+  "source_runtime_sha256": "ef51b1dc9d8bccabdfd72903a4ba5495a0c58a8da040b0d09a0e32ed391f57d8",
+  "span_candidate_coverage": {
+    "ADMISSION_DATE": {
+      "available": 288,
+      "gold": 288,
+      "missing": 0
+    },
+    "DISCHARGE_DATE": {
+      "available": 288,
+      "gold": 288,
+      "missing": 0
+    },
+    "MEMBER_ID": {
+      "available": 128,
+      "gold": 128,
+      "missing": 0
+    },
+    "POLICY_ID": {
+      "available": 128,
+      "gold": 128,
+      "missing": 0
+    },
+    "ROOM_LIMIT": {
+      "available": 64,
+      "gold": 64,
+      "missing": 0
+    },
+    "SUM_INSURED": {
+      "available": 64,
+      "gold": 64,
+      "missing": 0
+    }
+  },
+  "training_manifest_sha256": "c092bf90efe1829df7fcbb1af26032cbca737f3ecf7fd7969c29e508bd8ad54a"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "checks": 897,
+  "failures": [],
+  "limitations": [
+    "No OCR engine executed; scan OCR accuracy not measured.",
+    "Clinical/domain and native-language review not performed.",
+    "Canonical bounding boxes are approximate text regions; scan localization is not ground-truthed."
+  ]
+}

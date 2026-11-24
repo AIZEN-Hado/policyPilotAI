@@ -1,0 +1,64 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [6 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Length 2067 >>
+stream
+0.12 0.16 0.20 rg
+BT /F2 17 Tf 1 0 0 1 40 800 Tm (SYN Riverbend Hospital) Tj ET
+BT /F2 13 Tf 1 0 0 1 40 775 Tm (Discharge summary) Tj ET
+BT /F1 8 Tf 1 0 0 1 40 735 Tm (Case SYN-C001  |  Pune  |  Records: records@example.invalid) Tj ET
+0.65 G 40 721 m 555 721 l S
+BT /F1 10 Tf 1 0 0 1 40 699 Tm (Patient: Meera Kulkarni / age 34) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 683 Tm (Member / policy: SYN-M101 / SYN-P101) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 667 Tm (Inpatient record: SYN-IP001) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 651 Tm (Admission: 2026-08-12) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 635 Tm (Discharge: 2026-08-15) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 619 Tm (Discharge status: Stable / home) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 587 Tm (DIAGNOSIS) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 568 Tm (Acute appendicitis) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 536 Tm (PRESENTATION AND INPATIENT COURSE) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 517 Tm (Admitted with abdominal pain. Surgical assessment and imaging documented appendicitis.) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 501 Tm (Laparoscopic appendectomy performed on 13 August. Observed postoperatively; discharged in) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 485 Tm (stable condition.) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 453 Tm (INVESTIGATIONS) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 434 Tm (See attached investigation record. Findings are fictional narrative content and have not) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 418 Tm (been clinically validated.) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 386 Tm (FOLLOW-UP RECORD) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 367 Tm (Outpatient review was advised. Medication names and dosing are intentionally omitted; this) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 351 Tm (fixture is not a treatment guide.) Tj ET
+BT /F2 10 Tf 1 0 0 1 40 319 Tm (RECORD AUTHORIZATION) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 300 Tm (SYN-CLINICIAN-01 / synthetic record author; no medical registration or signature) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 284 Tm (represented.) Tj ET
+BT /F2 8 Tf 1 0 0 1 40 31 Tm (SYNTHETIC - NOT VALID FOR CLAIM SUBMISSION) Tj ET
+BT /F1 7 Tf 1 0 0 1 40 18 Tm (Fictional issuer and patient | SYN-C001 | Page 1) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000191 00000 n 
+0000000266 00000 n 
+0000002385 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+2521
+%%EOF

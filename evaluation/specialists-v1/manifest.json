@@ -1,0 +1,25 @@
+{
+  "counts": {
+    "rank": 256,
+    "span": 384
+  },
+  "files": {
+    "test-rank.jsonl": {
+      "bytes": 100157,
+      "sha256": "f83eda6ddd94ab5ec65d545ebf0fe3dd85678cbfe68b3325af9130da71dcfc71"
+    },
+    "test-span.jsonl": {
+      "bytes": 184728,
+      "sha256": "40d913401a2dc85b7fa52716d444cf295f0c87beaa9e6efa40185aca26162a50"
+    }
+  },
+  "limitations": [
+    "Original English synthetic text only; no PDF, layout-coordinate, OCR or real-world accuracy benchmark.",
+    "Wording/layout families and cases are split, but synthetic generation semantics are shared.",
+    "Oracle/source-label consistency is not trained model accuracy.",
+    "Final test labels and their reconstructing generator are excluded from the training runtime archive."
+  ],
+  "schema_version": 1,
+  "split": "test",
+  "synthetic_only": true
+}

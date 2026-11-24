@@ -1,0 +1,463 @@
+{
+  "experiment": "specialists-self-learning-v1",
+  "status": "TARGET_NOT_MET",
+  "candidate": {
+    "archive": "/workspace/specialist-self-learning-v1-runs/run-eb0d041f214b468280cf91b5fc60ac95.tar.gz",
+    "bytes": 5007329,
+    "sha256": "93ef5692d9ea0ad62d9afd2688e5580d0a1aeb247819dd0eeb589e5ade6207c8",
+    "independent_reload": {
+      "student": true,
+      "teacher": true
+    }
+  },
+  "inputs": {
+    "config_sha256": "a8298d727266067d4edba1be5d016d72ac839be32e779cbf4b8d92007a260140",
+    "training_manifest_sha256": "b50b63ada0e3091a812f0f60ea152d114529c0ed60444b0aa9548f4b2387e067",
+    "runtime_archive_sha256": "4d0cec6c29abd3ec01c858b28e8c0fcb16b4f0463e89419e977b7ac9ccfc26be",
+    "holdout_archive_sha256": "91a4a80d0d35683ab93bb543ec2c18f52950f721ae7c38c1841140068ab51ea0",
+    "holdout_manifest_sha256": "18af268654900864a7586d9aab01937b5fc9eee67b56a69d2a3b9a43660a3358"
+  },
+  "training": {
+    "started_at": "2026-11-20T23:02:25.306051+00:00",
+    "stages": {
+      "baseline": {
+        "exit_code": 0,
+        "deadline_reached": false,
+        "wall_seconds": 1.558,
+        "sampled_peak_rss_bytes": 85344256,
+        "rss_scope": "child VmHWM samples; short exits may not be sampled",
+        "passed": true
+      },
+      "train": {
+        "exit_code": 0,
+        "deadline_reached": false,
+        "wall_seconds": 287.164,
+        "sampled_peak_rss_bytes": 1288843264,
+        "rss_scope": "child VmHWM samples; short exits may not be sampled",
+        "passed": true
+      },
+      "reload": {
+        "exit_code": 0,
+        "deadline_reached": false,
+        "wall_seconds": 4.119,
+        "sampled_peak_rss_bytes": 724221952,
+        "rss_scope": "child VmHWM samples; short exits may not be sampled",
+        "passed": true
+      }
+    },
+    "supervised_updates": {
+      "rank": {
+        "epochs": [
+          {
+            "epoch": 1,
+            "loss": 0.6319580493228776,
+            "validation_score": 0.856418918918919
+          },
+          {
+            "epoch": 2,
+            "loss": 0.07663701549656206,
+            "validation_score": 0.8766891891891891
+          },
+          {
+            "epoch": 3,
+            "loss": 0.031358057705612924,
+            "validation_score": 0.8766891891891891
+          },
+          {
+            "epoch": 4,
+            "loss": 0.019967574287544598,
+            "validation_score": 0.8513513513513513
+          },
+          {
+            "epoch": 5,
+            "loss": 0.014230833488649555,
+            "validation_score": 0.831081081081081
+          },
+          {
+            "epoch": 6,
+            "loss": 0.01073196682437964,
+            "validation_score": 0.8327702702702703
+          },
+          {
+            "epoch": 7,
+            "loss": 0.008487606687205178,
+            "validation_score": 0.8344594594594594
+          },
+          {
+            "epoch": 8,
+            "loss": 0.006849461924526599,
+            "validation_score": 0.8327702702702703
+          },
+          {
+            "epoch": 9,
+            "loss": 0.005449024989880476,
+            "validation_score": 0.8327702702702703
+          },
+          {
+            "epoch": 10,
+            "loss": 0.004540125639843089,
+            "validation_score": 0.8344594594594594
+          },
+          {
+            "epoch": 11,
+            "loss": 0.0038432484816203452,
+            "validation_score": 0.8361486486486487
+          },
+          {
+            "epoch": 12,
+            "loss": 0.0032794103668942177,
+            "validation_score": 0.8378378378378378
+          }
+        ],
+        "selected_epoch": 2,
+        "steps": 924
+      },
+      "span": {
+        "epochs": [
+          {
+            "epoch": 1,
+            "loss": 0.3326484319862678,
+            "validation_score": 0.8686359309628072
+          },
+          {
+            "epoch": 2,
+            "loss": 0.008890743432377423,
+            "validation_score": 0.8623513890769224
+          },
+          {
+            "epoch": 3,
+            "loss": 0.0023964376905034794,
+            "validation_score": 0.8566750662634318
+          },
+          {
+            "epoch": 4,
+            "loss": 0.0011892843371621206,
+            "validation_score": 0.8518527728199925
+          },
+          {
+            "epoch": 5,
+            "loss": 0.0007247799043638187,
+            "validation_score": 0.8479518355470425
+          },
+          {
+            "epoch": 6,
+            "loss": 0.0004919441254350929,
+            "validation_score": 0.8537929861697445
+          },
+          {
+            "epoch": 7,
+            "loss": 0.00035587427577743697,
+            "validation_score": 0.8567163362907607
+          },
+          {
+            "epoch": 8,
+            "loss": 0.0002695062011746255,
+            "validation_score": 0.8399156776289676
+          },
+          {
+            "epoch": 9,
+            "loss": 0.00021095704374454329,
+            "validation_score": 0.8377946057481463
+          },
+          {
+            "epoch": 10,
+            "loss": 0.00016889299533736472,
+            "validation_score": 0.8409793516976749
+          },
+          {
+            "epoch": 11,
+            "loss": 0.0001378250806571722,
+            "validation_score": 0.8435926762559357
+          },
+          {
+            "epoch": 12,
+            "loss": 0.00011404398498926099,
+            "validation_score": 0.8401370585293956
+          }
+        ],
+        "selected_epoch": 1,
+        "selection_metric": "macro_exact_span_f1",
+        "steps": 2364
+      }
+    },
+    "self_training": {
+      "pool_sizes": {
+        "rank": 2400,
+        "span": 1300
+      },
+      "rounds": [
+        {
+          "optimizer_updates": {
+            "rank": {
+              "epochs": [
+                {
+                  "epoch": 1,
+                  "loss": 0.025363096683893516,
+                  "validation_score": 0.8682432432432432
+                },
+                {
+                  "epoch": 2,
+                  "loss": 0.014318651669031091,
+                  "validation_score": 0.8581081081081081
+                },
+                {
+                  "epoch": 3,
+                  "loss": 0.010278092037997734,
+                  "validation_score": 0.8344594594594594
+                }
+              ],
+              "selected_epoch": 1,
+              "steps": 276
+            },
+            "span": {
+              "epochs": [
+                {
+                  "epoch": 1,
+                  "loss": 0.007697038662546121,
+                  "validation_score": 0.8692339065094791
+                },
+                {
+                  "epoch": 2,
+                  "loss": 0.001434814501300196,
+                  "validation_score": 0.8650773074870943
+                },
+                {
+                  "epoch": 3,
+                  "loss": 0.0006337448060431859,
+                  "validation_score": 0.8607307353797907
+                }
+              ],
+              "selected_epoch": 1,
+              "selection_metric": "macro_exact_span_f1",
+              "steps": 606
+            }
+          },
+          "rank_groups_added": 487,
+          "rank_rows_added": 1948,
+          "round": 1,
+          "span_labels_added": {
+            "ADMISSION_DATE": 97,
+            "DISCHARGE_DATE": 96,
+            "MEMBER_ID": 70,
+            "POLICY_ID": 87,
+            "ROOM_LIMIT": 91,
+            "SUM_INSURED": 74
+          },
+          "span_rows_added": 184
+        },
+        {
+          "optimizer_updates": {
+            "rank": {
+              "epochs": [
+                {
+                  "epoch": 1,
+                  "loss": 0.013275033313977091,
+                  "validation_score": 0.8581081081081081
+                },
+                {
+                  "epoch": 2,
+                  "loss": 0.008652684014094504,
+                  "validation_score": 0.8648648648648649
+                },
+                {
+                  "epoch": 3,
+                  "loss": 0.006234633687295411,
+                  "validation_score": 0.8648648648648649
+                }
+              ],
+              "selected_epoch": 2,
+              "steps": 285
+            },
+            "span": {
+              "epochs": [
+                {
+                  "epoch": 1,
+                  "loss": 0.0014580087432796709,
+                  "validation_score": 0.8634964164223079
+                },
+                {
+                  "epoch": 2,
+                  "loss": 0.0015207765344888969,
+                  "validation_score": 0.8688881765216259
+                },
+                {
+                  "epoch": 3,
+                  "loss": 0.00030368323661596625,
+                  "validation_score": 0.8917067703394008
+                }
+              ],
+              "selected_epoch": 3,
+              "selection_metric": "macro_exact_span_f1",
+              "steps": 633
+            }
+          },
+          "rank_groups_added": 87,
+          "rank_rows_added": 348,
+          "round": 2,
+          "span_labels_added": {
+            "ADMISSION_DATE": 151,
+            "DISCHARGE_DATE": 161,
+            "MEMBER_ID": 168,
+            "POLICY_ID": 151,
+            "ROOM_LIMIT": 157,
+            "SUM_INSURED": 138
+          },
+          "span_rows_added": 266
+        }
+      ],
+      "teacher_bytes": 2653037,
+      "teacher_validation_fingerprint": "519201d9b6755a9bb4de77c0967cceede1831a675c92d254835f2ad491b7257d",
+      "teacher_validation_metrics": {
+        "rank": {
+          "group_top1_accuracy": 0.8766891891891891,
+          "groups": 592,
+          "pairwise_accuracy": 0.944364161849711,
+          "rows": 1976,
+          "strict_group_top1_accuracy": 0.8766891891891891
+        },
+        "span": {
+          "entity_token": {
+            "f1": 0.8683936094773287,
+            "precision": 0.909162372259586,
+            "recall": 0.8311242414564037,
+            "support": 12524
+          },
+          "exact_span": {
+            "f1": 0.8710718532359436,
+            "precision": 0.921307941070787,
+            "recall": 0.8260309278350515,
+            "support": 3104
+          },
+          "exact_span_by_label": {
+            "ADMISSION_DATE": {
+              "f1": 0.8337388483373885,
+              "precision": 0.8426229508196721,
+              "recall": 0.8250401284109149,
+              "support": 623
+            },
+            "DISCHARGE_DATE": {
+              "f1": 0.9281678773204197,
+              "precision": 0.9472817133443163,
+              "recall": 0.9098101265822784,
+              "support": 632
+            },
+            "MEMBER_ID": {
+              "f1": 0.8122605363984674,
+              "precision": 0.99375,
+              "recall": 0.6868250539956804,
+              "support": 463
+            },
+            "POLICY_ID": {
+              "f1": 0.9417040358744395,
+              "precision": 1,
+              "recall": 0.8898305084745762,
+              "support": 472
+            },
+            "ROOM_LIMIT": {
+              "f1": 0.8345945945945946,
+              "precision": 0.8520971302428256,
+              "recall": 0.8177966101694916,
+              "support": 472
+            },
+            "SUM_INSURED": {
+              "f1": 0.8613496932515338,
+              "precision": 0.9410187667560321,
+              "recall": 0.7941176470588235,
+              "support": 442
+            }
+          },
+          "rows": 1248,
+          "token_accuracy": 0.9522190437270127,
+          "tokens": 61175
+        }
+      }
+    },
+    "student_validation": {
+      "span": {
+        "entity_token": {
+          "f1": 0.8834400289890083,
+          "precision": 0.8910095021521969,
+          "recall": 0.8759980836793356,
+          "support": 12524
+        },
+        "exact_span": {
+          "f1": 0.8913256955810147,
+          "precision": 0.9058549567531603,
+          "recall": 0.8772551546391752,
+          "support": 3104
+        },
+        "exact_span_by_label": {
+          "ADMISSION_DATE": {
+            "f1": 0.8449799196787149,
+            "precision": 0.8456591639871383,
+            "recall": 0.8443017656500803,
+            "support": 623
+          },
+          "DISCHARGE_DATE": {
+            "f1": 0.9307568438003221,
+            "precision": 0.9475409836065574,
+            "recall": 0.9145569620253164,
+            "support": 632
+          },
+          "MEMBER_ID": {
+            "f1": 0.9118683901292597,
+            "precision": 1,
+            "recall": 0.838012958963283,
+            "support": 463
+          },
+          "POLICY_ID": {
+            "f1": 0.896,
+            "precision": 0.8484848484848485,
+            "recall": 0.9491525423728814,
+            "support": 472
+          },
+          "ROOM_LIMIT": {
+            "f1": 0.8893572181243414,
+            "precision": 0.8846960167714885,
+            "recall": 0.8940677966101694,
+            "support": 472
+          },
+          "SUM_INSURED": {
+            "f1": 0.8772782503037667,
+            "precision": 0.94750656167979,
+            "recall": 0.8167420814479638,
+            "support": 442
+          }
+        },
+        "rows": 1248,
+        "token_accuracy": 0.955063342868819,
+        "tokens": 61175
+      },
+      "rank": {
+        "group_top1_accuracy": 0.8648648648648649,
+        "groups": 592,
+        "pairwise_accuracy": 0.9183526011560693,
+        "rows": 1976,
+        "strict_group_top1_accuracy": 0.8648648648648649
+      }
+    }
+  },
+  "evaluation": {
+    "fresh": {
+      "path": "artifacts/research/specialists-self-learning-v1-heldout.json",
+      "sha256": "373f41351aafdff77d368c6d6fd0fea6b44ab58ff4d9cdac3e650bce141d3c28"
+    },
+    "prior_benchmark": {
+      "path": "artifacts/research/specialists-self-learning-v1-prior-benchmark.json",
+      "sha256": "44649cb8d7fbfdae9565b20b0c5a68c6b27dea0d45b9ee8da1ed164e1cee17f7"
+    }
+  },
+  "runpod": {
+    "pod_id": "qubelujwxugzzg",
+    "created_at": "2026-11-20T23:00:53.575Z",
+    "hourly_usd": 0.14,
+    "stopped_verified_at": "2026-11-20 23:09:17 UTC",
+    "pod_removed": true,
+    "volume_id": "c9iaje0u23",
+    "estimated_compute_usd": 0.01958,
+    "confirmed_charge_usd": null,
+    "task_budget_usd": 1
+  },
+  "deployment_performed": false,
+  "r2_backup_verified": false
+}

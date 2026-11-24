@@ -1,0 +1,290 @@
+{
+  "status": "TRAINING_COMPLETE_GPU_REMOVED",
+  "experiment": "specialists-date-diversity-v1",
+  "run_id": "run-9edf81cc46964e318f0d014b7519d7d9",
+  "training_started_at": "2026-11-20T13:32:16.370130+00:00",
+  "inputs": {
+    "archive_sha256": "029b89e167d765a013313aaa6f859974d7d1fd928eb2c1ddcf169414b6e5497c",
+    "dataset_manifest_sha256": "33d9e8d0a8a46922f75b7d165165f6138876c0372bc0c1bb99c024a2fc2d7b7c",
+    "config_sha256": "ca943c762760ae1e385779086af38565e832f0aa4c24e5d774d8ac32bb89e45c",
+    "unchanged_data_sha256": {
+      "train-rank.jsonl": "7163c79d2104f89601e7d2fbccfc460c4b6d2dc71cc0a88c441172aa3716cbd6",
+      "validation-rank.jsonl": "645842467141b914032ef1757e6d88a7cdec67d48cf3930d8f84ed430592b533",
+      "validation-span.jsonl": "b9b6cb21a4778a4a30749aebe91fe04cbbdb635680dabc6313de454ce427c772"
+    }
+  },
+  "candidate": {
+    "archive": "/workspace/specialist-date-diversity-runs/run-9edf81cc46964e318f0d014b7519d7d9.tar.gz",
+    "sha256": "1b02f0660870843e105d09b439e9ffc42f7761f1a518a8f3f87d935ff27e1661",
+    "bytes": 2336840,
+    "independent_reload_predictions_match": true,
+    "r2_readback_verified": false
+  },
+  "reference": {
+    "experiment": "specialists-precision-v1",
+    "run_id": "run-4f2ffe7238af4c9a9865c7f5ea4619c3",
+    "archive_sha256": "d245d82560525e1aeac0fdb315a89eb7cae5a29b08c67d46d93f0d47bf4bafb8"
+  },
+  "stages": {
+    "baseline": {
+      "exit_code": 0,
+      "deadline_reached": false,
+      "wall_seconds": 0.353,
+      "sampled_peak_rss_bytes": 30724096,
+      "rss_scope": "child VmHWM samples; short exits may not be sampled",
+      "passed": true
+    },
+    "train": {
+      "exit_code": 0,
+      "deadline_reached": false,
+      "wall_seconds": 12.667,
+      "sampled_peak_rss_bytes": 1787944960,
+      "rss_scope": "child VmHWM samples; short exits may not be sampled",
+      "passed": true
+    },
+    "reload": {
+      "exit_code": 0,
+      "deadline_reached": false,
+      "wall_seconds": 2.061,
+      "sampled_peak_rss_bytes": 1342869504,
+      "rss_scope": "child VmHWM samples; short exits may not be sampled",
+      "passed": true
+    }
+  },
+  "training_updates": {
+    "rank": {
+      "epochs": [
+        {
+          "epoch": 1,
+          "loss": 0.8906827469666799,
+          "validation_score": 0.5833333333333334
+        },
+        {
+          "epoch": 2,
+          "loss": 0.8041177863876025,
+          "validation_score": 0.5833333333333334
+        },
+        {
+          "epoch": 3,
+          "loss": 0.6721592396497726,
+          "validation_score": 0.6614583333333334
+        },
+        {
+          "epoch": 4,
+          "loss": 0.5163838018973669,
+          "validation_score": 0.6666666666666666
+        },
+        {
+          "epoch": 5,
+          "loss": 0.38653116424878436,
+          "validation_score": 0.6666666666666666
+        },
+        {
+          "epoch": 6,
+          "loss": 0.29433671819667023,
+          "validation_score": 0.6927083333333334
+        },
+        {
+          "epoch": 7,
+          "loss": 0.22994544605414072,
+          "validation_score": 0.71875
+        },
+        {
+          "epoch": 8,
+          "loss": 0.18299485556781292,
+          "validation_score": 0.78125
+        },
+        {
+          "epoch": 9,
+          "loss": 0.14688783014814058,
+          "validation_score": 0.8072916666666666
+        },
+        {
+          "epoch": 10,
+          "loss": 0.11989763053134084,
+          "validation_score": 0.8177083333333334
+        }
+      ],
+      "selected_epoch": 10,
+      "steps": 240
+    },
+    "span": {
+      "epochs": [
+        {
+          "epoch": 1,
+          "loss": 0.36333015485881615,
+          "validation_score": 0.3824799506477483
+        },
+        {
+          "epoch": 2,
+          "loss": 0.020017582242592022,
+          "validation_score": 0.38202247191011235
+        },
+        {
+          "epoch": 3,
+          "loss": 0.0036155139364732,
+          "validation_score": 0.4071340713407134
+        },
+        {
+          "epoch": 4,
+          "loss": 0.0016973556818042058,
+          "validation_score": 0.3946731234866828
+        },
+        {
+          "epoch": 5,
+          "loss": 0.0010537115513915734,
+          "validation_score": 0.4049079754601227
+        },
+        {
+          "epoch": 6,
+          "loss": 0.0007311550417888121,
+          "validation_score": 0.3963525835866261
+        },
+        {
+          "epoch": 7,
+          "loss": 0.0005428841879900295,
+          "validation_score": 0.41834862385321103
+        },
+        {
+          "epoch": 8,
+          "loss": 0.00042065687431694154,
+          "validation_score": 0.40097501523461304
+        },
+        {
+          "epoch": 9,
+          "loss": 0.0003368788904761179,
+          "validation_score": 0.41041162227602906
+        },
+        {
+          "epoch": 10,
+          "loss": 0.00027661940622727765,
+          "validation_score": 0.4026682838083687
+        }
+      ],
+      "selected_epoch": 7,
+      "steps": 1040
+    }
+  },
+  "validation": {
+    "span_exact": {
+      "previous": {
+        "f1": 0.3934794828555368,
+        "precision": 0.42735042735042733,
+        "recall": 0.3645833333333333,
+        "support": 960
+      },
+      "candidate": {
+        "f1": 0.41834862385321103,
+        "precision": 0.5066666666666667,
+        "recall": 0.35625,
+        "support": 960
+      }
+    },
+    "span_exact_by_label": {
+      "ADMISSION_DATE": {
+        "previous": {
+          "f1": 0.3927855711422846,
+          "precision": 0.46445497630331756,
+          "recall": 0.3402777777777778,
+          "support": 288
+        },
+        "candidate": {
+          "f1": 0.30905861456483125,
+          "precision": 0.31636363636363635,
+          "recall": 0.3020833333333333,
+          "support": 288
+        }
+      },
+      "DISCHARGE_DATE": {
+        "previous": {
+          "f1": 0.15609756097560976,
+          "precision": 0.14678899082568808,
+          "recall": 0.16666666666666666,
+          "support": 288
+        },
+        "candidate": {
+          "f1": 0.23370786516853934,
+          "precision": 0.33121019108280253,
+          "recall": 0.18055555555555555,
+          "support": 288
+        }
+      },
+      "MEMBER_ID": {
+        "previous": {
+          "f1": 0.5286343612334802,
+          "precision": 0.6060606060606061,
+          "recall": 0.46875,
+          "support": 128
+        },
+        "candidate": {
+          "f1": 0.5684210526315789,
+          "precision": 0.8709677419354839,
+          "recall": 0.421875,
+          "support": 128
+        }
+      },
+      "POLICY_ID": {
+        "previous": {
+          "f1": 0.8451882845188284,
+          "precision": 0.9099099099099099,
+          "recall": 0.7890625,
+          "support": 128
+        },
+        "candidate": {
+          "f1": 0.8495575221238938,
+          "precision": 0.9795918367346939,
+          "recall": 0.75,
+          "support": 128
+        }
+      },
+      "ROOM_LIMIT": {
+        "previous": {
+          "f1": 0.5203252032520326,
+          "precision": 0.5423728813559322,
+          "recall": 0.5,
+          "support": 64
+        },
+        "candidate": {
+          "f1": 0.7123287671232876,
+          "precision": 0.6341463414634146,
+          "recall": 0.8125,
+          "support": 64
+        }
+      },
+      "SUM_INSURED": {
+        "previous": {
+          "f1": 0.2894736842105263,
+          "precision": 0.9166666666666666,
+          "recall": 0.171875,
+          "support": 64
+        },
+        "candidate": {
+          "f1": 0.03076923076923077,
+          "precision": 1,
+          "recall": 0.015625,
+          "support": 64
+        }
+      }
+    },
+    "rank_strict_top1_accuracy": {
+      "previous": 0.8177083333333334,
+      "candidate": 0.8177083333333334
+    },
+    "rank_groups": 192,
+    "held_out_evaluation_completed": false,
+    "target": 0.99,
+    "met_on_validation": false
+  },
+  "runpod": {
+    "pod_id": "fsmrce28ghrfan",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_hourly_usd": 0.89,
+    "created_at": "2026-11-20T13:31:34.891Z",
+    "stop_confirmed_at": "2026-11-20T13:32:34.948Z",
+    "pod_removed": true,
+    "volume_id": "c9iaje0u23",
+    "volume_retained": true,
+    "estimated_gpu_cost_usd": 0.0148,
+    "confirmed_pod_charge_usd": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "archive": "policypilot-training-v1.tar.gz",
+  "sha256": "da8fb872214962ed0c5f2d3495abb79bd3566bcba805af11a76f52c6c4172d74",
+  "files": {
+    "training/__init__.py": "6c4baad9b7767bf31e47f4a05abdb7bb04e57b810a0c28224a7aa894ee1fc619",
+    "training/common.py": "07e5c3c993e8e020235131dfb9cb0a6eea344525d5a14dbbcef5ff228323ecbe",
+    "training/artifacts.py": "99c8b9ec0a3ab41892ea82acd5850dae7f6564be07f976e9f1b92481720f8cf5",
+    "training/run.py": "0d4555658298da3f19373848c4e6d3ac4d4152bca4c7588f107334fdf2a9c018",
+    "training/runtime.py": "f4a4f330dc13c715690b3a44bd7648d7e57d842350c83d170ea6b45ea6135623",
+    "training/config.json": "3de3f7ef6ea12cffad92b3d7fadfd316c8ac84e59f191ac9338bfa07ad324c97",
+    "training/requirements.txt": "dc7296b4444add75de696a540288ca6c4e49e17913e1701458ee86a786ea464c",
+    "training/pod.sh": "796a4b2d21ee6b3fc43f862b3999dcf48d18e1ce34a56429310bc5d9de8547d6",
+    "training/README.md": "c55c6322f9300c910d1946f9e2b5fb718d54862f7bbca48246428b6ac9041047",
+    "pilot/__init__.py": "ad167eca9aa817632d580aa13e20b6e3732c5640a17c84f40b9d257daa7cda0b",
+    "pilot/core.py": "1c618d8320c6ab784f2473f19cc9e8b19b4220c37b517913c6853b5d34e03197",
+    "pilot/review_prompt.py": "253d1d873fad3377c48a1bae3839f6054e6f4bb9e46f59f3558d9ddf4865b3e6",
+    "data/synthetic/finetune-v1/manifest.json": "98c53cd4dcf46cbd48af0a3d79cb70e47a9755fc064b298abfde33200eaa7ea4",
+    "data/synthetic/finetune-v1/train.jsonl": "9fa8100b963cb8ffeb73f2de6818dfa90b6a737d73fe4532f9d4e31685d15442",
+    "data/synthetic/finetune-v1/validation-prompts.jsonl": "5b6d0b4925b5ecdcffcb9895770278f353bb2bf4ef5807556556ce6fb033f33a"
+  },
+  "verified": "All archived members were read back and hash-matched; no extraction used."
+}

@@ -1,0 +1,35 @@
+{
+  "scope": "Production PDF review and local storage adapter on development exemplars",
+  "cases": [
+    {
+      "case": "SYN-C001",
+      "documents": 8,
+      "pages": 10,
+      "exact_field_citations": 15,
+      "admission_date_status": "found",
+      "room_limit_status": "missing",
+      "original_checks": 0,
+      "seconds": 0.283
+    },
+    {
+      "case": "SYN-C002",
+      "documents": 9,
+      "pages": 11,
+      "exact_field_citations": 17,
+      "admission_date_status": "found",
+      "room_limit_status": "conflicting",
+      "original_checks": 0,
+      "seconds": 0.303
+    },
+    {
+      "case": "SYN-C003",
+      "documents": 7,
+      "pages": 8,
+      "exact_field_citations": 12,
+      "admission_date_status": "conflicting",
+      "room_limit_status": "found",
+      "original_checks": 1,
+      "seconds": 0.233
+    }
+  ]
+}

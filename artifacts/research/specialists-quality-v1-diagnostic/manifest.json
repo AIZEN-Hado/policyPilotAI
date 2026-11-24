@@ -1,0 +1,18 @@
+{
+  "files": [
+    {
+      "bytes": 74311,
+      "path": "policypilot-specialists-quality-v1-diagnostic.tar.gz",
+      "sha256": "b8281369e3da6ef562feee553b1c3d2bb124c9e6304ffc725a40c71644fd2481"
+    },
+    {
+      "bytes": 1255,
+      "path": "preparation.json",
+      "sha256": "67a858f114f9f34c53179ba93bcba8c2307367a59e67d65e9a71f7af34c7bfd5"
+    }
+  ],
+  "metadata": {
+    "experiment": "specialists-quality-v1-diagnostic"
+  },
+  "version": 1
+}

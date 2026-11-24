@@ -1,0 +1,9 @@
+.login-page { min-height: 100dvh; display: grid; place-items: center; padding: 1rem; background: radial-gradient(ellipse at 22% 12%, #e7f1e9, var(--soft) 66%); }
+.login-panel { background: var(--white); border: 1px solid var(--line); border-top: 3px solid #518268; border-radius: .95rem; width: min(100%, 27rem); margin: 0; padding: clamp(1.4rem, 5vw, 2.4rem); box-shadow: 0 12px 38px #24483016; }
+.login-brand { margin-bottom: 1.85rem; }
+.login-panel h1 { font-size: clamp(2.7rem, 8vw, 3.5rem); font-weight: 570; letter-spacing: -.075em; margin-block: .25rem .5rem; }
+.login-panel h1 span { color: #518268; }
+.login-panel form { margin-top: 1.5rem; }
+.login-panel form label { margin-bottom: 1rem; }
+.login-panel .primary { width: 100%; margin: .35rem 0 1.2rem; }
+.login-note { border-top: 1px solid var(--line); padding-top: .85rem; text-wrap: pretty; }

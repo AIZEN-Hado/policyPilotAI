@@ -1,0 +1,2600 @@
+{
+  "experiment": "specialists-public-policy-v1-cpu",
+  "evaluation_archive_sha256": "f9a0a3291c301b7867ed9f1b43a6dd8c0f98f3792286058e3ccaef8b49af659a",
+  "public_source": {
+    "source": "https://github.com/ahmedabuzaid15-git/insurance-document-rag",
+    "license": "MIT",
+    "snapshot_sha256": "475035a7373f1f981cbfa7e1f958c6c224697554a48b77c4bf7552abc59ba50c",
+    "train_documents": [
+      "bronze_individual.md",
+      "bronze_student.md",
+      "gold_individual.md",
+      "gold_student.md",
+      "platinum_individual.md",
+      "platinum_student.md",
+      "silver_individual.md",
+      "silver_student.md"
+    ],
+    "validation_documents": [
+      "bronze_family.md",
+      "gold_family.md",
+      "platinum_family.md",
+      "silver_family.md"
+    ],
+    "heldout_documents": [
+      "bronze_expatriate.md",
+      "bronze_senior.md",
+      "gold_expatriate.md",
+      "gold_senior.md",
+      "platinum_expatriate.md",
+      "platinum_senior.md",
+      "silver_expatriate.md",
+      "silver_senior.md"
+    ],
+    "unused_unanswerable_questions": 3
+  },
+  "holdout_counts": {
+    "span": 432,
+    "rank": 452
+  },
+  "heldout_public_rank_groups": 5,
+  "recorded_at": "2026-11-20T16:09:21.709739+00:00",
+  "scope": "held_out_synthetic_text",
+  "candidate_sha256": "10ea94d419282a2eeb973179dc5397276b6ec8d3e1341ca3c8e1eda5c8951d91",
+  "reference_sha256": "1c02f3071a4a3f2ed516aaa90550eac238ba897b561a8abbad3c6e852ef2fc3d",
+  "candidate_train_manifest_sha256": "0c55ea985d7e436f3c950904b2c5f977df0e5d60df48a977ad9180e54b1738dc",
+  "reference_train_manifest_sha256": "c092bf90efe1829df7fcbb1af26032cbca737f3ecf7fd7969c29e508bd8ad54a",
+  "candidate_config_sha256": "3327e1e53b0a6bfdde16b1b55fe8541333a10765596ae4fbef362107b63165d4",
+  "reference_config_sha256": "cce846af72661a79b34cdf234070df8d89e89da116f753ea3ebc71d7488b2074",
+  "holdout_manifest_sha256": "05454ab5162d5f5f97e1f5caaa6d4b2e69467457c65cd0ae764feb89d9b971c1",
+  "target": 0.99,
+  "span_decoder": "joint",
+  "reports": {
+    "candidate": {
+      "span": {
+        "rows": 432,
+        "unscored_rows": 0,
+        "exact_span": {
+          "precision": 0.6627634660421545,
+          "recall": 0.3275462962962963,
+          "f1": 0.4384198295894655,
+          "support": 864,
+          "correct": 283,
+          "predicted": 427,
+          "false_positives": 144,
+          "false_negatives": 581
+        },
+        "exact_span_by_label": {
+          "POLICY_ID": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "support": 144,
+            "correct": 0,
+            "predicted": 78,
+            "false_positives": 78,
+            "false_negatives": 144
+          },
+          "MEMBER_ID": {
+            "precision": 0.5,
+            "recall": 0.125,
+            "f1": 0.2,
+            "support": 144,
+            "correct": 18,
+            "predicted": 36,
+            "false_positives": 18,
+            "false_negatives": 126
+          },
+          "ADMISSION_DATE": {
+            "precision": 1,
+            "recall": 0.6666666666666666,
+            "f1": 0.8,
+            "support": 144,
+            "correct": 96,
+            "predicted": 96,
+            "false_positives": 0,
+            "false_negatives": 48
+          },
+          "DISCHARGE_DATE": {
+            "precision": 0.5,
+            "recall": 0.3333333333333333,
+            "f1": 0.4,
+            "support": 144,
+            "correct": 48,
+            "predicted": 96,
+            "false_positives": 48,
+            "false_negatives": 96
+          },
+          "ROOM_LIMIT": {
+            "precision": 1,
+            "recall": 0.8402777777777778,
+            "f1": 0.9132075471698113,
+            "support": 144,
+            "correct": 121,
+            "predicted": 121,
+            "false_positives": 0,
+            "false_negatives": 23
+          },
+          "SUM_INSURED": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "support": 144,
+            "correct": 0,
+            "predicted": 0,
+            "false_positives": 0,
+            "false_negatives": 144
+          }
+        }
+      },
+      "rank": {
+        "rows": 452,
+        "groups": 149,
+        "correct_groups": 98,
+        "missed_groups": 51,
+        "incorrect_top_groups": 51,
+        "tied_top_groups": 0,
+        "incomplete_groups": 0,
+        "strict_group_top1_accuracy": 0.6577181208053692
+      },
+      "by_family": {
+        "public-synthetic-test-bronze_senior": {
+          "span": {
+            "rows": 0,
+            "unscored_rows": 0,
+            "exact_span": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0,
+              "support": 0,
+              "correct": 0,
+              "predicted": 0,
+              "false_positives": 0,
+              "false_negatives": 0
+            },
+            "exact_span_by_label": {
+              "POLICY_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "MEMBER_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ADMISSION_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "DISCHARGE_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ROOM_LIMIT": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "SUM_INSURED": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              }
+            }
+          },
+          "rank": {
+            "rows": 4,
+            "groups": 1,
+            "correct_groups": 0,
+            "missed_groups": 1,
+            "incorrect_top_groups": 1,
+            "tied_top_groups": 0,
+            "incomplete_groups": 0,
+            "strict_group_top1_accuracy": 0
+          }
+        },
+        "public-synthetic-test-gold_expatriate": {
+          "span": {
+            "rows": 0,
+            "unscored_rows": 0,
+            "exact_span": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0,
+              "support": 0,
+              "correct": 0,
+              "predicted": 0,
+              "false_positives": 0,
+              "false_negatives": 0
+            },
+            "exact_span_by_label": {
+              "POLICY_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "MEMBER_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ADMISSION_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "DISCHARGE_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ROOM_LIMIT": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "SUM_INSURED": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              }
+            }
+          },
+          "rank": {
+            "rows": 4,
+            "groups": 1,
+            "correct_groups": 0,
+            "missed_groups": 1,
+            "incorrect_top_groups": 1,
+            "tied_top_groups": 0,
+            "incomplete_groups": 0,
+            "strict_group_top1_accuracy": 0
+          }
+        },
+        "public-synthetic-test-platinum_expatriate": {
+          "span": {
+            "rows": 0,
+            "unscored_rows": 0,
+            "exact_span": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0,
+              "support": 0,
+              "correct": 0,
+              "predicted": 0,
+              "false_positives": 0,
+              "false_negatives": 0
+            },
+            "exact_span_by_label": {
+              "POLICY_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "MEMBER_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ADMISSION_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "DISCHARGE_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ROOM_LIMIT": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "SUM_INSURED": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              }
+            }
+          },
+          "rank": {
+            "rows": 4,
+            "groups": 1,
+            "correct_groups": 1,
+            "missed_groups": 0,
+            "incorrect_top_groups": 0,
+            "tied_top_groups": 0,
+            "incomplete_groups": 0,
+            "strict_group_top1_accuracy": 1
+          }
+        },
+        "public-synthetic-test-platinum_senior": {
+          "span": {
+            "rows": 0,
+            "unscored_rows": 0,
+            "exact_span": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0,
+              "support": 0,
+              "correct": 0,
+              "predicted": 0,
+              "false_positives": 0,
+              "false_negatives": 0
+            },
+            "exact_span_by_label": {
+              "POLICY_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "MEMBER_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ADMISSION_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "DISCHARGE_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ROOM_LIMIT": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "SUM_INSURED": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              }
+            }
+          },
+          "rank": {
+            "rows": 4,
+            "groups": 1,
+            "correct_groups": 1,
+            "missed_groups": 0,
+            "incorrect_top_groups": 0,
+            "tied_top_groups": 0,
+            "incomplete_groups": 0,
+            "strict_group_top1_accuracy": 1
+          }
+        },
+        "public-synthetic-test-silver_expatriate": {
+          "span": {
+            "rows": 0,
+            "unscored_rows": 0,
+            "exact_span": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0,
+              "support": 0,
+              "correct": 0,
+              "predicted": 0,
+              "false_positives": 0,
+              "false_negatives": 0
+            },
+            "exact_span_by_label": {
+              "POLICY_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "MEMBER_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ADMISSION_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "DISCHARGE_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ROOM_LIMIT": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "SUM_INSURED": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              }
+            }
+          },
+          "rank": {
+            "rows": 4,
+            "groups": 1,
+            "correct_groups": 0,
+            "missed_groups": 1,
+            "incorrect_top_groups": 1,
+            "tied_top_groups": 0,
+            "incomplete_groups": 0,
+            "strict_group_top1_accuracy": 0
+          }
+        },
+        "room-context-test-authorization-message": {
+          "span": {
+            "rows": 72,
+            "unscored_rows": 0,
+            "exact_span": {
+              "precision": 0.2962962962962963,
+              "recall": 0.16666666666666666,
+              "f1": 0.21333333333333335,
+              "support": 144,
+              "correct": 24,
+              "predicted": 81,
+              "false_positives": 57,
+              "false_negatives": 120
+            },
+            "exact_span_by_label": {
+              "POLICY_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 24,
+                "false_positives": 24,
+                "false_negatives": 24
+              },
+              "MEMBER_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 9,
+                "false_positives": 9,
+                "false_negatives": 24
+              },
+              "ADMISSION_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 24
+              },
+              "DISCHARGE_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 24,
+                "false_positives": 24,
+                "false_negatives": 24
+              },
+              "ROOM_LIMIT": {
+                "precision": 1,
+                "recall": 1,
+                "f1": 1,
+                "support": 24,
+                "correct": 24,
+                "predicted": 24,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "SUM_INSURED": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 24
+              }
+            }
+          },
+          "rank": {
+            "rows": 72,
+            "groups": 24,
+            "correct_groups": 24,
+            "missed_groups": 0,
+            "incorrect_top_groups": 0,
+            "tied_top_groups": 0,
+            "incomplete_groups": 0,
+            "strict_group_top1_accuracy": 1
+          }
+        },
+        "room-context-test-care-day-limit": {
+          "span": {
+            "rows": 72,
+            "unscored_rows": 0,
+            "exact_span": {
+              "precision": 0.84375,
+              "recall": 0.5625,
+              "f1": 0.675,
+              "support": 144,
+              "correct": 81,
+              "predicted": 96,
+              "false_positives": 15,
+              "false_negatives": 63
+            },
+            "exact_span_by_label": {
+              "POLICY_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 15,
+                "false_positives": 15,
+                "false_negatives": 24
+              },
+              "MEMBER_ID": {
+                "precision": 1,
+                "recall": 0.375,
+                "f1": 0.5454545454545454,
+                "support": 24,
+                "correct": 9,
+                "predicted": 9,
+                "false_positives": 0,
+                "false_negatives": 15
+              },
+              "ADMISSION_DATE": {
+                "precision": 1,
+                "recall": 1,
+                "f1": 1,
+                "support": 24,
+                "correct": 24,
+                "predicted": 24,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "DISCHARGE_DATE": {
+                "precision": 1,
+                "recall": 1,
+                "f1": 1,
+                "support": 24,
+                "correct": 24,
+                "predicted": 24,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ROOM_LIMIT": {
+                "precision": 1,
+                "recall": 1,
+                "f1": 1,
+                "support": 24,
+                "correct": 24,
+                "predicted": 24,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "SUM_INSURED": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 24
+              }
+            }
+          },
+          "rank": {
+            "rows": 72,
+            "groups": 24,
+            "correct_groups": 0,
+            "missed_groups": 24,
+            "incorrect_top_groups": 24,
+            "tied_top_groups": 0,
+            "incomplete_groups": 0,
+            "strict_group_top1_accuracy": 0
+          }
+        },
+        "room-context-test-head-office-policy": {
+          "span": {
+            "rows": 72,
+            "unscored_rows": 0,
+            "exact_span": {
+              "precision": 1,
+              "recall": 0.1736111111111111,
+              "f1": 0.2958579881656805,
+              "support": 144,
+              "correct": 25,
+              "predicted": 25,
+              "false_positives": 0,
+              "false_negatives": 119
+            },
+            "exact_span_by_label": {
+              "POLICY_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 24
+              },
+              "MEMBER_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 24
+              },
+              "ADMISSION_DATE": {
+                "precision": 1,
+                "recall": 1,
+                "f1": 1,
+                "support": 24,
+                "correct": 24,
+                "predicted": 24,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "DISCHARGE_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 24
+              },
+              "ROOM_LIMIT": {
+                "precision": 1,
+                "recall": 0.041666666666666664,
+                "f1": 0.08,
+                "support": 24,
+                "correct": 1,
+                "predicted": 1,
+                "false_positives": 0,
+                "false_negatives": 23
+              },
+              "SUM_INSURED": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 24
+              }
+            }
+          },
+          "rank": {
+            "rows": 72,
+            "groups": 24,
+            "correct_groups": 24,
+            "missed_groups": 0,
+            "incorrect_top_groups": 0,
+            "tied_top_groups": 0,
+            "incomplete_groups": 0,
+            "strict_group_top1_accuracy": 1
+          }
+        },
+        "room-context-test-hospital-payment-grid": {
+          "span": {
+            "rows": 72,
+            "unscored_rows": 0,
+            "exact_span": {
+              "precision": 0.2962962962962963,
+              "recall": 0.16666666666666666,
+              "f1": 0.21333333333333335,
+              "support": 144,
+              "correct": 24,
+              "predicted": 81,
+              "false_positives": 57,
+              "false_negatives": 120
+            },
+            "exact_span_by_label": {
+              "POLICY_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 24,
+                "false_positives": 24,
+                "false_negatives": 24
+              },
+              "MEMBER_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 9,
+                "false_positives": 9,
+                "false_negatives": 24
+              },
+              "ADMISSION_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 24
+              },
+              "DISCHARGE_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 24,
+                "false_positives": 24,
+                "false_negatives": 24
+              },
+              "ROOM_LIMIT": {
+                "precision": 1,
+                "recall": 1,
+                "f1": 1,
+                "support": 24,
+                "correct": 24,
+                "predicted": 24,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "SUM_INSURED": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 24
+              }
+            }
+          },
+          "rank": {
+            "rows": 72,
+            "groups": 24,
+            "correct_groups": 0,
+            "missed_groups": 24,
+            "incorrect_top_groups": 24,
+            "tied_top_groups": 0,
+            "incomplete_groups": 0,
+            "strict_group_top1_accuracy": 0
+          }
+        },
+        "room-context-test-occupant-allowance": {
+          "span": {
+            "rows": 72,
+            "unscored_rows": 0,
+            "exact_span": {
+              "precision": 0.84375,
+              "recall": 0.5625,
+              "f1": 0.675,
+              "support": 144,
+              "correct": 81,
+              "predicted": 96,
+              "false_positives": 15,
+              "false_negatives": 63
+            },
+            "exact_span_by_label": {
+              "POLICY_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 15,
+                "false_positives": 15,
+                "false_negatives": 24
+              },
+              "MEMBER_ID": {
+                "precision": 1,
+                "recall": 0.375,
+                "f1": 0.5454545454545454,
+                "support": 24,
+                "correct": 9,
+                "predicted": 9,
+                "false_positives": 0,
+                "false_negatives": 15
+              },
+              "ADMISSION_DATE": {
+                "precision": 1,
+                "recall": 1,
+                "f1": 1,
+                "support": 24,
+                "correct": 24,
+                "predicted": 24,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "DISCHARGE_DATE": {
+                "precision": 1,
+                "recall": 1,
+                "f1": 1,
+                "support": 24,
+                "correct": 24,
+                "predicted": 24,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ROOM_LIMIT": {
+                "precision": 1,
+                "recall": 1,
+                "f1": 1,
+                "support": 24,
+                "correct": 24,
+                "predicted": 24,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "SUM_INSURED": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 24
+              }
+            }
+          },
+          "rank": {
+            "rows": 72,
+            "groups": 24,
+            "correct_groups": 24,
+            "missed_groups": 0,
+            "incorrect_top_groups": 0,
+            "tied_top_groups": 0,
+            "incomplete_groups": 0,
+            "strict_group_top1_accuracy": 1
+          }
+        },
+        "room-context-test-regulator-example": {
+          "span": {
+            "rows": 72,
+            "unscored_rows": 0,
+            "exact_span": {
+              "precision": 1,
+              "recall": 0.3333333333333333,
+              "f1": 0.5,
+              "support": 144,
+              "correct": 48,
+              "predicted": 48,
+              "false_positives": 0,
+              "false_negatives": 96
+            },
+            "exact_span_by_label": {
+              "POLICY_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 24
+              },
+              "MEMBER_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 24
+              },
+              "ADMISSION_DATE": {
+                "precision": 1,
+                "recall": 1,
+                "f1": 1,
+                "support": 24,
+                "correct": 24,
+                "predicted": 24,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "DISCHARGE_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 24
+              },
+              "ROOM_LIMIT": {
+                "precision": 1,
+                "recall": 1,
+                "f1": 1,
+                "support": 24,
+                "correct": 24,
+                "predicted": 24,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "SUM_INSURED": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 24
+              }
+            }
+          },
+          "rank": {
+            "rows": 72,
+            "groups": 24,
+            "correct_groups": 24,
+            "missed_groups": 0,
+            "incorrect_top_groups": 0,
+            "tied_top_groups": 0,
+            "incomplete_groups": 0,
+            "strict_group_top1_accuracy": 1
+          }
+        }
+      },
+      "by_source": {
+        "authored_room_cap_scenarios": {
+          "span": {
+            "rows": 432,
+            "unscored_rows": 0,
+            "exact_span": {
+              "precision": 0.6627634660421545,
+              "recall": 0.3275462962962963,
+              "f1": 0.4384198295894655,
+              "support": 864,
+              "correct": 283,
+              "predicted": 427,
+              "false_positives": 144,
+              "false_negatives": 581
+            },
+            "exact_span_by_label": {
+              "POLICY_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 144,
+                "correct": 0,
+                "predicted": 78,
+                "false_positives": 78,
+                "false_negatives": 144
+              },
+              "MEMBER_ID": {
+                "precision": 0.5,
+                "recall": 0.125,
+                "f1": 0.2,
+                "support": 144,
+                "correct": 18,
+                "predicted": 36,
+                "false_positives": 18,
+                "false_negatives": 126
+              },
+              "ADMISSION_DATE": {
+                "precision": 1,
+                "recall": 0.6666666666666666,
+                "f1": 0.8,
+                "support": 144,
+                "correct": 96,
+                "predicted": 96,
+                "false_positives": 0,
+                "false_negatives": 48
+              },
+              "DISCHARGE_DATE": {
+                "precision": 0.5,
+                "recall": 0.3333333333333333,
+                "f1": 0.4,
+                "support": 144,
+                "correct": 48,
+                "predicted": 96,
+                "false_positives": 48,
+                "false_negatives": 96
+              },
+              "ROOM_LIMIT": {
+                "precision": 1,
+                "recall": 0.8402777777777778,
+                "f1": 0.9132075471698113,
+                "support": 144,
+                "correct": 121,
+                "predicted": 121,
+                "false_positives": 0,
+                "false_negatives": 23
+              },
+              "SUM_INSURED": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 144,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 144
+              }
+            }
+          },
+          "rank": {
+            "rows": 432,
+            "groups": 144,
+            "correct_groups": 96,
+            "missed_groups": 48,
+            "incorrect_top_groups": 48,
+            "tied_top_groups": 0,
+            "incomplete_groups": 0,
+            "strict_group_top1_accuracy": 0.6666666666666666
+          }
+        },
+        "public_mit_publisher_questions": {
+          "span": {
+            "rows": 0,
+            "unscored_rows": 0,
+            "exact_span": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0,
+              "support": 0,
+              "correct": 0,
+              "predicted": 0,
+              "false_positives": 0,
+              "false_negatives": 0
+            },
+            "exact_span_by_label": {
+              "POLICY_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "MEMBER_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ADMISSION_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "DISCHARGE_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ROOM_LIMIT": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "SUM_INSURED": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              }
+            }
+          },
+          "rank": {
+            "rows": 20,
+            "groups": 5,
+            "correct_groups": 2,
+            "missed_groups": 3,
+            "incorrect_top_groups": 3,
+            "tied_top_groups": 0,
+            "incomplete_groups": 0,
+            "strict_group_top1_accuracy": 0.4
+          }
+        }
+      },
+      "synthetic_target_met": false,
+      "target_failures": {
+        "POLICY_ID": [
+          "precision",
+          "recall"
+        ],
+        "MEMBER_ID": [
+          "precision",
+          "recall"
+        ],
+        "ADMISSION_DATE": [
+          "recall"
+        ],
+        "DISCHARGE_DATE": [
+          "precision",
+          "recall"
+        ],
+        "ROOM_LIMIT": [
+          "recall"
+        ],
+        "SUM_INSURED": [
+          "precision",
+          "recall"
+        ],
+        "ranking": [
+          "strict_group_top1_accuracy"
+        ]
+      }
+    },
+    "reference": {
+      "span": {
+        "rows": 432,
+        "unscored_rows": 0,
+        "exact_span": {
+          "precision": 0.6419753086419753,
+          "recall": 0.3611111111111111,
+          "f1": 0.4622222222222222,
+          "support": 864,
+          "correct": 312,
+          "predicted": 486,
+          "false_positives": 174,
+          "false_negatives": 552
+        },
+        "exact_span_by_label": {
+          "POLICY_ID": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "support": 144,
+            "correct": 0,
+            "predicted": 96,
+            "false_positives": 96,
+            "false_negatives": 144
+          },
+          "MEMBER_ID": {
+            "precision": 1,
+            "recall": 0.3333333333333333,
+            "f1": 0.5,
+            "support": 144,
+            "correct": 48,
+            "predicted": 48,
+            "false_positives": 0,
+            "false_negatives": 96
+          },
+          "ADMISSION_DATE": {
+            "precision": 0.7619047619047619,
+            "recall": 0.6666666666666666,
+            "f1": 0.7111111111111111,
+            "support": 144,
+            "correct": 96,
+            "predicted": 126,
+            "false_positives": 30,
+            "false_negatives": 48
+          },
+          "DISCHARGE_DATE": {
+            "precision": 0.6666666666666666,
+            "recall": 0.6666666666666666,
+            "f1": 0.6666666666666666,
+            "support": 144,
+            "correct": 96,
+            "predicted": 144,
+            "false_positives": 48,
+            "false_negatives": 48
+          },
+          "ROOM_LIMIT": {
+            "precision": 1,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "support": 144,
+            "correct": 72,
+            "predicted": 72,
+            "false_positives": 0,
+            "false_negatives": 72
+          },
+          "SUM_INSURED": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "support": 144,
+            "correct": 0,
+            "predicted": 0,
+            "false_positives": 0,
+            "false_negatives": 144
+          }
+        }
+      },
+      "rank": {
+        "rows": 452,
+        "groups": 149,
+        "correct_groups": 72,
+        "missed_groups": 77,
+        "incorrect_top_groups": 77,
+        "tied_top_groups": 0,
+        "incomplete_groups": 0,
+        "strict_group_top1_accuracy": 0.48322147651006714
+      },
+      "by_family": {
+        "public-synthetic-test-bronze_senior": {
+          "span": {
+            "rows": 0,
+            "unscored_rows": 0,
+            "exact_span": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0,
+              "support": 0,
+              "correct": 0,
+              "predicted": 0,
+              "false_positives": 0,
+              "false_negatives": 0
+            },
+            "exact_span_by_label": {
+              "POLICY_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "MEMBER_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ADMISSION_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "DISCHARGE_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ROOM_LIMIT": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "SUM_INSURED": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              }
+            }
+          },
+          "rank": {
+            "rows": 4,
+            "groups": 1,
+            "correct_groups": 0,
+            "missed_groups": 1,
+            "incorrect_top_groups": 1,
+            "tied_top_groups": 0,
+            "incomplete_groups": 0,
+            "strict_group_top1_accuracy": 0
+          }
+        },
+        "public-synthetic-test-gold_expatriate": {
+          "span": {
+            "rows": 0,
+            "unscored_rows": 0,
+            "exact_span": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0,
+              "support": 0,
+              "correct": 0,
+              "predicted": 0,
+              "false_positives": 0,
+              "false_negatives": 0
+            },
+            "exact_span_by_label": {
+              "POLICY_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "MEMBER_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ADMISSION_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "DISCHARGE_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ROOM_LIMIT": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "SUM_INSURED": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              }
+            }
+          },
+          "rank": {
+            "rows": 4,
+            "groups": 1,
+            "correct_groups": 0,
+            "missed_groups": 1,
+            "incorrect_top_groups": 1,
+            "tied_top_groups": 0,
+            "incomplete_groups": 0,
+            "strict_group_top1_accuracy": 0
+          }
+        },
+        "public-synthetic-test-platinum_expatriate": {
+          "span": {
+            "rows": 0,
+            "unscored_rows": 0,
+            "exact_span": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0,
+              "support": 0,
+              "correct": 0,
+              "predicted": 0,
+              "false_positives": 0,
+              "false_negatives": 0
+            },
+            "exact_span_by_label": {
+              "POLICY_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "MEMBER_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ADMISSION_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "DISCHARGE_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ROOM_LIMIT": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "SUM_INSURED": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              }
+            }
+          },
+          "rank": {
+            "rows": 4,
+            "groups": 1,
+            "correct_groups": 0,
+            "missed_groups": 1,
+            "incorrect_top_groups": 1,
+            "tied_top_groups": 0,
+            "incomplete_groups": 0,
+            "strict_group_top1_accuracy": 0
+          }
+        },
+        "public-synthetic-test-platinum_senior": {
+          "span": {
+            "rows": 0,
+            "unscored_rows": 0,
+            "exact_span": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0,
+              "support": 0,
+              "correct": 0,
+              "predicted": 0,
+              "false_positives": 0,
+              "false_negatives": 0
+            },
+            "exact_span_by_label": {
+              "POLICY_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "MEMBER_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ADMISSION_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "DISCHARGE_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ROOM_LIMIT": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "SUM_INSURED": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              }
+            }
+          },
+          "rank": {
+            "rows": 4,
+            "groups": 1,
+            "correct_groups": 0,
+            "missed_groups": 1,
+            "incorrect_top_groups": 1,
+            "tied_top_groups": 0,
+            "incomplete_groups": 0,
+            "strict_group_top1_accuracy": 0
+          }
+        },
+        "public-synthetic-test-silver_expatriate": {
+          "span": {
+            "rows": 0,
+            "unscored_rows": 0,
+            "exact_span": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0,
+              "support": 0,
+              "correct": 0,
+              "predicted": 0,
+              "false_positives": 0,
+              "false_negatives": 0
+            },
+            "exact_span_by_label": {
+              "POLICY_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "MEMBER_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ADMISSION_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "DISCHARGE_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ROOM_LIMIT": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "SUM_INSURED": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              }
+            }
+          },
+          "rank": {
+            "rows": 4,
+            "groups": 1,
+            "correct_groups": 0,
+            "missed_groups": 1,
+            "incorrect_top_groups": 1,
+            "tied_top_groups": 0,
+            "incomplete_groups": 0,
+            "strict_group_top1_accuracy": 0
+          }
+        },
+        "room-context-test-authorization-message": {
+          "span": {
+            "rows": 72,
+            "unscored_rows": 0,
+            "exact_span": {
+              "precision": 0.5517241379310345,
+              "recall": 0.3333333333333333,
+              "f1": 0.4155844155844156,
+              "support": 144,
+              "correct": 48,
+              "predicted": 87,
+              "false_positives": 39,
+              "false_negatives": 96
+            },
+            "exact_span_by_label": {
+              "POLICY_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 24
+              },
+              "MEMBER_ID": {
+                "precision": 1,
+                "recall": 1,
+                "f1": 1,
+                "support": 24,
+                "correct": 24,
+                "predicted": 24,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ADMISSION_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 15,
+                "false_positives": 15,
+                "false_negatives": 24
+              },
+              "DISCHARGE_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 24,
+                "false_positives": 24,
+                "false_negatives": 24
+              },
+              "ROOM_LIMIT": {
+                "precision": 1,
+                "recall": 1,
+                "f1": 1,
+                "support": 24,
+                "correct": 24,
+                "predicted": 24,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "SUM_INSURED": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 24
+              }
+            }
+          },
+          "rank": {
+            "rows": 72,
+            "groups": 24,
+            "correct_groups": 0,
+            "missed_groups": 24,
+            "incorrect_top_groups": 24,
+            "tied_top_groups": 0,
+            "incomplete_groups": 0,
+            "strict_group_top1_accuracy": 0
+          }
+        },
+        "room-context-test-care-day-limit": {
+          "span": {
+            "rows": 72,
+            "unscored_rows": 0,
+            "exact_span": {
+              "precision": 0.75,
+              "recall": 0.5,
+              "f1": 0.6,
+              "support": 144,
+              "correct": 72,
+              "predicted": 96,
+              "false_positives": 24,
+              "false_negatives": 72
+            },
+            "exact_span_by_label": {
+              "POLICY_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 24,
+                "false_positives": 24,
+                "false_negatives": 24
+              },
+              "MEMBER_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 24
+              },
+              "ADMISSION_DATE": {
+                "precision": 1,
+                "recall": 1,
+                "f1": 1,
+                "support": 24,
+                "correct": 24,
+                "predicted": 24,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "DISCHARGE_DATE": {
+                "precision": 1,
+                "recall": 1,
+                "f1": 1,
+                "support": 24,
+                "correct": 24,
+                "predicted": 24,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ROOM_LIMIT": {
+                "precision": 1,
+                "recall": 1,
+                "f1": 1,
+                "support": 24,
+                "correct": 24,
+                "predicted": 24,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "SUM_INSURED": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 24
+              }
+            }
+          },
+          "rank": {
+            "rows": 72,
+            "groups": 24,
+            "correct_groups": 24,
+            "missed_groups": 0,
+            "incorrect_top_groups": 0,
+            "tied_top_groups": 0,
+            "incomplete_groups": 0,
+            "strict_group_top1_accuracy": 1
+          }
+        },
+        "room-context-test-head-office-policy": {
+          "span": {
+            "rows": 72,
+            "unscored_rows": 0,
+            "exact_span": {
+              "precision": 0.6666666666666666,
+              "recall": 0.3333333333333333,
+              "f1": 0.4444444444444444,
+              "support": 144,
+              "correct": 48,
+              "predicted": 72,
+              "false_positives": 24,
+              "false_negatives": 96
+            },
+            "exact_span_by_label": {
+              "POLICY_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 24,
+                "false_positives": 24,
+                "false_negatives": 24
+              },
+              "MEMBER_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 24
+              },
+              "ADMISSION_DATE": {
+                "precision": 1,
+                "recall": 1,
+                "f1": 1,
+                "support": 24,
+                "correct": 24,
+                "predicted": 24,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "DISCHARGE_DATE": {
+                "precision": 1,
+                "recall": 1,
+                "f1": 1,
+                "support": 24,
+                "correct": 24,
+                "predicted": 24,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ROOM_LIMIT": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 24
+              },
+              "SUM_INSURED": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 24
+              }
+            }
+          },
+          "rank": {
+            "rows": 72,
+            "groups": 24,
+            "correct_groups": 24,
+            "missed_groups": 0,
+            "incorrect_top_groups": 0,
+            "tied_top_groups": 0,
+            "incomplete_groups": 0,
+            "strict_group_top1_accuracy": 1
+          }
+        },
+        "room-context-test-hospital-payment-grid": {
+          "span": {
+            "rows": 72,
+            "unscored_rows": 0,
+            "exact_span": {
+              "precision": 0.38095238095238093,
+              "recall": 0.16666666666666666,
+              "f1": 0.2318840579710145,
+              "support": 144,
+              "correct": 24,
+              "predicted": 63,
+              "false_positives": 39,
+              "false_negatives": 120
+            },
+            "exact_span_by_label": {
+              "POLICY_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 24
+              },
+              "MEMBER_ID": {
+                "precision": 1,
+                "recall": 1,
+                "f1": 1,
+                "support": 24,
+                "correct": 24,
+                "predicted": 24,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ADMISSION_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 15,
+                "false_positives": 15,
+                "false_negatives": 24
+              },
+              "DISCHARGE_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 24,
+                "false_positives": 24,
+                "false_negatives": 24
+              },
+              "ROOM_LIMIT": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 24
+              },
+              "SUM_INSURED": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 24
+              }
+            }
+          },
+          "rank": {
+            "rows": 72,
+            "groups": 24,
+            "correct_groups": 0,
+            "missed_groups": 24,
+            "incorrect_top_groups": 24,
+            "tied_top_groups": 0,
+            "incomplete_groups": 0,
+            "strict_group_top1_accuracy": 0
+          }
+        },
+        "room-context-test-occupant-allowance": {
+          "span": {
+            "rows": 72,
+            "unscored_rows": 0,
+            "exact_span": {
+              "precision": 0.75,
+              "recall": 0.5,
+              "f1": 0.6,
+              "support": 144,
+              "correct": 72,
+              "predicted": 96,
+              "false_positives": 24,
+              "false_negatives": 72
+            },
+            "exact_span_by_label": {
+              "POLICY_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 24,
+                "false_positives": 24,
+                "false_negatives": 24
+              },
+              "MEMBER_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 24
+              },
+              "ADMISSION_DATE": {
+                "precision": 1,
+                "recall": 1,
+                "f1": 1,
+                "support": 24,
+                "correct": 24,
+                "predicted": 24,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "DISCHARGE_DATE": {
+                "precision": 1,
+                "recall": 1,
+                "f1": 1,
+                "support": 24,
+                "correct": 24,
+                "predicted": 24,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ROOM_LIMIT": {
+                "precision": 1,
+                "recall": 1,
+                "f1": 1,
+                "support": 24,
+                "correct": 24,
+                "predicted": 24,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "SUM_INSURED": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 24
+              }
+            }
+          },
+          "rank": {
+            "rows": 72,
+            "groups": 24,
+            "correct_groups": 0,
+            "missed_groups": 24,
+            "incorrect_top_groups": 24,
+            "tied_top_groups": 0,
+            "incomplete_groups": 0,
+            "strict_group_top1_accuracy": 0
+          }
+        },
+        "room-context-test-regulator-example": {
+          "span": {
+            "rows": 72,
+            "unscored_rows": 0,
+            "exact_span": {
+              "precision": 0.6666666666666666,
+              "recall": 0.3333333333333333,
+              "f1": 0.4444444444444444,
+              "support": 144,
+              "correct": 48,
+              "predicted": 72,
+              "false_positives": 24,
+              "false_negatives": 96
+            },
+            "exact_span_by_label": {
+              "POLICY_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 24,
+                "false_positives": 24,
+                "false_negatives": 24
+              },
+              "MEMBER_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 24
+              },
+              "ADMISSION_DATE": {
+                "precision": 1,
+                "recall": 1,
+                "f1": 1,
+                "support": 24,
+                "correct": 24,
+                "predicted": 24,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "DISCHARGE_DATE": {
+                "precision": 1,
+                "recall": 1,
+                "f1": 1,
+                "support": 24,
+                "correct": 24,
+                "predicted": 24,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ROOM_LIMIT": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 24
+              },
+              "SUM_INSURED": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 24,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 24
+              }
+            }
+          },
+          "rank": {
+            "rows": 72,
+            "groups": 24,
+            "correct_groups": 24,
+            "missed_groups": 0,
+            "incorrect_top_groups": 0,
+            "tied_top_groups": 0,
+            "incomplete_groups": 0,
+            "strict_group_top1_accuracy": 1
+          }
+        }
+      },
+      "by_source": {
+        "authored_room_cap_scenarios": {
+          "span": {
+            "rows": 432,
+            "unscored_rows": 0,
+            "exact_span": {
+              "precision": 0.6419753086419753,
+              "recall": 0.3611111111111111,
+              "f1": 0.4622222222222222,
+              "support": 864,
+              "correct": 312,
+              "predicted": 486,
+              "false_positives": 174,
+              "false_negatives": 552
+            },
+            "exact_span_by_label": {
+              "POLICY_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 144,
+                "correct": 0,
+                "predicted": 96,
+                "false_positives": 96,
+                "false_negatives": 144
+              },
+              "MEMBER_ID": {
+                "precision": 1,
+                "recall": 0.3333333333333333,
+                "f1": 0.5,
+                "support": 144,
+                "correct": 48,
+                "predicted": 48,
+                "false_positives": 0,
+                "false_negatives": 96
+              },
+              "ADMISSION_DATE": {
+                "precision": 0.7619047619047619,
+                "recall": 0.6666666666666666,
+                "f1": 0.7111111111111111,
+                "support": 144,
+                "correct": 96,
+                "predicted": 126,
+                "false_positives": 30,
+                "false_negatives": 48
+              },
+              "DISCHARGE_DATE": {
+                "precision": 0.6666666666666666,
+                "recall": 0.6666666666666666,
+                "f1": 0.6666666666666666,
+                "support": 144,
+                "correct": 96,
+                "predicted": 144,
+                "false_positives": 48,
+                "false_negatives": 48
+              },
+              "ROOM_LIMIT": {
+                "precision": 1,
+                "recall": 0.5,
+                "f1": 0.6666666666666666,
+                "support": 144,
+                "correct": 72,
+                "predicted": 72,
+                "false_positives": 0,
+                "false_negatives": 72
+              },
+              "SUM_INSURED": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 144,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 144
+              }
+            }
+          },
+          "rank": {
+            "rows": 432,
+            "groups": 144,
+            "correct_groups": 72,
+            "missed_groups": 72,
+            "incorrect_top_groups": 72,
+            "tied_top_groups": 0,
+            "incomplete_groups": 0,
+            "strict_group_top1_accuracy": 0.5
+          }
+        },
+        "public_mit_publisher_questions": {
+          "span": {
+            "rows": 0,
+            "unscored_rows": 0,
+            "exact_span": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0,
+              "support": 0,
+              "correct": 0,
+              "predicted": 0,
+              "false_positives": 0,
+              "false_negatives": 0
+            },
+            "exact_span_by_label": {
+              "POLICY_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "MEMBER_ID": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ADMISSION_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "DISCHARGE_DATE": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "ROOM_LIMIT": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              },
+              "SUM_INSURED": {
+                "precision": 0,
+                "recall": 0,
+                "f1": 0,
+                "support": 0,
+                "correct": 0,
+                "predicted": 0,
+                "false_positives": 0,
+                "false_negatives": 0
+              }
+            }
+          },
+          "rank": {
+            "rows": 20,
+            "groups": 5,
+            "correct_groups": 0,
+            "missed_groups": 5,
+            "incorrect_top_groups": 5,
+            "tied_top_groups": 0,
+            "incomplete_groups": 0,
+            "strict_group_top1_accuracy": 0
+          }
+        }
+      },
+      "synthetic_target_met": false,
+      "target_failures": {
+        "POLICY_ID": [
+          "precision",
+          "recall"
+        ],
+        "MEMBER_ID": [
+          "recall"
+        ],
+        "ADMISSION_DATE": [
+          "precision",
+          "recall"
+        ],
+        "DISCHARGE_DATE": [
+          "precision",
+          "recall"
+        ],
+        "ROOM_LIMIT": [
+          "recall"
+        ],
+        "SUM_INSURED": [
+          "precision",
+          "recall"
+        ],
+        "ranking": [
+          "strict_group_top1_accuracy"
+        ]
+      }
+    }
+  },
+  "production_accuracy_established": false,
+  "runtime": {
+    "device": "cpu",
+    "torch": "2.8.0+cu128",
+    "elapsed_seconds": 1.582
+  },
+  "runpod": {
+    "pod_id": "5b2v6pgwarzwvt",
+    "compute_shape": "cpu3c",
+    "compute_hourly_usd": 0.12,
+    "created_at": "2026-11-20T16:07:48.915Z",
+    "stop_confirmed_at": "2026-11-20T16:09:25.814Z",
+    "pod_removed": true,
+    "volume_id": "c9iaje0u23",
+    "volume_retained": true,
+    "estimated_compute_usd": 0.00323,
+    "confirmed_charge_usd": null
+  }
+}

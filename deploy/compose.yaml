@@ -1,0 +1,109 @@
+name: policypilot
+x-app: &app
+  build:
+    context: ..
+    dockerfile: pilot/Dockerfile
+  environment: &app-env
+    DATABASE_URL: postgresql://pilot:${POSTGRES_PASSWORD:?Run configure.py}@db:5432/pilot
+    PROXY_TOKEN: ${PROXY_TOKEN:?Run configure.py}
+    APP_ORIGIN: https://${APP_DOMAIN:?Set domain}
+    OLLAMA_BASE_URL: http://ollama:11434
+    OLLAMA_MODEL: ${OLLAMA_MODEL:-qwen2.5:3b}
+    INFERENCE_BACKEND: ollama
+    PROCESSING_ENABLED: '1'
+  networks: [private]
+  volumes: [documents:/data/documents]
+  read_only: true
+  tmpfs: [/tmp:size=256m,mode=1777]
+  cap_drop: [ALL]
+  security_opt: [no-new-privileges:true]
+  pids_limit: 128
+  mem_limit: 1g
+  restart: unless-stopped
+services:
+  caddy:
+    image: caddy:2.10.2-alpine
+    restart: unless-stopped
+    ports: ['80:80', '443:443']
+    environment:
+      APP_DOMAIN: ${APP_DOMAIN:?Set domain}
+      PILOT_USER: ${PILOT_USER:-reviewer}
+      PILOT_PASSWORD_HASH: ${PILOT_PASSWORD_HASH:?Run configure.py}
+      PROXY_TOKEN: ${PROXY_TOKEN:?Run configure.py}
+    volumes: ['./Caddyfile:/etc/caddy/Caddyfile:ro', 'caddy_data:/data', 'caddy_config:/config']
+    networks: [edge,private]
+    depends_on: [api]
+  db:
+    image: postgres:16-bookworm
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: pilot
+      POSTGRES_USER: pilot
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Run configure.py}
+    volumes: [postgres:/var/lib/postgresql/data, './db-init.sql:/docker-entrypoint-initdb.d/010-role.sql:ro']
+    networks: [private]
+    healthcheck:
+      test: ['CMD-SHELL','pg_isready -U pilot -d pilot']
+      interval: 5s
+      timeout: 5s
+      retries: 15
+  migrate:
+    <<: *app
+    restart: 'no'
+    command: ['python','-m','pilot.migrate']
+    depends_on:
+      db: {condition: service_healthy}
+  api:
+    <<: *app
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+    healthcheck:
+      test: ['CMD','python','-c','import os,urllib.request; r=urllib.request.Request("http://localhost:8000/api/health",headers={"X-Proxy-Token":os.environ["PROXY_TOKEN"]}); urllib.request.urlopen(r,timeout=5)']
+      interval: 20s
+      timeout: 8s
+      retries: 3
+  worker:
+    <<: *app
+    command: ['python','-m','pilot.worker']
+    mem_limit: 2g
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+      ollama: {condition: service_started}
+  ollama:
+    image: ollama/ollama:0.40.15
+    restart: unless-stopped
+    environment:
+      OLLAMA_NO_CLOUD: '1'
+      OLLAMA_NUM_PARALLEL: '1'
+      OLLAMA_MAX_LOADED_MODELS: '1'
+      OLLAMA_HOST: 0.0.0.0:11434
+    volumes: [models:/root/.ollama]
+    networks: [private]
+    mem_limit: ${MODEL_MEMORY_LIMIT:-6g}
+  model-init:
+    image: ollama/ollama:0.40.15
+    profiles: [setup]
+    restart: 'no'
+    entrypoint: ['/bin/sh','-ec']
+    command:
+      - |
+        ollama serve >/tmp/ollama-init.log 2>&1 &
+        pid=$$!
+        trap 'kill $$pid 2>/dev/null || true' EXIT
+        for i in 1 2 3 4 5 6 7 8 9 10; do ollama list >/dev/null 2>&1 && break; sleep 2; done
+        ollama pull "$$OLLAMA_MODEL"
+    environment:
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-qwen2.5:3b}
+      OLLAMA_NO_CLOUD: '1'
+    volumes: [models:/root/.ollama]
+    networks: [provisioning]
+networks:
+  edge: {}
+  private: {internal: true}
+  provisioning: {}
+volumes:
+  postgres: {}
+  documents: {}
+  models: {}
+  caddy_data: {}
+  caddy_config: {}

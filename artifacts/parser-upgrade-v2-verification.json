@@ -1,0 +1,27 @@
+{
+  "recorded_at": "2026-11-17T16:42:17.136984+00:00",
+  "application_tests": {
+    "total": 107,
+    "passed": 80,
+    "skipped": 27,
+    "failures": 0,
+    "errors": 0
+  },
+  "release_gate_passed": false,
+  "skipped_reason": "API dependencies absent; must run pinned image checks without skips before release",
+  "training_preparation_regressions_passed": 24,
+  "javascript_syntax_passed": true,
+  "real_pdf_ocr_executed": false,
+  "model_inference_executed": false,
+  "dependencies_or_weights_downloaded": false,
+  "provider_resources_changed": false,
+  "deployed": false,
+  "commit_queue_changed": false,
+  "source_artifact": {
+    "path": "parser-upgrade-v2-source.tar.gz",
+    "scope": "changed source increment, not a full deployment or model artifact",
+    "files": 11,
+    "sha256": "c45e88d8a25c788672f3d891981cf4a6c3bd9fbe796ee708cbed700267567064",
+    "member_hashes_verified": true
+  }
+}

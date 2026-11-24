@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PolicyPilot · Claim review</title>
+  <meta name="description" content="Review health insurance claim documents and trace extracted fields to the original PDF pages.">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/theme.css">
+  <link rel="stylesheet" href="/evidence-search.css">
+  <link rel="stylesheet" href="/review-tools.css">
+  <script src="/orb.js" defer></script>
+  <script src="/app.js" defer></script>
+  <script src="/review-tools.js" defer></script>
+  <script src="/evidence-search.js" defer></script>
+  <script src="/workspace.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to workspace</a>
+<header class="masthead">
+  <div class="masthead-inner">
+    <a href="/" class="brand" aria-label="PolicyPilot home"><span class="brandmark" aria-hidden="true"><i></i><i></i><i></i></span>PolicyPilot</a>
+    <nav aria-label="Workspace"><button id="home" aria-current="page">Cases</button><button id="about">Workspace details</button></nav>
+    <div class="account"><span class="pilot-label">Synthetic pilot</span><button id="sign-out" class="textbutton" hidden>Sign out</button></div>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+  <div id="message" role="status" aria-live="polite"></div>
+  <section id="overview" aria-labelledby="workspace-title">
+    <div class="workspace-intro">
+      <div class="intro-copy">
+        <h1 id="workspace-title">Claim review<span>.</span></h1>
+        <p class="lede">Compare policy and claim documents and check extracted fields against the original PDFs.</p>
+        <button class="primary" id="new-case"><span aria-hidden="true">+</span> New case</button>
+      </div>
+      <div class="orb-stage">
+        <canvas data-orb="model" data-ambient="true" data-state="off" aria-hidden="true"></canvas>
+        <button type="button" class="orb-motion" id="orb-motion" aria-pressed="false" aria-label="Pause decorative animation">Pause motion</button>
+      </div>
+    </div>
+    <dl class="metrics" aria-label="Case totals">
+      <div><dt>Total cases</dt><dd id="total">—</dd></div>
+      <div><dt>Ready for review</dt><dd id="ready">—</dd></div>
+      <div><dt>In processing</dt><dd id="processing">—</dd></div>
+      <div><dt>Needs attention</dt><dd id="failed">—</dd></div>
+    </dl>
+    <details id="review-dashboard" class="panel review-dashboard">
+      <summary>Workspace review performance</summary>
+      <p class="small">Application review statistics across synthetic cases. Reviewer agreement is not ground-truth accuracy; unreviewed fields are excluded. Historical synthetic benchmarks are separate from these statistics.</p>
+      <button id="refresh-review-metrics" type="button" class="textbutton">Refresh statistics</button>
+      <p id="review-metrics-status" class="small" role="status"></p><div id="review-metrics"></div>
+    </details>
+    <section class="queue" aria-labelledby="queue-title">
+      <div class="panelhead queue-head"><div><h2 id="queue-title">Case queue</h2><p id="list-summary" class="small" role="status" aria-live="polite">Loading cases…</p></div>
+        <div class="list-tools">
+          <label class="search"><span class="sr-only">Search cases by title or ID</span><input id="search" placeholder="Search title or ID" type="search"></label>
+          <label><span class="sr-only">Filter by case status</span><select id="state-filter"><option value="all">All statuses</option><option value="draft">Draft</option><option value="ready">Review ready</option><option value="processing">Processing</option><option value="queued">Queued</option><option value="failed">Needs attention</option></select></label>
+        </div>
+      </div>
+      <div id="queue-columns" class="queue-columns" aria-hidden="true" hidden><span>Case</span><span>Status</span><span>Created</span></div>
+      <div id="case-list" class="case-list" aria-describedby="list-summary"><p class="empty">Loading cases…</p></div>
+    </section>
+  </section>
+  <section id="detail" hidden>
+    <button id="back" class="textbutton back">← Case queue</button>
+    <header class="caseheading">
+      <div><p class="eyebrow" id="case-id"></p><h1 id="case-title" tabindex="-1"></h1><p class="subtitle" id="case-description"></p></div>
+      <div class="actions"><span id="case-state"></span><button id="pdf-review" class="primary" hidden>Review PDF fields</button><button id="run" class="secondary">Process &amp; assess</button></div>
+    </header>
+    <div id="case-error" class="error" role="alert" hidden></div>
+    <div class="reviewgrid">
+      <section class="panel documents" aria-labelledby="documents-title">
+        <div class="panelhead"><h2 id="documents-title">Documents</h2><span class="small" id="doc-count"></span></div><div id="documents"></div>
+        <form id="upload-form" class="upload">
+          <label>Document type<select id="document-kind"><option value="policy">Policy wording</option><option value="schedule">Policy schedule</option><option value="endorsement">Endorsement</option><option value="claim_form">Claim form</option><option value="bill">Hospital bill</option><option value="discharge">Discharge summary</option><option value="receipt">Payment receipt</option><option value="other">Supporting document</option></select></label>
+          <label>Synthetic PDF<input id="file" type="file" accept="application/pdf,.pdf" aria-describedby="upload-guidance" required></label>
+          <p class="small" id="upload-guidance">Up to 10 MB and 20 pages per PDF. Up to 12 files and 60 pages per case.</p>
+          <button class="secondary" type="submit" id="upload-button">Attach document</button>
+        </form>
+      </section>
+      <section class="panel evidence" aria-labelledby="source-title">
+        <div class="panelhead"><div><p class="eyebrow">Source pages</p><h2 id="source-title" tabindex="-1">Select a document</h2></div><a id="download" hidden class="textbutton">Download original ↗</a></div>
+        <section id="evidence-search" aria-label="Search case evidence" hidden></section>
+        <div id="source-content" class="source-content"></div>
+      </section>
+      <section class="panel assessment" aria-labelledby="assessment-title">
+        <div class="panelhead"><h2 id="assessment-title">Field review</h2></div>
+        <section id="review-fields" class="review-fields" aria-labelledby="review-fields-title" hidden></section>
+        <div id="result" class="result"></div>
+        <div id="chat-thread" class="chat-thread" aria-label="Previous questions"></div><p class="small" id="chat-hint" role="status"></p>
+        <div class="review-action"><button id="acknowledge" class="secondary" disabled>Record acknowledgement</button><p class="small">Records that you reviewed the evidence. Coverage and payment require a separate decision.</p></div>
+      </section>
+    </div>
+    <section id="review-tools" class="panel review-tools" aria-labelledby="review-tools-title" hidden>
+      <div class="panelhead"><h2 id="review-tools-title">Reviewer tools</h2><a id="review-report" class="textbutton" download>Download review report ↗</a></div>
+      <p id="review-tools-status" class="small" role="status"></p>
+      <p class="small">The report records this review, not coverage authorization. Original document links require access to this application.</p>
+      <div class="review-tools-grid">
+        <section aria-labelledby="checklist-title"><h3 id="checklist-title">Document checklist</h3><p class="small">Synthetic hospitalization reimbursement example. Requirements vary by insurer; missing items do not block review.</p><ul id="document-checklist"></ul></section>
+        <section aria-labelledby="claim-timeline-title"><h3 id="claim-timeline-title">Claim timeline</h3><div id="claim-timeline"></div></section>
+        <section aria-labelledby="neural-title"><h3 id="neural-title">Neural suggestions</h3><div id="neural-results"></div></section>
+        <section aria-labelledby="correction-title"><h3 id="correction-title">Record a reviewer correction</h3>
+          <p class="small" id="correction-help">Choose a cited suggestion to accept or correct, or enter a value with a source citation. Offsets count characters in the extracted page, starting at zero; the end is exclusive. Saving clears the prior acknowledgement. Corrections are not automatically used for training.</p>
+          <form id="correction-form" aria-describedby="correction-help">
+            <label for="correction-field">Field</label><select id="correction-field" required></select>
+            <label for="correction-candidate">Suggested value and citation</label><select id="correction-candidate"></select>
+            <label for="correction-value">Reviewer-confirmed value</label><input id="correction-value" required maxlength="500">
+            <label for="correction-source">Suggestion source</label><select id="correction-source"><option value="rules">Rules</option><option value="neural">Neural</option></select>
+            <label for="correction-reason">Reason for acceptance or correction</label><textarea id="correction-reason" required maxlength="2000" rows="2"></textarea>
+            <label for="correction-document">Supporting document</label><select id="correction-document" required></select>
+            <label for="correction-page">Supporting page</label><select id="correction-page" required></select>
+            <div class="correction-offsets"><label>Start offset<input id="correction-start" type="number" min="0" step="1" required></label><label>End offset<input id="correction-end" type="number" min="1" step="1" required></label></div>
+            <p id="correction-status" class="small" role="status" aria-live="polite"></p>
+            <button id="correction-save" type="submit" class="secondary" disabled>Save reviewed value</button>
+            <button id="correction-reset" type="button" class="textbutton" hidden>Reload current revision</button>
+          </form>
+        </section>
+      </div>
+      <details class="correction-history"><summary>Correction history</summary><ul id="correction-history"></ul></details>
+    </section>
+    <section class="panel timeline"><div class="panelhead"><h2>Case activity</h2><button id="delete-case" class="danger">Delete case</button></div><div id="events"></div></section>
+  </section>
+</main>
+<footer><span>PolicyPilot</span><span>Use synthetic claim documents only.</span></footer>
+<dialog id="new-dialog" aria-labelledby="new-dialog-title" aria-describedby="new-dialog-description">
+  <form id="create-form">
+    <div class="dialoghead"><h2 id="new-dialog-title">New case</h2><button type="button" id="close-dialog" class="close" aria-label="Close">×</button></div>
+    <p id="new-dialog-description">Use synthetic documents only. All reviewers in this workspace can see the case.</p>
+    <label>Case title<input id="title" required minlength="3" maxlength="120" placeholder="e.g. SYN-C005 · Hospital admission"></label>
+    <label>Claim context<textarea id="description" required minlength="20" maxlength="3000" rows="4" placeholder="Which dates, policy terms or amounts need review?"></textarea></label>
+    <p id="create-error" class="error" role="alert" hidden></p><button class="primary" id="create-button">Create case</button>
+  </form>
+</dialog>
+<dialog id="about-dialog" aria-labelledby="about-dialog-title">
+  <div class="dialoghead"><h2 id="about-dialog-title">Workspace details</h2><button id="close-about" class="close" aria-label="Close">×</button></div>
+  <p>All reviewers share access to the same cases. Use synthetic PDFs only.</p>
+  <h3>Document review</h3><p>Review PDF fields links labeled values to their source pages. When OCR is available, it can read scanned pages. Check flagged pages against the original PDF.</p>
+  <section class="connection-strip" aria-label="Model connection"><strong id="model-name">Model connection</strong><p id="model-status" role="status" aria-live="polite">Checking connection…</p><p id="model-note"></p><span id="readiness" class="small"></span></section>
+  <h3>Records and storage</h3><p>Case records are stored in PostgreSQL. Original PDFs use the configured private storage. Deleting a case removes access and queues the files for deletion. Backups follow the operator’s retention schedule.</p>
+  <section id="cleanup-tools" hidden><h3>Document cleanup</h3><p id="cleanup-status" class="small" role="status">Checking cleanup queue…</p><button type="button" class="secondary" id="cleanup-retry">Retry eligible cleanup</button><p class="small">Each attempt handles one queued object. Failed deletions can be retried after five minutes.</p></section>
+</dialog>
+</body>
+</html>

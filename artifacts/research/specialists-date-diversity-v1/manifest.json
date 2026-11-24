@@ -1,0 +1,18 @@
+{
+  "files": [
+    {
+      "bytes": 140090,
+      "path": "policypilot-specialists-date-diversity-v1-runtime.tar.gz",
+      "sha256": "029b89e167d765a013313aaa6f859974d7d1fd928eb2c1ddcf169414b6e5497c"
+    },
+    {
+      "bytes": 1382,
+      "path": "preparation.json",
+      "sha256": "85d1991897ad07376bfb6183dd5c5a9c876cd7811043d11139a87e842c267d59"
+    }
+  ],
+  "metadata": {
+    "experiment": "specialists-date-diversity-v1"
+  },
+  "version": 1
+}

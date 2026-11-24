@@ -1,0 +1,17 @@
+{
+  "train_manifest_checksum": "3a44bf598e8190bb4e81f972f2891c5fd688d1334b60196f9e72258ca6329dc3",
+  "holdout_manifest_checksum": "bf3e352334d01f05461a39931fce2ee932f7924505ae9a866fd64d38173f949f",
+  "rules_span_exact": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 768
+  },
+  "lexical_rank_top1_accuracy": 0.0,
+  "fieldbench_policy_id_rules": {
+    "correct_values": 0,
+    "documents": 220,
+    "over_256_tokens": 184
+  },
+  "neural_execution_performed": false
+}

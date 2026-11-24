@@ -1,0 +1,38 @@
+{
+  "version": "policypilot-synthetic-review-v1",
+  "synthetic_only": true,
+  "counts": {
+    "train": 144,
+    "validation": 72,
+    "test": 72
+  },
+  "families": {
+    "train": [
+      "reed",
+      "slate",
+      "birch",
+      "fern",
+      "copper",
+      "linen",
+      "quartz",
+      "willow"
+    ],
+    "validation": [
+      "harbor",
+      "orchid",
+      "meadow",
+      "pebble"
+    ],
+    "test": [
+      "summit",
+      "lagoon",
+      "cobalt",
+      "maple"
+    ]
+  },
+  "limitations": "Original fictional text fixtures. Shared scenario templates; no PDF/OCR/layout or real-world accuracy benchmark. Not actuarial or clinical review.",
+  "files": {
+    "train.jsonl": "9fa8100b963cb8ffeb73f2de6818dfa90b6a737d73fe4532f9d4e31685d15442",
+    "validation-prompts.jsonl": "5b6d0b4925b5ecdcffcb9895770278f353bb2bf4ef5807556556ce6fb033f33a"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "authorization": "Original planning ceiling plus the user-approved additional USD 1; prior spend remains counted",
+  "combined_planning_maximum_usd": "2.99",
+  "last_reported_account_spend_usd": "0.6341043521679239",
+  "billing_may_lag": true,
+  "historical_compute_reserved_usd": "0.797085",
+  "historical_reservations_reset": false,
+  "new_compute_or_storage_provisioned": false,
+  "replacement_storage_budget_verified": false,
+  "note": "User approved up to USD 3/month for persistent model storage. Existing experiment ceiling, prior spend and compute reservations remain unchanged. Verify current volume quote, tax, GPU co-location and account access before provisioning. No new compute or storage has been created.",
+  "persistent_storage_monthly_maximum_usd": "3.00",
+  "persistent_storage_authorization": {
+    "source": "user",
+    "statement": "cost is not a problem, i can afford 3 dollars per month",
+    "recorded_at": "2026-11-15T17:47:50.006695+00:00",
+    "scope": "recurring persistent model storage; does not increase GPU compute allowance"
+  },
+  "persistent_storage_proposed_size_gb": 30,
+  "persistent_storage_listed_monthly_usd_before_tax": "2.10",
+  "preferred_training_gpu": "RTX PRO 4000; exact provider label/data center/quote unverified",
+  "gpu_hourly_price_ceiling_exclusive_usd": "1.00",
+  "gpu_rate_preference_source": "User: any below $1 per hr; RTX PRO 4000 selected",
+  "local_model_execution_allowed": false,
+  "cloud_model_process_ram_limit_bytes": null,
+  "ram_policy_clarification": {
+    "recorded_at": "2026-11-16T21:54:14.605071+00:00",
+    "source": "user",
+    "statement": "i dont care what ram it need in cloud, but i dont want to pressure my machines ram",
+    "scope": "All model execution and downloads remote; remove the 2 GB cloud cap. Compute/storage dollar limits unchanged."
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "recorded_at": "2026-11-15T17:46:20.607364+00:00",
+  "read_only": true,
+  "resources_changed": false,
+  "jobs_submitted": 0,
+  "budget_ceiling_usd": "2.99",
+  "historical_reported_spend_usd": "0.6341043521679239",
+  "historical_reported_spend_freshly_verified": false,
+  "historical_compute_reserved_usd": "0.797085",
+  "reservations_reset": false,
+  "live_gpu_stock_verified": false,
+  "runpod_access_check": "Provider GET unavailable; no retry",
+  "runpod_tools_available_in_session": false,
+  "proposed_storage_gb": 30,
+  "storage_size_approved": false,
+  "retention_choice_pending": false,
+  "pricing_source": "https://docs.runpod.io/storage/network-volumes",
+  "standard_usd_per_gb_month": "0.07",
+  "illustrative_storage_cost_usd": {
+    "1_days": "0.0700",
+    "7_days": "0.4900",
+    "30_days": "2.1000"
+  },
+  "cost_assumptions": "720-hour month, hourly network-volume billing, before any tax; verify actual provider charge before creation",
+  "public_gpu_listing_source": "https://www.runpod.io/product/cloud-gpus",
+  "public_example_gpu": "RTX A5000 24 GB",
+  "public_example_usd_per_hour": "0.27",
+  "public_gpu_listing_is_not_a_stock_or_account_quote": true,
+  "model_ram_verified": false,
+  "fine_tuned_artifact_verified": false,
+  "blocking_checks": [
+    "Connect configured Runpod MCP and verify account inventory and latest billing",
+    "Read current Secure Cloud GPU stock and quote in the same data center before volume creation",
+    "Verify recurring storage quote including tax fits USD 3/month"
+  ],
+  "storage_monthly_budget_usd": "3.00",
+  "storage_budget_authorized_by_user": true,
+  "recurring_storage_approved": true,
+  "compute_allowance_increased": false,
+  "live_quote_including_tax_verified": false,
+  "connection_diagnostic": {
+    "recorded_at": "2026-11-15T17:52:08.003144+00:00",
+    "mcp_configured": true,
+    "mcp_enabled": true,
+    "mcp_url": "https://mcp.runpod.io/",
+    "runpod_tools_available_in_agent": false,
+    "agent_shell_dns_available": false,
+    "hosts_checked": [
+      "mcp.runpod.io",
+      "api.runpod.io"
+    ],
+    "oauth_login_independently_verified": false,
+    "owner_reported_login_done": true,
+    "resource_mutations": 0
+  }
+}

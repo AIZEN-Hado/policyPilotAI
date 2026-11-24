@@ -1,0 +1,48 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# PolicyPilotAI — Ollama Edition
+#
+# LLM      : Ollama (local, runs on your GTX 1650 4GB)
+# Embeddings: HuggingFace SentenceTransformers (local, CPU — no GPU needed)
+# RAG      : LangChain + FAISS
+# DB       : SQLite (aiosqlite + SQLAlchemy async ORM)
+#
+# NO OpenAI / Gemini / Anthropic / HuggingFace Hub token required.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Web framework
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+
+# LangChain core + Ollama integration
+langchain==0.2.1
+langchain-community==0.2.1
+langchain-ollama==0.1.0
+
+# Embeddings — local SentenceTransformers (CPU, no API key)
+langchain-huggingface==0.0.3
+sentence-transformers==3.0.1
+
+# Vector store
+faiss-cpu==1.8.0
+
+# PDF processing
+pypdf==4.2.0
+pdfplumber==0.11.0
+
+# Streamlit UI
+streamlit==1.35.0
+
+# Database — SQLite async + SQLAlchemy ORM
+aiosqlite==0.20.0
+sqlalchemy==2.0.30
+
+# Utilities
+python-dotenv==1.0.1
+pydantic==2.7.1
+pydantic-settings==2.3.0
+httpx==0.27.0
+numpy==1.26.4
+
+# Testing
+pytest==8.2.1
+pytest-asyncio==0.23.7

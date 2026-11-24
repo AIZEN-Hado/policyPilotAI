@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "model_execution_location": "remote_gpu_pod_only",
+  "pretrained_language_backbone": null,
+  "generative_model": false,
+  "max_parameters": 5000000,
+  "max_weight_bytes": 25000000,
+  "span": {
+    "word_hash_buckets": 8192,
+    "word_embedding_dim": 64,
+    "char_vocab_size": 512,
+    "char_embedding_dim": 16,
+    "char_channels": 32,
+    "char_kernel": 3,
+    "hidden_size": 64,
+    "max_tokens": 256,
+    "max_chars_per_token": 32
+  },
+  "rank": {
+    "features": 96,
+    "hidden_size": 32
+  },
+  "training": {
+    "seed": 20261118,
+    "epochs": 3,
+    "max_steps": 60,
+    "batch_size": 16,
+    "learning_rate": 0.001
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "additional_cms_rows": {
+    "test": 320,
+    "train": 1440,
+    "validation": 240
+  },
+  "additional_policy_groups": {
+    "test": 5,
+    "train": 103,
+    "validation": 51
+  },
+  "config_sha256": "2ec9f3251244e528755e37275928ff29fda652a245146f78a8f4415ef65a5f10",
+  "counts": {
+    "test": {
+      "rank": 20,
+      "span": 320
+    },
+    "train": {
+      "rank": 8698,
+      "span": 7720
+    },
+    "validation": {
+      "rank": 2180,
+      "span": 1488
+    }
+  },
+  "evaluation": {
+    "bytes": 217333,
+    "path": "policypilot-specialists-research-transfer-v1-evaluation.tar.gz",
+    "sha256": "261e5c8d2ea2ad8712bab614ce4197803e303e23b36034f8e024290f18d8935c"
+  },
+  "experiment": "specialists-research-transfer-v1",
+  "fieldbench_manifest_sha256": "3f6219d3a7aee0ef6b665cbd61eb14a72fec2897ea8053ccfa8a4e4c6c7e1437",
+  "holdout_manifest_sha256": "0893d7ce6f09fb972bb71822b9a9468415e3d1095eb48c9dfd9e4b0043eb27c7",
+  "model_execution_performed": false,
+  "planned_steps": {
+    "rank": 480,
+    "span": 1452
+  },
+  "reference": {
+    "archive": "/workspace/specialist-self-learning-v1-runs/run-eb0d041f214b468280cf91b5fc60ac95.tar.gz",
+    "config_sha256": "a8298d727266067d4edba1be5d016d72ac839be32e779cbf4b8d92007a260140",
+    "sha256": "93ef5692d9ea0ad62d9afd2688e5580d0a1aeb247819dd0eeb589e5ade6207c8",
+    "training_manifest_sha256": "b50b63ada0e3091a812f0f60ea152d114529c0ed60444b0aa9548f4b2387e067"
+  },
+  "regression_manifest_sha256": "18af268654900864a7586d9aab01937b5fc9eee67b56a69d2a3b9a43660a3358",
+  "research_sources": {
+    "cms": {
+      "excluded_previous_beneficiaries": 756,
+      "license": "US public domain",
+      "lineage_digests": {
+        "test": "94141c869ab6a047c448bcbcbb9a23cf5e6d0944d7d9c1259913a9c5d64e6372",
+        "train": "ecf0f2b8b9ea676fa21546b51bf90e0893aa2718f38445108a142a7304ed450a",
+        "validation": "659178440ea3437279aacdbb65d1d882eb576002a0375ee91af249be32ec69a6"
+      },
+      "new_beneficiaries": {
+        "test": 320,
+        "train": 1440,
+        "validation": 240
+      },
+      "sha256": "ac25124184d22863aff538607097d2d0c880d19f7d58f882f9d31129c492d893",
+      "source": "https://www.cms.gov/research-statistics-data-and-systems/downloadable-public-use-files/synpufs/downloads/de1_0_2008_to_2010_inpatient_claims_sample_1.zip",
+      "source_counts": {
+        "collapsed_repeat_stays": 19,
+        "source_rows": 66773
+      }
+    },
+    "policy": {
+      "heldout_documents": [
+        "bronze_expatriate.md",
+        "bronze_senior.md",
+        "gold_expatriate.md",
+        "gold_senior.md",
+        "platinum_expatriate.md",
+        "platinum_senior.md",
+        "silver_expatriate.md",
+        "silver_senior.md"
+      ],
+      "license": "MIT",
+      "snapshot_sha256": "475035a7373f1f981cbfa7e1f958c6c224697554a48b77c4bf7552abc59ba50c",
+      "source": "https://github.com/ahmedabuzaid15-git/insurance-document-rag",
+      "train_documents": [
+        "bronze_individual.md",
+        "bronze_student.md",
+        "gold_individual.md",
+        "gold_student.md",
+        "platinum_individual.md",
+        "platinum_student.md",
+        "silver_individual.md",
+        "silver_student.md"
+      ],
+      "unused_unanswerable_questions": 3,
+      "validation_documents": [
+        "bronze_family.md",
+        "gold_family.md",
+        "platinum_family.md",
+        "silver_family.md"
+      ]
+    }
+  },
+  "runtime": {
+    "bytes": 793914,
+    "path": "policypilot-specialists-research-transfer-v1-runtime.tar.gz",
+    "sha256": "cae9486d46019ac840c3d40d4230725acf9ab2650353bd170df535f6143105fa"
+  },
+  "training_manifest_sha256": "2cb92c2144a6cfe7997e4eb8958c3ad3ab7cfd4aee893c2cbb7439be4bc0848c"
+}

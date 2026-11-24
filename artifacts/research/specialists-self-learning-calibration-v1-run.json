@@ -1,0 +1,74 @@
+{
+  "experiment": "specialists-self-learning-calibration-v1",
+  "status": "TARGET_NOT_MET",
+  "trained_checkpoint_sha256": "93ef5692d9ea0ad62d9afd2688e5580d0a1aeb247819dd0eeb589e5ade6207c8",
+  "calibration": {
+    "path": "/workspace/specialist-self-learning-v1-runs/calibration-v1.json",
+    "sha256": "33bc10869f4539156363ad58d2e9a92ff2dc3de9ea7cb5583ffd2032319c2e8d",
+    "development": {
+      "before": {
+        "span": {
+          "precision": 0.9014271490209094,
+          "recall": 0.875,
+          "f1": 0.8880170017982671,
+          "support": 3104,
+          "correct": 2716,
+          "predicted": 3013,
+          "false_positives": 297,
+          "false_negatives": 388
+        },
+        "rank": {
+          "rows": 1976,
+          "groups": 592,
+          "correct_groups": 512,
+          "missed_groups": 80,
+          "incorrect_top_groups": 80,
+          "tied_top_groups": 0,
+          "incomplete_groups": 0,
+          "strict_group_top1_accuracy": 0.8648648648648649
+        }
+      },
+      "after": {
+        "span": {
+          "precision": 0.9781144781144782,
+          "recall": 0.935889175257732,
+          "f1": 0.9565360553177478,
+          "support": 3104,
+          "correct": 2905,
+          "predicted": 2970,
+          "false_positives": 65,
+          "false_negatives": 199
+        },
+        "rank": {
+          "rows": 1976,
+          "groups": 592,
+          "correct_groups": 519,
+          "missed_groups": 73,
+          "incorrect_top_groups": 73,
+          "tied_top_groups": 0,
+          "incomplete_groups": 0,
+          "strict_group_top1_accuracy": 0.8766891891891891
+        }
+      }
+    }
+  },
+  "holdout": {
+    "path": "artifacts/research/specialists-self-learning-calibration-v1-heldout.json",
+    "report_sha256": "606912fcae4ff33ae83fd764411a70beb93c8f33a7395124977f29eeec414622",
+    "manifest_sha256": "ca033a95f7ea949aa25c8bfa92438e239c478d19f91322eb8640b3fd040dd34d",
+    "target": 0.95,
+    "passed": false
+  },
+  "runpod": {
+    "pod_id": "fu4wuovljr6h19",
+    "created_at": "2026-11-20T23:14:21.034Z",
+    "hourly_usd": 0.14,
+    "pod_removed": true,
+    "volume_id": "c9iaje0u23",
+    "estimated_compute_usd": 0.00424,
+    "confirmed_charge_usd": null,
+    "combined_estimated_compute_usd": 0.02382,
+    "task_budget_usd": 1
+  },
+  "deployment_performed": false
+}

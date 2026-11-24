@@ -1,0 +1,217 @@
+{
+  "experiment": "specialists-public-policy-v1-cpu",
+  "status": "SYNTHETIC_GATE_FAILED",
+  "public_source": {
+    "source": "https://github.com/ahmedabuzaid15-git/insurance-document-rag",
+    "license": "MIT",
+    "snapshot_sha256": "475035a7373f1f981cbfa7e1f958c6c224697554a48b77c4bf7552abc59ba50c",
+    "train_documents": [
+      "bronze_individual.md",
+      "bronze_student.md",
+      "gold_individual.md",
+      "gold_student.md",
+      "platinum_individual.md",
+      "platinum_student.md",
+      "silver_individual.md",
+      "silver_student.md"
+    ],
+    "validation_documents": [
+      "bronze_family.md",
+      "gold_family.md",
+      "platinum_family.md",
+      "silver_family.md"
+    ],
+    "heldout_documents": [
+      "bronze_expatriate.md",
+      "bronze_senior.md",
+      "gold_expatriate.md",
+      "gold_senior.md",
+      "platinum_expatriate.md",
+      "platinum_senior.md",
+      "silver_expatriate.md",
+      "silver_senior.md"
+    ],
+    "unused_unanswerable_questions": 3
+  },
+  "inputs": {
+    "runtime_sha256": "5e877ac44f4d3bb88d96ca0383abc6b4732ac7a52a9709f42b85296a9affc39d",
+    "training_manifest_sha256": "0c55ea985d7e436f3c950904b2c5f977df0e5d60df48a977ad9180e54b1738dc",
+    "config_sha256": "3327e1e53b0a6bfdde16b1b55fe8541333a10765596ae4fbef362107b63165d4",
+    "holdout_manifest_sha256": "05454ab5162d5f5f97e1f5caaa6d4b2e69467457c65cd0ae764feb89d9b971c1"
+  },
+  "candidate": {
+    "run_id": "run-97d64e423c3b422293094daf84136291",
+    "archive": "/workspace/specialist-public-policy-cpu-runs/run-97d64e423c3b422293094daf84136291.tar.gz",
+    "sha256": "10ea94d419282a2eeb973179dc5397276b6ec8d3e1341ca3c8e1eda5c8951d91",
+    "bytes": 2420646,
+    "independent_reload_predictions_match": true,
+    "training_started_at": "2026-11-20T16:08:35.132947+00:00",
+    "r2_readback_verified": false
+  },
+  "reference": {
+    "archive": "/workspace/specialist-quality-runs/run-e14b110f44b94823a2763b2c6bcffcd8.tar.gz",
+    "sha256": "1c02f3071a4a3f2ed516aaa90550eac238ba897b561a8abbad3c6e852ef2fc3d",
+    "config_sha256": "cce846af72661a79b34cdf234070df8d89e89da116f753ea3ebc71d7488b2074",
+    "training_manifest_sha256": "c092bf90efe1829df7fcbb1af26032cbca737f3ecf7fd7969c29e508bd8ad54a"
+  },
+  "validation": {
+    "span": {
+      "f1": 0.7025380710659899,
+      "precision": 0.7134020618556701,
+      "recall": 0.692,
+      "support": 1000
+    },
+    "rank_strict_top1_accuracy": 0.9453125
+  },
+  "training": {
+    "stages": {
+      "baseline": {
+        "exit_code": 0,
+        "deadline_reached": false,
+        "wall_seconds": 0.605,
+        "sampled_peak_rss_bytes": 36237312,
+        "rss_scope": "child VmHWM samples; short exits may not be sampled",
+        "passed": true
+      },
+      "train": {
+        "exit_code": 0,
+        "deadline_reached": false,
+        "wall_seconds": 31.679,
+        "sampled_peak_rss_bytes": 816635904,
+        "rss_scope": "child VmHWM samples; short exits may not be sampled",
+        "passed": true
+      },
+      "reload": {
+        "exit_code": 0,
+        "deadline_reached": false,
+        "wall_seconds": 1.71,
+        "sampled_peak_rss_bytes": 567259136,
+        "rss_scope": "child VmHWM samples; short exits may not be sampled",
+        "passed": true
+      }
+    },
+    "updates": {
+      "rank": {
+        "epochs": [
+          {
+            "epoch": 1,
+            "loss": 0.6549480818722346,
+            "validation_score": 0.91015625
+          },
+          {
+            "epoch": 2,
+            "loss": 0.19424308076092642,
+            "validation_score": 0.9453125
+          },
+          {
+            "epoch": 3,
+            "loss": 0.11059404951711632,
+            "validation_score": 0.93359375
+          },
+          {
+            "epoch": 4,
+            "loss": 0.07283802126368431,
+            "validation_score": 0.8828125
+          },
+          {
+            "epoch": 5,
+            "loss": 0.05109634516403487,
+            "validation_score": 0.8984375
+          },
+          {
+            "epoch": 6,
+            "loss": 0.036846795412775586,
+            "validation_score": 0.90234375
+          }
+        ],
+        "selected_epoch": 2,
+        "steps": 438
+      },
+      "span": {
+        "epochs": [
+          {
+            "epoch": 1,
+            "loss": 0.2085315554947804,
+            "validation_score": 0.7597387566137566
+          },
+          {
+            "epoch": 2,
+            "loss": 0.0037398639731029766,
+            "validation_score": 0.7295737903004339
+          },
+          {
+            "epoch": 3,
+            "loss": 0.001170316907519009,
+            "validation_score": 0.7298941798941799
+          },
+          {
+            "epoch": 4,
+            "loss": 0.0006245111571843154,
+            "validation_score": 0.7314814814814815
+          },
+          {
+            "epoch": 5,
+            "loss": 0.00039885140309210823,
+            "validation_score": 0.7314814814814815
+          },
+          {
+            "epoch": 6,
+            "loss": 0.00027978208791782066,
+            "validation_score": 0.7314814814814815
+          }
+        ],
+        "selected_epoch": 1,
+        "selection_metric": "macro_exact_span_f1",
+        "steps": 1056
+      }
+    },
+    "measurements": {
+      "device": "cpu",
+      "process_peak_rss_bytes": 815042560
+    }
+  },
+  "holdout": {
+    "report": "specialists-public-policy-v1-cpu-heldout-evaluation.json",
+    "gate_passed": false,
+    "target_failures": {
+      "POLICY_ID": [
+        "precision",
+        "recall"
+      ],
+      "MEMBER_ID": [
+        "precision",
+        "recall"
+      ],
+      "ADMISSION_DATE": [
+        "recall"
+      ],
+      "DISCHARGE_DATE": [
+        "precision",
+        "recall"
+      ],
+      "ROOM_LIMIT": [
+        "recall"
+      ],
+      "SUM_INSURED": [
+        "precision",
+        "recall"
+      ],
+      "ranking": [
+        "strict_group_top1_accuracy"
+      ]
+    }
+  },
+  "runpod": {
+    "pod_id": "5b2v6pgwarzwvt",
+    "compute_shape": "cpu3c",
+    "compute_hourly_usd": 0.12,
+    "created_at": "2026-11-20T16:07:48.915Z",
+    "stop_confirmed_at": "2026-11-20T16:09:25.814Z",
+    "pod_removed": true,
+    "volume_id": "c9iaje0u23",
+    "volume_retained": true,
+    "estimated_compute_usd": 0.00323,
+    "confirmed_charge_usd": null
+  },
+  "live_deployment_performed": false
+}

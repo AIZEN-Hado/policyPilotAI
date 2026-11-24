@@ -1,0 +1,14 @@
+{
+  "namespace": "aizen-hado",
+  "version": "v0.1.0-demo.20261124T085236Z",
+  "images": [
+    {
+      "name": "policypilot-api",
+      "tag": "ghcr.io/aizen-hado/policypilot-api:v0.1.0-demo.20261124T085236Z",
+      "reference": "ghcr.io/aizen-hado/policypilot-api@sha256:7119c5d9e21808f08c14ff5281de58e3361b5ec5f53f947cf66c95de67f0a1ea",
+      "image_id": "sha256:7119c5d9e21808f08c14ff5281de58e3361b5ec5f53f947cf66c95de67f0a1ea",
+      "visibility": "private"
+    }
+  ],
+  "compute_started": false
+}

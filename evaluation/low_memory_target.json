@@ -1,0 +1,22 @@
+{
+  "status": "superseded_local_cpu_candidate_do_not_execute_locally",
+  "training_base": "Qwen/Qwen2.5-0.5B-Instruct",
+  "baseline_gguf_repository": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+  "quantization": "Q4_K_M",
+  "runtime": "llama.cpp CPU",
+  "model_process_ram_limit_bytes": 2000000000,
+  "context_tokens": 2048,
+  "parallel_requests": 1,
+  "max_output_tokens": 256,
+  "threads": 4,
+  "training_method_candidate": "LoRA or QLoRA, chosen after baseline evaluation",
+  "training_authorized_total_usd": 2,
+  "training_ready": false,
+  "reasons_training_not_ready": [
+    "Only three development exemplar cases exist",
+    "No held-out claim-family evaluation dataset",
+    "Baseline CPU memory, latency and task quality not measured",
+    "No verified cost ceiling or reachable Runpod provisioning connection"
+  ],
+  "superseded_by": "User cloud-only model execution preference; current training/config.json has no artificial cloud RSS cap."
+}

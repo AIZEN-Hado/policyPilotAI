@@ -1,0 +1,18 @@
+{
+  "files": [
+    {
+      "bytes": 68000,
+      "path": "policypilot-specialists-joint-release-v1-evaluation.tar.gz",
+      "sha256": "6a057994141871844a2634ece4d7457154dfa5db1ceb66442e94e0dbe817d6f8"
+    },
+    {
+      "bytes": 1407,
+      "path": "preparation.json",
+      "sha256": "06ca5a838fecd0b00c6674ea4488352b7c96fabe4bc8029572347efe72cd29cf"
+    }
+  ],
+  "metadata": {
+    "experiment": "specialists-joint-release-v1"
+  },
+  "version": 1
+}

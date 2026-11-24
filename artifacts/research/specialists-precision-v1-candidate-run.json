@@ -1,0 +1,229 @@
+{
+  "status": "TRAINING_COMPLETE_GPU_REMOVED",
+  "experiment": "specialists-precision-v1",
+  "run_id": "run-4f2ffe7238af4c9a9865c7f5ea4619c3",
+  "training_started_at": "2026-11-20T12:15:38.228766+00:00",
+  "inputs": {
+    "archive_sha256": "304b02a19ba14961696fead2f656558de248444ca33a2dedfa1d64423a70479a",
+    "config_sha256": "2c1db2801943f55623200eb2927233e5f4b3b8d07716a3c2024ca79d4cb187a4",
+    "dataset_manifest_sha256": "3a44bf598e8190bb4e81f972f2891c5fd688d1334b60196f9e72258ca6329dc3"
+  },
+  "candidate": {
+    "archive": "/workspace/specialist-precision-runs/run-4f2ffe7238af4c9a9865c7f5ea4619c3.tar.gz",
+    "sha256": "d245d82560525e1aeac0fdb315a89eb7cae5a29b08c67d46d93f0d47bf4bafb8",
+    "bytes": 2337949,
+    "both_weights_verified": true,
+    "independent_reload_predictions_match": true,
+    "r2_readback_verified": false
+  },
+  "stages": {
+    "baseline": {
+      "exit_code": 0,
+      "deadline_reached": false,
+      "wall_seconds": 0.456,
+      "sampled_peak_rss_bytes": 30609408,
+      "rss_scope": "child VmHWM samples; short exits may not be sampled",
+      "passed": true
+    },
+    "train": {
+      "exit_code": 0,
+      "deadline_reached": false,
+      "wall_seconds": 17.019,
+      "sampled_peak_rss_bytes": 2049884160,
+      "rss_scope": "child VmHWM samples; short exits may not be sampled",
+      "passed": true
+    },
+    "reload": {
+      "exit_code": 0,
+      "deadline_reached": false,
+      "wall_seconds": 3.174,
+      "sampled_peak_rss_bytes": 1392439296,
+      "rss_scope": "child VmHWM samples; short exits may not be sampled",
+      "passed": true
+    }
+  },
+  "training_updates": {
+    "rank": {
+      "epochs": [
+        {
+          "epoch": 1,
+          "loss": 0.8906854540109634,
+          "validation_score": 0.5833333333333334
+        },
+        {
+          "epoch": 2,
+          "loss": 0.8041242187221845,
+          "validation_score": 0.5833333333333334
+        },
+        {
+          "epoch": 3,
+          "loss": 0.6722692847251892,
+          "validation_score": 0.6614583333333334
+        },
+        {
+          "epoch": 4,
+          "loss": 0.5167207332948843,
+          "validation_score": 0.6666666666666666
+        },
+        {
+          "epoch": 5,
+          "loss": 0.38708188633124035,
+          "validation_score": 0.6666666666666666
+        },
+        {
+          "epoch": 6,
+          "loss": 0.2945690875252088,
+          "validation_score": 0.6875
+        },
+        {
+          "epoch": 7,
+          "loss": 0.23002619047959647,
+          "validation_score": 0.7135416666666666
+        },
+        {
+          "epoch": 8,
+          "loss": 0.18301185903449854,
+          "validation_score": 0.78125
+        },
+        {
+          "epoch": 9,
+          "loss": 0.14693589663753906,
+          "validation_score": 0.796875
+        },
+        {
+          "epoch": 10,
+          "loss": 0.12009246818100412,
+          "validation_score": 0.8177083333333334
+        }
+      ],
+      "selected_epoch": 10,
+      "steps": 240
+    },
+    "span": {
+      "epochs": [
+        {
+          "epoch": 1,
+          "loss": 0.41398338777944443,
+          "validation_score": 0.31685527099463967
+        },
+        {
+          "epoch": 2,
+          "loss": 0.027845460193930194,
+          "validation_score": 0.3934794828555368
+        },
+        {
+          "epoch": 3,
+          "loss": 0.004937643342418596,
+          "validation_score": 0.3566265060240964
+        },
+        {
+          "epoch": 4,
+          "loss": 0.002327270869136555,
+          "validation_score": 0.3521043272080617
+        },
+        {
+          "epoch": 5,
+          "loss": 0.001436259572437848,
+          "validation_score": 0.37876960193003617
+        },
+        {
+          "epoch": 6,
+          "loss": 0.0009860173999186373,
+          "validation_score": 0.35809987819732036
+        },
+        {
+          "epoch": 7,
+          "loss": 0.0007281293281266698,
+          "validation_score": 0.35603345280764637
+        },
+        {
+          "epoch": 8,
+          "loss": 0.0005634772054690984,
+          "validation_score": 0.36548831635710005
+        },
+        {
+          "epoch": 9,
+          "loss": 0.0004497587277001003,
+          "validation_score": 0.36004784688995217
+        },
+        {
+          "epoch": 10,
+          "loss": 0.00036810365490964615,
+          "validation_score": 0.35854675402025016
+        }
+      ],
+      "selected_epoch": 2,
+      "steps": 800
+    }
+  },
+  "validation": {
+    "span_exact": {
+      "f1": 0.3934794828555368,
+      "precision": 0.42735042735042733,
+      "recall": 0.3645833333333333,
+      "support": 960
+    },
+    "span_exact_by_label": {
+      "ADMISSION_DATE": {
+        "f1": 0.3927855711422846,
+        "precision": 0.46445497630331756,
+        "recall": 0.3402777777777778,
+        "support": 288
+      },
+      "DISCHARGE_DATE": {
+        "f1": 0.15609756097560976,
+        "precision": 0.14678899082568808,
+        "recall": 0.16666666666666666,
+        "support": 288
+      },
+      "MEMBER_ID": {
+        "f1": 0.5286343612334802,
+        "precision": 0.6060606060606061,
+        "recall": 0.46875,
+        "support": 128
+      },
+      "POLICY_ID": {
+        "f1": 0.8451882845188284,
+        "precision": 0.9099099099099099,
+        "recall": 0.7890625,
+        "support": 128
+      },
+      "ROOM_LIMIT": {
+        "f1": 0.5203252032520326,
+        "precision": 0.5423728813559322,
+        "recall": 0.5,
+        "support": 64
+      },
+      "SUM_INSURED": {
+        "f1": 0.2894736842105263,
+        "precision": 0.9166666666666666,
+        "recall": 0.171875,
+        "support": 64
+      }
+    },
+    "rank_strict_top1_accuracy": 0.8177083333333334,
+    "rank_groups": 192,
+    "rules_span_exact": {
+      "f1": 0,
+      "precision": 0,
+      "recall": 0,
+      "support": 960
+    },
+    "rules_rank_strict_top1_accuracy": 0.5,
+    "target": 0.99,
+    "met_on_validation": false,
+    "held_out_evaluation_completed": false
+  },
+  "runpod": {
+    "pod_id": "j91giichvbbebp",
+    "gpu": "NVIDIA RTX PRO 4500 Blackwell",
+    "gpu_hourly_usd": 0.72,
+    "created_at": "2026-11-20T12:14:58.206Z",
+    "stop_confirmed_at": "2026-11-20T12:16:04.960Z",
+    "pod_removed": true,
+    "estimated_gpu_cost_usd": 0.0134,
+    "confirmed_pod_charge_usd": null,
+    "volume_id": "c9iaje0u23",
+    "volume_retained": true
+  }
+}

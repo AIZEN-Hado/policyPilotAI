@@ -1,0 +1,15 @@
+{
+  "runtime_source_archive_sha256": "3630e7899cc31c5fc4e82ccc5604ef845b86917a902bbbf1b3468665a7f86d68",
+  "archive_member_hashes_verified": true,
+  "isolated_plan_passed": true,
+  "isolated_local_execute_rejected": true,
+  "held_out_labels_and_generator_excluded": true,
+  "model_execution_performed": false,
+  "weights_created": false,
+  "trained_model_verified": false,
+  "specialist_lightweight_tests_passed": 37,
+  "render_inference_fit_verified": false,
+  "live_app_changed": false,
+  "provider_resources_changed": false,
+  "commit_queue_changed": false
+}

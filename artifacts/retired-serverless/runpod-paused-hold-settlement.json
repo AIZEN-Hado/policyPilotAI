@@ -1,0 +1,68 @@
+{
+  "proposal": {
+    "endpoint_id": "tjkkm5pkp7lrej",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "rows": [
+      {
+        "report": "runpod-warmup-startup-fix.json",
+        "recorded_at": "2026-11-14T18:52:01.768865+00:00",
+        "elapsed_seconds": "24.08",
+        "padded_seconds": 85,
+        "original_reserved_usd": "0.106250",
+        "retained_bound_usd": "0.017709",
+        "required_job_state": "REJECTED_PAUSED",
+        "require_no_provider_id": true
+      }
+    ],
+    "validation_only_rows": [
+      {
+        "report": "runpod-warmup-diagnostic.json",
+        "recorded_at": "2026-11-15T13:49:13.797232+00:00",
+        "padded_seconds": 312,
+        "original_reserved_usd": "0.118750",
+        "required_job_state": "FAILED",
+        "minimum_age_seconds": 0,
+        "require_provider_id": true
+      }
+    ],
+    "source_sha256": {
+      "runpod-warmup-startup-fix.json": "4df8ae01d67b243d2ee3fd06fb23736130649acf8a90c5979a197e198ea2760b",
+      "runpod-warmup-diagnostic.json": "8f3929e0d47658efa676941f1b59a9ce0a36eb6f83f0bf51f5eab29da30cd4f6"
+    },
+    "reserved_before_usd": "0.648126",
+    "reserved_after_usd": "0.559585",
+    "released_unused_hold_usd": "0.088541",
+    "required_prior_audit_action": "closed_warmup_settlement_v1:23eb1a2a9b03a5ee11645574fda9e54e71827b5afac29b1ebf28bd13f223f882",
+    "original_job_reservations_preserved": true,
+    "compute_limit_usd": "0.700000",
+    "inference_total_usd": "1.000000",
+    "bounds_are_invoice_amounts": false
+  },
+  "recorded_at": "2026-11-15T14:17:27.532746+00:00",
+  "endpoint_id": "tjkkm5pkp7lrej",
+  "result": "PASS",
+  "database_committed": true,
+  "provider_resources_changed": false,
+  "jobs_submitted": 0,
+  "apply_requested": true,
+  "account_30day_reported_usd": "0.6198162269574823",
+  "already_applied": false,
+  "audit_action": "closed_warmup_settlement_v1:b2a5478ac245cecf11d5e2df51f6ed05d9b4cc4b95b695e8551e68dbbdb76008",
+  "database_update_prepared": true,
+  "job_ids": [
+    "2d5d55af-7f02-4398-9c78-7aa1dadb5cc9",
+    "2e539122-6bd0-4dbb-bd9e-6c843dd92bf6"
+  ],
+  "observed_reserved_usd": "0.559585",
+  "app_after": {
+    "configured": true,
+    "enabled": false,
+    "can_start": true,
+    "operator": true,
+    "state": "off",
+    "startup_protocol": "invoke-worker-v2",
+    "compute_allowance_usd": "0.7",
+    "demo_inference_allowance_usd": "1.0",
+    "demo_compute_reserved_usd": "0.559585"
+  }
+}

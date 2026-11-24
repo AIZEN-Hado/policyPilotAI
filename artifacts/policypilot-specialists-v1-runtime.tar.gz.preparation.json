@@ -1,0 +1,40 @@
+{
+  "archive_bytes": 76523,
+  "artifact": "policypilot-specialists-v1-runtime.tar.gz",
+  "counts": {
+    "test": {
+      "rank": 256,
+      "span": 384
+    },
+    "train": {
+      "rank": 512,
+      "span": 768
+    },
+    "validation": {
+      "rank": 256,
+      "span": 384
+    }
+  },
+  "language_model_used": false,
+  "limitations": [
+    "Original English synthetic text only; no PDF, layout-coordinate, OCR or real-world accuracy benchmark.",
+    "Wording/layout families and cases are split, but synthetic generation semantics are shared.",
+    "Oracle/source-label consistency is not trained model accuracy.",
+    "Final test labels and their reconstructing generator are excluded from the training runtime archive."
+  ],
+  "member_hashes_verified": true,
+  "model_execution_performed": false,
+  "model_quality_verified": false,
+  "parameter_estimate": {
+    "fp32_bytes": 2487224,
+    "rank": 3137,
+    "span": 618669,
+    "total": 621806
+  },
+  "recorded_at": "2026-11-17T21:41:26.700170+00:00",
+  "remote_resources_changed": false,
+  "render_fit_verified": false,
+  "sha256": "3630e7899cc31c5fc4e82ccc5604ef845b86917a902bbbf1b3468665a7f86d68",
+  "source_preparation_verified": true,
+  "trained_weights_created": false
+}

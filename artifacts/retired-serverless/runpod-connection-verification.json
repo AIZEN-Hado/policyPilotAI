@@ -1,0 +1,15 @@
+{
+  "endpoint_id": "tjkkm5pkp7lrej",
+  "recorded_at": "2026-11-11T11:28:56.879935+00:00",
+  "result": "PASS",
+  "jobs_submitted": 0,
+  "control_write_attempted": true,
+  "control_write_verified": true,
+  "key_resource_restrictions_verified": false,
+  "inference_submission_permission_verified": false,
+  "generation_verified": false,
+  "stage": "Complete",
+  "disabled_configuration_verified": true,
+  "zero_allocated_workers_verified": true,
+  "inference_health_access_verified": true
+}

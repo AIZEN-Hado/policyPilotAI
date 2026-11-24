@@ -1,0 +1,77 @@
+{
+  "endpoint_id": "tjkkm5pkp7lrej",
+  "requests_submitted": 0,
+  "resources_changed": false,
+  "raw_logs_saved": false,
+  "workers": {
+    "honfdw7xez6d6c": {
+      "first_observed_at": "2026-11-15T12:56:28.295968+00:00",
+      "last_observed_at": "2026-11-15T12:57:34.036883+00:00",
+      "last_status": "RUNNING"
+    }
+  },
+  "log_sources": [
+    {
+      "worker_id": "honfdw7xez6d6c",
+      "source": "system",
+      "records_seen": 12,
+      "events": [
+        {
+          "signals": [
+            "image_pull_activity"
+          ],
+          "source": "system",
+          "timestamp": "2026-11-15T12:56:55+00:00"
+        },
+        {
+          "signals": [
+            "image_pull_activity"
+          ],
+          "source": "system",
+          "timestamp": "2026-11-15T12:56:57+00:00"
+        }
+      ],
+      "raw_logs_saved": false,
+      "read_complete": false,
+      "first_observed_timestamp": "2026-11-15T12:56:24+00:00",
+      "last_observed_timestamp": "2026-11-15T12:56:59+00:00",
+      "stream_timed_out": true,
+      "read_verified": true
+    },
+    {
+      "worker_id": "honfdw7xez6d6c",
+      "source": "container",
+      "records_seen": 21,
+      "events": [
+        {
+          "signals": [
+            "sdk_start_banner"
+          ],
+          "source": "container",
+          "timestamp": "2026-11-15T12:57:01.782304+00:00"
+        },
+        {
+          "signals": [
+            "error_or_traceback"
+          ],
+          "source": "container",
+          "timestamp": "2026-11-15T12:57:33.778841+00:00"
+        },
+        {
+          "signals": [
+            "error_or_traceback"
+          ],
+          "source": "container",
+          "timestamp": "2026-11-15T12:57:33.778857+00:00"
+        }
+      ],
+      "raw_logs_saved": false,
+      "read_complete": false,
+      "first_observed_timestamp": "2026-11-15T12:57:01.782304+00:00",
+      "last_observed_timestamp": "2026-11-15T12:57:34.064718+00:00",
+      "stream_timed_out": true,
+      "read_verified": true
+    }
+  ],
+  "last_sample_at": "2026-11-15T12:57:34.036883+00:00"
+}

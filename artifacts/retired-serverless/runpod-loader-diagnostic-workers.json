@@ -1,0 +1,204 @@
+{
+  "endpoint_id": "tjkkm5pkp7lrej",
+  "requests_submitted": 0,
+  "resources_changed": false,
+  "raw_logs_saved": false,
+  "workers": {
+    "hn6y9870pxvsm1": {
+      "first_observed_at": "2026-11-15T14:19:32.656318+00:00",
+      "last_observed_at": "2026-11-15T14:22:25.412270+00:00",
+      "last_status": "IDLE"
+    },
+    "3248tkngx1egxc": {
+      "first_observed_at": "2026-11-15T14:21:42.994085+00:00",
+      "last_observed_at": "2026-11-15T14:22:25.412270+00:00",
+      "last_status": "RUNNING"
+    }
+  },
+  "log_sources": [
+    {
+      "worker_id": "hn6y9870pxvsm1",
+      "source": "system",
+      "records_seen": 200,
+      "events": [
+        {
+          "signals": [
+            "image_pull_activity"
+          ],
+          "source": "system",
+          "timestamp": "2026-11-15T14:21:33+00:00"
+        }
+      ],
+      "raw_logs_saved": false,
+      "read_complete": false,
+      "first_observed_timestamp": "2026-11-15T14:21:05+00:00",
+      "last_observed_timestamp": "2026-11-15T14:21:38+00:00",
+      "read_verified": true
+    },
+    {
+      "worker_id": "hn6y9870pxvsm1",
+      "source": "container",
+      "records_seen": 0,
+      "events": [],
+      "raw_logs_saved": false,
+      "read_complete": false,
+      "stream_timed_out": true,
+      "read_verified": true
+    },
+    {
+      "worker_id": "3248tkngx1egxc",
+      "source": "system",
+      "records_seen": 7,
+      "events": [
+        {
+          "signals": [
+            "image_pull_activity"
+          ],
+          "source": "system",
+          "timestamp": "2026-11-15T14:22:20+00:00"
+        }
+      ],
+      "raw_logs_saved": false,
+      "read_complete": false,
+      "first_observed_timestamp": "2026-11-15T14:21:39+00:00",
+      "last_observed_timestamp": "2026-11-15T14:22:21+00:00",
+      "stream_timed_out": true,
+      "read_verified": true
+    },
+    {
+      "worker_id": "3248tkngx1egxc",
+      "source": "container",
+      "records_seen": 19,
+      "events": [
+        {
+          "signals": [
+            "sdk_start_banner"
+          ],
+          "source": "container",
+          "timestamp": "2026-11-15T14:22:23.973206+00:00"
+        },
+        {
+          "signals": [
+            "worker_diagnostic"
+          ],
+          "worker_diagnostic": {
+            "event": "stage",
+            "stage": "validate_input"
+          },
+          "source": "container",
+          "timestamp": "2026-11-15T14:22:24.214746+00:00"
+        },
+        {
+          "signals": [
+            "worker_diagnostic"
+          ],
+          "worker_diagnostic": {
+            "event": "stage",
+            "stage": "import_torch"
+          },
+          "source": "container",
+          "timestamp": "2026-11-15T14:22:24.214777+00:00"
+        },
+        {
+          "signals": [
+            "worker_diagnostic"
+          ],
+          "worker_diagnostic": {
+            "event": "stage",
+            "stage": "import_libraries"
+          },
+          "source": "container",
+          "timestamp": "2026-11-15T14:22:25.113425+00:00"
+        },
+        {
+          "signals": [
+            "worker_diagnostic"
+          ],
+          "worker_diagnostic": {
+            "event": "stage",
+            "stage": "validate_config"
+          },
+          "source": "container",
+          "timestamp": "2026-11-15T14:22:25.483824+00:00"
+        },
+        {
+          "signals": [
+            "worker_diagnostic"
+          ],
+          "worker_diagnostic": {
+            "event": "stage",
+            "stage": "cuda_check"
+          },
+          "source": "container",
+          "timestamp": "2026-11-15T14:22:25.483850+00:00"
+        },
+        {
+          "signals": [
+            "worker_diagnostic"
+          ],
+          "worker_diagnostic": {
+            "event": "stage",
+            "stage": "check_quantizer"
+          },
+          "source": "container",
+          "timestamp": "2026-11-15T14:22:25.519012+00:00"
+        },
+        {
+          "signals": [
+            "error_or_traceback",
+            "worker_diagnostic"
+          ],
+          "worker_diagnostic": {
+            "event": "failure",
+            "stage": "check_quantizer",
+            "category": "processing_failure",
+            "exception_type": "RuntimeError",
+            "peak_rss_bytes": 664096768,
+            "model_loader_reason": "Failed to find C compiler. Please specify via CC environment variable.",
+            "library_frames": [
+              {
+                "file": "bitsandbytes/__init__.py",
+                "line": 15
+              },
+              {
+                "file": "bitsandbytes/nn/__init__.py",
+                "line": 21
+              },
+              {
+                "file": "bitsandbytes/nn/triton_based_modules.py",
+                "line": 6
+              },
+              {
+                "file": "bitsandbytes/triton/dequantize_rowwise.py",
+                "line": 18
+              }
+            ]
+          },
+          "source": "container",
+          "timestamp": "2026-11-15T14:22:26.277603+00:00"
+        },
+        {
+          "signals": [
+            "error_or_traceback"
+          ],
+          "source": "container",
+          "timestamp": "2026-11-15T14:22:26.277878+00:00"
+        },
+        {
+          "signals": [
+            "error_or_traceback"
+          ],
+          "source": "container",
+          "timestamp": "2026-11-15T14:22:26.277930+00:00"
+        }
+      ],
+      "raw_logs_saved": false,
+      "read_complete": false,
+      "first_observed_timestamp": "2026-11-15T14:22:23.973206+00:00",
+      "last_observed_timestamp": "2026-11-15T14:22:26.555720+00:00",
+      "stream_timed_out": true,
+      "read_verified": true
+    }
+  ],
+  "last_sample_at": "2026-11-15T14:22:25.412270+00:00"
+}

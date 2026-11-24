@@ -1,0 +1,52 @@
+{
+  "recorded_at": "2026-11-15T17:39:50.549554+00:00",
+  "workspace_confirmed_by_user": true,
+  "workspace_id": "tea-d6ssva75gffc738qantg",
+  "service_id": "srv-dbq1kqu7bikc73bp4epg",
+  "service_name": "policypilot-demo",
+  "render_access_verified": true,
+  "current_deployment_id": "dep-dbsuq1dg1s2s7389d2fg",
+  "current_deployment_status": "live",
+  "cleaned_release_live_verified": true,
+  "desired_image": "ghcr.io/aizen-hado/policypilot-api@sha256:ac31523f1bc86ee37c8d90962eebcb22ca96bdb16fac016d86c079e43de968fc",
+  "image_update_tool_available": false,
+  "resources_changed": true,
+  "credential_values_saved": false,
+  "remaining": [
+    "Independent public /healthz marker and authenticated synthetic smoke verification; no smoke result supplied"
+  ],
+  "cleaned_image_deployment_live_verified": true,
+  "live_image": "ghcr.io/aizen-hado/policypilot-api@sha256:ac31523f1bc86ee37c8d90962eebcb22ca96bdb16fac016d86c079e43de968fc",
+  "environment_merge": {
+    "INFERENCE_BACKEND": "disabled",
+    "PROCESSING_ENABLED": "0"
+  },
+  "environment_merge_accepted": true,
+  "merged_environment_deployment_live_verified": true,
+  "public_health_marker_verified": false,
+  "authenticated_smoke_verified": false,
+  "obsolete_environment_variables_deleted": true,
+  "runtime_keys_revoked": true,
+  "github_gpu_package_deleted": true,
+  "local_gpu_images_deleted": true,
+  "local_gpu_image_cleanup": {
+    "recorded_at": "2026-11-15T17:30:08.977224+00:00",
+    "evidence_source": "owner_terminal_output",
+    "independently_rechecked": false,
+    "untagged": [
+      "policypilot-gpu:demo",
+      "ghcr.io/aizen-hado/policypilot-gpu:v0.1.0-demo.20261110T202218Z"
+    ],
+    "deleted_image_id": "sha256:537c877f3c2fce36265cf360f4e9ff8e2ff92d19fe81680e5a55313672a105c2"
+  },
+  "owner_cleanup_confirmation": {
+    "statement": "did everything told",
+    "evidence_source": "owner_confirmation",
+    "independently_verified": false,
+    "scope": [
+      "obsolete Render variables",
+      "dedicated obsolete Runpod runtime keys",
+      "GitHub GPU package"
+    ]
+  }
+}

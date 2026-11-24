@@ -1,0 +1,50 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [6 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Length 1034 >>
+stream
+0.12 0.16 0.20 rg
+BT /F2 17 Tf 1 0 0 1 40 800 Tm (SYN Meridian Benefits) Tj ET
+BT /F2 13 Tf 1 0 0 1 40 775 Tm (Benefit utilization statement) Tj ET
+BT /F1 8 Tf 1 0 0 1 40 735 Tm (Case SYN-C002  |  Bengaluru  |  Records: records@example.invalid) Tj ET
+0.65 G 40 721 m 555 721 l S
+BT /F1 10 Tf 1 0 0 1 40 699 Tm (Patient: Arjun Menon / age 42) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 683 Tm (Member / policy: SYN-M202-A / SYN-P202) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 667 Tm (As of: 2026-09-07) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 651 Tm (Previously paid benefits: INR 1,20,000.00) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 635 Tm (Remaining annual cover: INR 8,80,000.00) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 619 Tm (Statement applies to the annual policy period and all members listed on the schedule. It) Tj ET
+BT /F1 10 Tf 1 0 0 1 40 603 Tm (precedes the current admission; no restoration is assumed.) Tj ET
+BT /F2 8 Tf 1 0 0 1 40 31 Tm (SYNTHETIC - NOT VALID FOR CLAIM SUBMISSION) Tj ET
+BT /F1 7 Tf 1 0 0 1 40 18 Tm (Fictional issuer and patient | SYN-C002 | Page 1) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000191 00000 n 
+0000000266 00000 n 
+0000001352 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+1488
+%%EOF

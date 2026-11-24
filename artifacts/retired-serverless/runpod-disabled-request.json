@@ -1,0 +1,44 @@
+{
+  "name": "policypilot-demo-PREVIEW",
+  "type": "QUEUE",
+  "image": "ghcr.io/aizen-hado/policypilot-gpu@sha256:a5b02a0ccf1d4cdb9e2f90bf8f148acddc853095a41924fab7e937b0f21f514b",
+  "registry": "REGISTRY_ID_FROM_CREATE",
+  "disk": 30,
+  "cmd": [
+    "python",
+    "-m",
+    "pilot.gpu_handler"
+  ],
+  "ports": [],
+  "env": {
+    "MODEL_REPOSITORY": "Qwen/Qwen2.5-7B-Instruct",
+    "MODEL_REVISION": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "DOCUMENT_DOWNLOAD_HOST": "7e49cfe64d89569b5e5829ccc329ca53.r2.cloudflarestorage.com",
+    "HF_HOME": "/tmp/huggingface",
+    "RUNPOD_INIT_TIMEOUT": "180"
+  },
+  "gpu": {
+    "pools": [
+      "AMPERE_24"
+    ],
+    "count": 1,
+    "minCudaVersion": "12.8",
+    "excludedTypes": []
+  },
+  "workers": {
+    "min": 0,
+    "max": 0,
+    "idleTimeout": 300
+  },
+  "scaling": {
+    "type": "QUEUE_DELAY",
+    "queueDelay": 4
+  },
+  "timeout": 180000,
+  "flashboot": "OFF",
+  "dataCenterIds": [],
+  "mounts": {
+    "network": [],
+    "global": []
+  }
+}

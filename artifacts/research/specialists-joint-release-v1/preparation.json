@@ -1,0 +1,37 @@
+{
+  "authored_families": 8,
+  "candidate": {
+    "archive": "/workspace/specialist-quality-runs/run-e14b110f44b94823a2763b2c6bcffcd8.tar.gz",
+    "bytes": 2416813,
+    "independent_reload_predictions_match": true,
+    "r2_readback_verified": false,
+    "run_id": "run-e14b110f44b94823a2763b2c6bcffcd8",
+    "sha256": "1c02f3071a4a3f2ed516aaa90550eac238ba897b561a8abbad3c6e852ef2fc3d",
+    "training_started_at": "2026-11-20T15:07:17.442256+00:00"
+  },
+  "config_sha256": "cce846af72661a79b34cdf234070df8d89e89da116f753ea3ebc71d7488b2074",
+  "evaluation": {
+    "bytes": 68000,
+    "path": "policypilot-specialists-joint-release-v1-evaluation.tar.gz",
+    "sha256": "6a057994141871844a2634ece4d7457154dfa5db1ceb66442e94e0dbe817d6f8"
+  },
+  "experiment": "specialists-joint-release-v1",
+  "field_support": {
+    "ADMISSION_DATE": 128,
+    "DISCHARGE_DATE": 128,
+    "MEMBER_ID": 128,
+    "POLICY_ID": 128,
+    "ROOM_LIMIT": 128,
+    "SUM_INSURED": 128
+  },
+  "holdout_manifest_sha256": "c118719e8d6fdd4b514541d6885825dafcc0f5c042698f35c49b0e72b027739e",
+  "holdout_rows": {
+    "rank": 159,
+    "span": 512
+  },
+  "model_execution_performed": false,
+  "ranking_groups": 53,
+  "source_decoder_archive_sha256": "a48f1eeeee88b737969a470e98cf5a78e01a74751fe834c2154b0f76f7a2a4cf",
+  "training_manifest_sha256": "c092bf90efe1829df7fcbb1af26032cbca737f3ecf7fd7969c29e508bd8ad54a",
+  "unique_question_wordings": 8
+}

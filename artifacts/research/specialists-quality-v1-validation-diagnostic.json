@@ -1,0 +1,264 @@
+{
+  "scope": "synthetic_development_only",
+  "checkpoint_sha256": "1c02f3071a4a3f2ed516aaa90550eac238ba897b561a8abbad3c6e852ef2fc3d",
+  "config_sha256": "cce846af72661a79b34cdf234070df8d89e89da116f753ea3ebc71d7488b2074",
+  "training_manifest_sha256": "c092bf90efe1829df7fcbb1af26032cbca737f3ecf7fd7969c29e508bd8ad54a",
+  "rank_probe_sha256": "cd2ef8c5f6662e45624116cc8c22379cbdfd6180e2e3f3e35ea0ea2a0abafe61",
+  "span_candidate_coverage": {
+    "ADMISSION_DATE": {
+      "gold": 288,
+      "available": 288,
+      "missing": 0
+    },
+    "DISCHARGE_DATE": {
+      "gold": 288,
+      "available": 288,
+      "missing": 0
+    },
+    "MEMBER_ID": {
+      "gold": 128,
+      "available": 128,
+      "missing": 0
+    },
+    "POLICY_ID": {
+      "gold": 128,
+      "available": 128,
+      "missing": 0
+    },
+    "ROOM_LIMIT": {
+      "gold": 64,
+      "available": 64,
+      "missing": 0
+    },
+    "SUM_INSURED": {
+      "gold": 64,
+      "available": 64,
+      "missing": 0
+    }
+  },
+  "span": {
+    "rows": 512,
+    "by_field": {
+      "ROOM_LIMIT": {
+        "correct": 64
+      },
+      "MEMBER_ID": {
+        "overlap_with_output": 32,
+        "false_positive": 64,
+        "correct": 60,
+        "null_score_won": 36
+      },
+      "POLICY_ID": {
+        "overlap_with_output": 64,
+        "false_positive": 64,
+        "correct": 32,
+        "another_value_selected": 28,
+        "null_score_won": 4
+      },
+      "SUM_INSURED": {
+        "correct": 64
+      },
+      "ADMISSION_DATE": {
+        "overlap_with_output": 32,
+        "correct": 160,
+        "null_score_won": 96,
+        "false_positive": 136
+      },
+      "DISCHARGE_DATE": {
+        "another_value_selected": 54,
+        "false_positive": 96,
+        "correct": 192,
+        "overlap_with_output": 10,
+        "null_score_won": 32
+      }
+    },
+    "by_family": {
+      "willow-margin": {
+        "ROOM_LIMIT": {
+          "correct": 32
+        },
+        "MEMBER_ID": {
+          "overlap_with_output": 32,
+          "false_positive": 32,
+          "correct": 32
+        },
+        "POLICY_ID": {
+          "overlap_with_output": 32,
+          "false_positive": 32,
+          "correct": 32
+        },
+        "SUM_INSURED": {
+          "correct": 32
+        },
+        "ADMISSION_DATE": {
+          "overlap_with_output": 32,
+          "correct": 32,
+          "null_score_won": 32,
+          "false_positive": 10
+        },
+        "DISCHARGE_DATE": {
+          "another_value_selected": 22,
+          "false_positive": 32,
+          "correct": 32,
+          "overlap_with_output": 10
+        }
+      },
+      "prairie-ledger": {
+        "ROOM_LIMIT": {
+          "correct": 32
+        },
+        "MEMBER_ID": {
+          "correct": 28,
+          "null_score_won": 36,
+          "false_positive": 32
+        },
+        "POLICY_ID": {
+          "another_value_selected": 28,
+          "false_positive": 32,
+          "overlap_with_output": 32,
+          "null_score_won": 4
+        },
+        "SUM_INSURED": {
+          "correct": 32
+        },
+        "ADMISSION_DATE": {
+          "false_positive": 126,
+          "null_score_won": 64
+        },
+        "DISCHARGE_DATE": {
+          "correct": 32,
+          "another_value_selected": 32,
+          "false_positive": 64,
+          "null_score_won": 32
+        }
+      },
+      "cms-inpatient-validation-v1": {
+        "ADMISSION_DATE": {
+          "correct": 128
+        },
+        "DISCHARGE_DATE": {
+          "correct": 128
+        }
+      }
+    }
+  },
+  "rank_validation": {
+    "overall": {
+      "rows": 512,
+      "groups": 192,
+      "correct_groups": 192,
+      "missed_groups": 0,
+      "incorrect_top_groups": 0,
+      "tied_top_groups": 0,
+      "incomplete_groups": 0,
+      "strict_group_top1_accuracy": 1
+    },
+    "by_family": {
+      "prairie-ledger": {
+        "rows": 128,
+        "groups": 64,
+        "correct_groups": 64,
+        "missed_groups": 0,
+        "incorrect_top_groups": 0,
+        "tied_top_groups": 0,
+        "incomplete_groups": 0,
+        "strict_group_top1_accuracy": 1
+      },
+      "research-rank-validation-deadline": {
+        "rows": 64,
+        "groups": 16,
+        "correct_groups": 16,
+        "missed_groups": 0,
+        "incorrect_top_groups": 0,
+        "tied_top_groups": 0,
+        "incomplete_groups": 0,
+        "strict_group_top1_accuracy": 1
+      },
+      "research-rank-validation-endorsement": {
+        "rows": 64,
+        "groups": 16,
+        "correct_groups": 16,
+        "missed_groups": 0,
+        "incorrect_top_groups": 0,
+        "tied_top_groups": 0,
+        "incomplete_groups": 0,
+        "strict_group_top1_accuracy": 1
+      },
+      "research-rank-validation-evidence": {
+        "rows": 64,
+        "groups": 16,
+        "correct_groups": 16,
+        "missed_groups": 0,
+        "incorrect_top_groups": 0,
+        "tied_top_groups": 0,
+        "incomplete_groups": 0,
+        "strict_group_top1_accuracy": 1
+      },
+      "research-rank-validation-room": {
+        "rows": 64,
+        "groups": 16,
+        "correct_groups": 16,
+        "missed_groups": 0,
+        "incorrect_top_groups": 0,
+        "tied_top_groups": 0,
+        "incomplete_groups": 0,
+        "strict_group_top1_accuracy": 1
+      },
+      "willow-margin": {
+        "rows": 128,
+        "groups": 64,
+        "correct_groups": 64,
+        "missed_groups": 0,
+        "incorrect_top_groups": 0,
+        "tied_top_groups": 0,
+        "incomplete_groups": 0,
+        "strict_group_top1_accuracy": 1
+      }
+    }
+  },
+  "rank_probe": {
+    "overall": {
+      "rows": 24,
+      "groups": 8,
+      "correct_groups": 4,
+      "missed_groups": 4,
+      "incorrect_top_groups": 4,
+      "tied_top_groups": 0,
+      "incomplete_groups": 0,
+      "strict_group_top1_accuracy": 0.5
+    },
+    "by_family": {
+      "development-context-probe": {
+        "rows": 24,
+        "groups": 8,
+        "correct_groups": 4,
+        "missed_groups": 4,
+        "incorrect_top_groups": 4,
+        "tied_top_groups": 0,
+        "incomplete_groups": 0,
+        "strict_group_top1_accuracy": 0.5
+      }
+    }
+  },
+  "span_totals": {
+    "gold": 960,
+    "misses": 388,
+    "correct": 572,
+    "overlap_with_output": 138,
+    "false_positive": 360,
+    "null_score_won": 168,
+    "another_value_selected": 82
+  },
+  "runpod": {
+    "pod_id": "yj1irlgme8s6to",
+    "shape": "cpu3g",
+    "compute_hourly_usd": 0.08,
+    "created_at": "2026-11-20T15:22:57.416Z",
+    "stop_confirmed_at": "2026-11-20T15:23:34.511Z",
+    "pod_removed": true,
+    "network_volume": "c9iaje0u23",
+    "volume_retained": true,
+    "estimated_compute_usd": 0.00082,
+    "confirmed_charge_usd": null
+  }
+}

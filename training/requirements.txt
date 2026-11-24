@@ -1,0 +1,9 @@
+# Separate candidate experiment environment; never install into the web image.
+# Pin Python 3.12 on the Pod. GPU behavior remains unverified.
+torch==2.7.1
+transformers==4.51.3
+accelerate==1.6.0
+bitsandbytes==0.45.5
+peft==0.15.2
+safetensors==0.5.3
+huggingface-hub==0.30.2

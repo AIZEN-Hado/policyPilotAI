@@ -1,0 +1,49 @@
+{
+  "additional_span_labels": {
+    "train": {
+      "ADMISSION_DATE": 240,
+      "DISCHARGE_DATE": 240,
+      "MEMBER_ID": 240,
+      "POLICY_ID": 288,
+      "ROOM_LIMIT": 240,
+      "SUM_INSURED": 288
+    },
+    "validation": {
+      "ADMISSION_DATE": 72,
+      "DISCHARGE_DATE": 72,
+      "MEMBER_ID": 72,
+      "POLICY_ID": 72,
+      "ROOM_LIMIT": 72,
+      "SUM_INSURED": 72
+    }
+  },
+  "additional_span_rows": {
+    "train": 384,
+    "validation": 120
+  },
+  "config_sha256": "5de21b39664a6775655d2aae006cae20780ad8d4720c1533f8b3328760d726a0",
+  "counts": {
+    "train": {
+      "rank": 3640,
+      "span": 3200
+    },
+    "validation": {
+      "rank": 728,
+      "span": 692
+    }
+  },
+  "experiment": "specialists-balanced-fields-v1",
+  "holdout_included": false,
+  "model_execution_performed": false,
+  "planned_steps": {
+    "rank": 438,
+    "span": 1200
+  },
+  "previous_runtime_sha256": "5e877ac44f4d3bb88d96ca0383abc6b4732ac7a52a9709f42b85296a9affc39d",
+  "runtime": {
+    "bytes": 270609,
+    "path": "policypilot-specialists-balanced-fields-v1-runtime.tar.gz",
+    "sha256": "b405976951374a7839a1870efd8068c81b9ecdaa590dfc4235ddd55ef35a8528"
+  },
+  "training_manifest_sha256": "b332817ca02ae390c84bd9d08a0cb6d9da511d5cb1bb6347e13b7bec12c79b6b"
+}

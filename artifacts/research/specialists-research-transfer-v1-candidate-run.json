@@ -1,0 +1,331 @@
+{
+  "experiment": "specialists-research-transfer-v1",
+  "status": "REFERENCE_RETAINED",
+  "candidate": {
+    "archive": "/workspace/specialist-research-transfer-v1-runs/run-86ffb9b72717452284603d351f587c48.tar.gz",
+    "sha256": "b04e7a19deab9e97d320caa56b3eafb9d183493944bd9aa17d5c151a70910c28",
+    "bytes": 2566181,
+    "independent_reload": true,
+    "r2_backup_verified": false
+  },
+  "reference": {
+    "archive": "/workspace/specialist-self-learning-v1-runs/run-eb0d041f214b468280cf91b5fc60ac95.tar.gz",
+    "config_sha256": "a8298d727266067d4edba1be5d016d72ac839be32e779cbf4b8d92007a260140",
+    "sha256": "93ef5692d9ea0ad62d9afd2688e5580d0a1aeb247819dd0eeb589e5ade6207c8",
+    "training_manifest_sha256": "b50b63ada0e3091a812f0f60ea152d114529c0ed60444b0aa9548f4b2387e067"
+  },
+  "inputs": {
+    "training_manifest_sha256": "2cb92c2144a6cfe7997e4eb8958c3ad3ab7cfd4aee893c2cbb7439be4bc0848c",
+    "config_sha256": "2ec9f3251244e528755e37275928ff29fda652a245146f78a8f4415ef65a5f10",
+    "runtime_archive_sha256": "cae9486d46019ac840c3d40d4230725acf9ab2650353bd170df535f6143105fa",
+    "evaluation_archive_sha256": "261e5c8d2ea2ad8712bab614ce4197803e303e23b36034f8e024290f18d8935c"
+  },
+  "training": {
+    "started_at": "2026-11-21T00:39:29.198258+00:00",
+    "stages": {
+      "baseline": {
+        "exit_code": 0,
+        "deadline_reached": false,
+        "wall_seconds": 1.858,
+        "sampled_peak_rss_bytes": 94547968,
+        "rss_scope": "child VmHWM samples; short exits may not be sampled",
+        "passed": true
+      },
+      "train": {
+        "exit_code": 0,
+        "deadline_reached": false,
+        "wall_seconds": 124.486,
+        "sampled_peak_rss_bytes": 1248735232,
+        "rss_scope": "child VmHWM samples; short exits may not be sampled",
+        "passed": true
+      },
+      "reload": {
+        "exit_code": 0,
+        "deadline_reached": false,
+        "wall_seconds": 3.874,
+        "sampled_peak_rss_bytes": 670031872,
+        "rss_scope": "child VmHWM samples; short exits may not be sampled",
+        "passed": true
+      }
+    },
+    "updates": {
+      "rank": {
+        "epochs": [
+          {
+            "epoch": 1,
+            "loss": 0.04711209125816822,
+            "validation_score": 0.8538102643856921
+          },
+          {
+            "epoch": 2,
+            "loss": 0.037744974135421216,
+            "validation_score": 0.8553654743390358
+          },
+          {
+            "epoch": 3,
+            "loss": 0.031459717437974176,
+            "validation_score": 0.8569206842923794
+          },
+          {
+            "epoch": 4,
+            "loss": 0.026130100261070766,
+            "validation_score": 0.8538102643856921
+          },
+          {
+            "epoch": 5,
+            "loss": 0.021986677004497322,
+            "validation_score": 0.8351477449455676
+          },
+          {
+            "epoch": 6,
+            "loss": 0.01858300669118762,
+            "validation_score": 0.8367029548989113
+          }
+        ],
+        "selected_epoch": 3,
+        "steps": 480
+      },
+      "span": {
+        "epochs": [
+          {
+            "epoch": 1,
+            "loss": 0.002519410963505526,
+            "validation_score": 0.8738451246683928
+          },
+          {
+            "epoch": 2,
+            "loss": 0.00015975617153787973,
+            "validation_score": 0.8770650730436044
+          },
+          {
+            "epoch": 3,
+            "loss": 0.00009714440228371815,
+            "validation_score": 0.8879233336200468
+          },
+          {
+            "epoch": 4,
+            "loss": 0.0000690354612337359,
+            "validation_score": 0.8872183108839585
+          },
+          {
+            "epoch": 5,
+            "loss": 0.00005217361282752076,
+            "validation_score": 0.886144544012323
+          },
+          {
+            "epoch": 6,
+            "loss": 0.000041333369041270144,
+            "validation_score": 0.8871403862282694
+          }
+        ],
+        "selected_epoch": 3,
+        "selection_metric": "macro_exact_span_f1",
+        "steps": 1452
+      }
+    }
+  },
+  "evaluation": {
+    "path": "artifacts/research/specialists-research-transfer-v1-heldout.json",
+    "sha256": "48d9fa8f2d72d1f39687ee78f595e7bef353727e32895d5c48003cb56e9e1389",
+    "bytes": 152093,
+    "metrics": {
+      "fine_tuned": {
+        "cms_dates": {
+          "correct": 320,
+          "support": 640,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "per_field": {
+            "POLICY_ID": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0,
+              "support": 0,
+              "correct": 0,
+              "predicted": 66,
+              "false_positives": 66,
+              "false_negatives": 0
+            },
+            "MEMBER_ID": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0,
+              "support": 0,
+              "correct": 0,
+              "predicted": 0,
+              "false_positives": 0,
+              "false_negatives": 0
+            },
+            "ADMISSION_DATE": {
+              "precision": 0.5,
+              "recall": 0.5,
+              "f1": 0.5,
+              "support": 320,
+              "correct": 160,
+              "predicted": 320,
+              "false_positives": 160,
+              "false_negatives": 160
+            },
+            "DISCHARGE_DATE": {
+              "precision": 0.5,
+              "recall": 0.5,
+              "f1": 0.5,
+              "support": 320,
+              "correct": 160,
+              "predicted": 320,
+              "false_positives": 160,
+              "false_negatives": 160
+            },
+            "ROOM_LIMIT": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0,
+              "support": 0,
+              "correct": 0,
+              "predicted": 0,
+              "false_positives": 0,
+              "false_negatives": 0
+            },
+            "SUM_INSURED": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0,
+              "support": 0,
+              "correct": 0,
+              "predicted": 0,
+              "false_positives": 0,
+              "false_negatives": 0
+            }
+          }
+        },
+        "publisher": {
+          "rows": 20,
+          "groups": 5,
+          "correct_groups": 5,
+          "missed_groups": 0,
+          "incorrect_top_groups": 0,
+          "tied_top_groups": 0,
+          "incomplete_groups": 0,
+          "strict_group_top1_accuracy": 1
+        },
+        "fieldbench": {
+          "documents": 220,
+          "correct": 112,
+          "resolved": 154,
+          "ambiguous": 0,
+          "gold_value_in_candidate_set": 210,
+          "windows": 589,
+          "value_accuracy": 0.509090909090909
+        },
+        "regression_f1": 0.9315352697095436,
+        "regression_rank": 0.9038461538461539,
+        "regression_gate": false
+      },
+      "reference": {
+        "cms_dates": {
+          "correct": 320,
+          "support": 640,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "per_field": {
+            "POLICY_ID": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0,
+              "support": 0,
+              "correct": 0,
+              "predicted": 80,
+              "false_positives": 80,
+              "false_negatives": 0
+            },
+            "MEMBER_ID": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0,
+              "support": 0,
+              "correct": 0,
+              "predicted": 0,
+              "false_positives": 0,
+              "false_negatives": 0
+            },
+            "ADMISSION_DATE": {
+              "precision": 0.5,
+              "recall": 0.5,
+              "f1": 0.5,
+              "support": 320,
+              "correct": 160,
+              "predicted": 320,
+              "false_positives": 160,
+              "false_negatives": 160
+            },
+            "DISCHARGE_DATE": {
+              "precision": 0.5,
+              "recall": 0.5,
+              "f1": 0.5,
+              "support": 320,
+              "correct": 160,
+              "predicted": 320,
+              "false_positives": 160,
+              "false_negatives": 160
+            },
+            "ROOM_LIMIT": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0,
+              "support": 0,
+              "correct": 0,
+              "predicted": 0,
+              "false_positives": 0,
+              "false_negatives": 0
+            },
+            "SUM_INSURED": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0,
+              "support": 0,
+              "correct": 0,
+              "predicted": 0,
+              "false_positives": 0,
+              "false_negatives": 0
+            }
+          }
+        },
+        "publisher": {
+          "rows": 20,
+          "groups": 5,
+          "correct_groups": 5,
+          "missed_groups": 0,
+          "incorrect_top_groups": 0,
+          "tied_top_groups": 0,
+          "incomplete_groups": 0,
+          "strict_group_top1_accuracy": 1
+        },
+        "fieldbench": {
+          "documents": 220,
+          "correct": 147,
+          "resolved": 181,
+          "ambiguous": 0,
+          "gold_value_in_candidate_set": 210,
+          "windows": 589,
+          "value_accuracy": 0.6681818181818182
+        },
+        "regression_f1": 0.9322325421396629,
+        "regression_rank": 0.907051282051282,
+        "regression_gate": false
+      }
+    }
+  },
+  "runpod": {
+    "pod_id": "u82pnijtwgavnz",
+    "created_at": "2026-11-21T00:37:48.397Z",
+    "stop_verified_at": "2026-11-21 00:48:11 UTC",
+    "provider_hourly_usd": 0.14,
+    "pod_removed": true,
+    "volume_id": "c9iaje0u23",
+    "estimated_compute_usd": 0.02421,
+    "confirmed_charge_usd": null
+  },
+  "deployment_performed": false
+}

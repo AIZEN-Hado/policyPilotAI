@@ -1,0 +1,80 @@
+{
+  "recorded_at": "2026-11-11T09:45:23.812872+00:00",
+  "window": "last 30 day buckets, including current bucket",
+  "reported_total_usd": "0.5064673366287025",
+  "categories": {
+    "Pods": "0.506467336628702511",
+    "Serverless": "0",
+    "Public endpoints": "0",
+    "Network storage": "0",
+    "Clusters": "0"
+  },
+  "resources": [
+    {
+      "category": "Pods",
+      "resource_id": "gr4wrfy4kbcb11",
+      "amount_usd": "0.3552756445715204",
+      "bucket_starts": [
+        "2026-11-01T00:00:00+00:00"
+      ]
+    },
+    {
+      "category": "Pods",
+      "resource_id": "l8qg19qpp9hzzn",
+      "amount_usd": "0.04251785948872566",
+      "bucket_starts": [
+        "2026-11-06T00:00:00+00:00"
+      ]
+    },
+    {
+      "category": "Pods",
+      "resource_id": "1ieni9wjb6tv26",
+      "amount_usd": "0.03172427765093744",
+      "bucket_starts": [
+        "2026-11-03T00:00:00+00:00"
+      ]
+    },
+    {
+      "category": "Pods",
+      "resource_id": "piwpwhvoeg8ucn",
+      "amount_usd": "0.02590608038008213",
+      "bucket_starts": [
+        "2026-11-06T00:00:00+00:00"
+      ]
+    },
+    {
+      "category": "Pods",
+      "resource_id": "m3a14dacrbhb8b",
+      "amount_usd": "0.023633332923054695",
+      "bucket_starts": [
+        "2026-11-07T00:00:00+00:00"
+      ]
+    },
+    {
+      "category": "Pods",
+      "resource_id": "z1dafd51ppasgu",
+      "amount_usd": "0.014790153130888939",
+      "bucket_starts": [
+        "2026-11-03T00:00:00+00:00"
+      ]
+    },
+    {
+      "category": "Pods",
+      "resource_id": "74lqxr2lrco6lh",
+      "amount_usd": "0.012399721890687943",
+      "bucket_starts": [
+        "2026-11-03T00:00:00+00:00"
+      ]
+    },
+    {
+      "category": "Pods",
+      "resource_id": "v6ivyai7em829z",
+      "amount_usd": "0.00022026659280527383",
+      "bucket_starts": [
+        "2026-11-03T00:00:00+00:00"
+      ]
+    }
+  ],
+  "resources_changed": false,
+  "billing_may_lag": true
+}

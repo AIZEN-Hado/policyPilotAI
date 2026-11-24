@@ -1,0 +1,13 @@
+{
+  "config_sha256": "cce846af72661a79b34cdf234070df8d89e89da116f753ea3ebc71d7488b2074",
+  "diagnostic": {
+    "bytes": 67529,
+    "path": "policypilot-specialists-joint-selection-v1.tar.gz",
+    "sha256": "a48f1eeeee88b737969a470e98cf5a78e01a74751fe834c2154b0f76f7a2a4cf"
+  },
+  "experiment": "specialists-joint-selection-v1",
+  "model_execution_performed": false,
+  "source_diagnostic_sha256": "b8281369e3da6ef562feee553b1c3d2bb124c9e6304ffc725a40c71644fd2481",
+  "training_manifest_sha256": "c092bf90efe1829df7fcbb1af26032cbca737f3ecf7fd7969c29e508bd8ad54a",
+  "validation_gold_span_count": 960
+}

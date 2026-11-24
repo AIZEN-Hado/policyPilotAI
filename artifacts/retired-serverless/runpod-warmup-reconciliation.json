@@ -1,0 +1,31 @@
+{
+  "recorded_at": "2026-11-14T09:22:52.092937+00:00",
+  "endpoint_id": "tjkkm5pkp7lrej",
+  "apply_requested": true,
+  "database_committed": true,
+  "result": "PASS",
+  "provider_resources_changed": false,
+  "new_jobs_submitted": 0,
+  "refund_usd": "0",
+  "job_id": "c8e88a2d-6e4f-474b-83c9-f50c063f01e9",
+  "original_job_state": "uncertain",
+  "created_at": "2026-11-11T12:35:11.747676+00:00",
+  "reserved_compute_usd": "0.106250",
+  "provider_disabled_and_idle_verified": true,
+  "past_submitted_ttl_and_margin": true,
+  "outcome_verified": false,
+  "candidate_verified": true,
+  "estimate_ended_at": "2026-11-11T12:39:21.154257+00:00",
+  "estimate_end_basis": "Saved verified rehearsal shutdown plus 60-second clock margin",
+  "database_update_prepared": true,
+  "app_after": {
+    "configured": true,
+    "enabled": false,
+    "can_start": false,
+    "operator": true,
+    "state": "off",
+    "compute_allowance_usd": "0.7",
+    "demo_inference_allowance_usd": "1.0",
+    "demo_compute_reserved_usd": "0.10625"
+  }
+}

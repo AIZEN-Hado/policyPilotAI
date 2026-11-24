@@ -1,0 +1,47 @@
+{
+  "dataset_version": "specialists-research-v1",
+  "files": {
+    "train-rank.jsonl": {
+      "bytes": 424146,
+      "rows": 1024,
+      "sha256": "7163c79d2104f89601e7d2fbccfc460c4b6d2dc71cc0a88c441172aa3716cbd6"
+    },
+    "train-span.jsonl": {
+      "bytes": 632311,
+      "rows": 1280,
+      "sha256": "b8e3155c7d7dbe39107fd6e7c0ffec93f282e37e8ba7460728f1398d3a4bde16"
+    },
+    "validation-rank.jsonl": {
+      "bytes": 218002,
+      "rows": 512,
+      "sha256": "645842467141b914032ef1757e6d88a7cdec67d48cf3930d8f84ed430592b533"
+    },
+    "validation-span.jsonl": {
+      "bytes": 246734,
+      "rows": 512,
+      "sha256": "b9b6cb21a4778a4a30749aebe91fe04cbbdb635680dabc6313de454ce427c772"
+    }
+  },
+  "limitations": [
+    "All examples are synthetic English text. CMS stays are rendered in fictional document layouts.",
+    "Authored synthetic cases within a family are template variants, so row counts overstate independent wording diversity.",
+    "The experiment evaluates text offsets and evidence relevance. PDFs, layout coordinates, OCR, and real claims are outside its scope."
+  ],
+  "schema_version": 1,
+  "sources": {
+    "challenge_seed": 20261120,
+    "cms_source_archive_sha256": "ac25124184d22863aff538607097d2d0c880d19f7d58f882f9d31129c492d893",
+    "original_training_manifest_sha256": "488fad1d89d8508bd8712be9afd6e8d415da2bdf7982f9413c0343596c502739"
+  },
+  "splits": {
+    "train": {
+      "rank": 1024,
+      "span": 1280
+    },
+    "validation": {
+      "rank": 512,
+      "span": 512
+    }
+  },
+  "synthetic_only": true
+}

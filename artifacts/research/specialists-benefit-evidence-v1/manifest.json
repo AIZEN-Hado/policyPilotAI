@@ -1,0 +1,23 @@
+{
+  "files": [
+    {
+      "bytes": 66288,
+      "path": "policypilot-specialists-benefit-evidence-v1-evaluation.tar.gz",
+      "sha256": "57f92a70c3c051ca6b3f36fc6aafd2ec0225e483d8f6808ce2b46ff4d7e07566"
+    },
+    {
+      "bytes": 307630,
+      "path": "policypilot-specialists-benefit-evidence-v1-runtime.tar.gz",
+      "sha256": "a7f1f64336902f2e40cb4beb847dc42600f098cf370914ef74a949a5f61bca5f"
+    },
+    {
+      "bytes": 1875,
+      "path": "preparation.json",
+      "sha256": "8bdf0139eb89d9f2064a26b8613634bb818ae77b35453e9ff497410bee853002"
+    }
+  ],
+  "metadata": {
+    "experiment": "specialists-benefit-evidence-v1"
+  },
+  "version": 1
+}

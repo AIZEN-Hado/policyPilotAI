@@ -1,0 +1,26 @@
+{
+  "recorded_at": "2026-11-17T21:44:02.217391+00:00",
+  "read_only": true,
+  "resources_changed": false,
+  "render": {
+    "service": "policypilot-demo",
+    "plan_read_back": "free",
+    "region": "singapore",
+    "not_suspended_verified": true,
+    "listed_ram_mb": 512,
+    "inference_ram_fit_verified": false,
+    "worker_or_onnx_deployment_verified": false
+  },
+  "r2": {
+    "standard_included_storage_gb_month": 10,
+    "model_bucket_access_verified": false,
+    "account_remaining_allowance_verified": false,
+    "artifact_uploaded": false
+  },
+  "sources": [
+    "https://render.com/docs/free",
+    "https://render.com/hosting/docker",
+    "https://developers.cloudflare.com/r2/pricing/"
+  ],
+  "note": "Storage capacity does not establish compute/RAM fit. No service, bucket, credential or plan changed."
+}

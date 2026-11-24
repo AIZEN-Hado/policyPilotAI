@@ -1,0 +1,8 @@
+{
+  "artifact_type": "historical_source_before_serverless_removal",
+  "archive": "before-serverless-removal-20261115T150348Z.tar.gz",
+  "sha256": "29397223f3d91a930d6d4cfaa00d516e9c174c23a55d6d9dfab38203bd188691",
+  "files": 116,
+  "credentials_included": false,
+  "contents_verified": true
+}

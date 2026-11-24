@@ -1,0 +1,121 @@
+{
+  "stage": "verify zero allocated workers",
+  "fields": {
+    "name": {
+      "present": true,
+      "observed_type": "str",
+      "matches": true
+    },
+    "type": {
+      "present": true,
+      "observed_type": "str",
+      "matches": true
+    },
+    "image": {
+      "present": true,
+      "observed_type": "str",
+      "matches": true
+    },
+    "registry": {
+      "present": true,
+      "observed_type": "str",
+      "matches": true
+    },
+    "disk": {
+      "present": true,
+      "observed_type": "int",
+      "matches": true
+    },
+    "cmd": {
+      "present": true,
+      "observed_type": "list",
+      "matches": true
+    },
+    "ports": {
+      "present": false,
+      "observed_type": "NoneType",
+      "matches": true
+    },
+    "env": {
+      "present": true,
+      "observed_type": "dict",
+      "matches": true
+    },
+    "scaling": {
+      "present": true,
+      "observed_type": "dict",
+      "matches": true
+    },
+    "timeout": {
+      "present": true,
+      "observed_type": "int",
+      "matches": true
+    },
+    "flashboot": {
+      "present": true,
+      "observed_type": "str",
+      "matches": true
+    },
+    "mounts": {
+      "present": true,
+      "observed_type": "dict",
+      "matches": true
+    },
+    "dataCenterIds": {
+      "present": true,
+      "observed_type": "list",
+      "matches": true
+    },
+    "workers.min": {
+      "present": true,
+      "observed_type": "int",
+      "matches": true,
+      "observed_integer": 0
+    },
+    "workers.max": {
+      "present": true,
+      "observed_type": "int",
+      "matches": true,
+      "observed_integer": 0
+    },
+    "workers.idleTimeout": {
+      "present": true,
+      "observed_type": "int",
+      "matches": true,
+      "observed_integer": 300
+    },
+    "gpu.pools": {
+      "present": true,
+      "observed_type": "list",
+      "matches": true
+    },
+    "gpu.count": {
+      "present": true,
+      "observed_type": "int",
+      "matches": true,
+      "observed_integer": 1
+    },
+    "gpu.minCudaVersion": {
+      "present": true,
+      "observed_type": "str",
+      "matches": true
+    },
+    "gpu.excludedTypes": {
+      "present": false,
+      "observed_type": "NoneType",
+      "matches": true
+    }
+  },
+  "arbitrary_provider_values_saved": false,
+  "worker_summary": {
+    "running": 0,
+    "idle": 0,
+    "initializing": 0,
+    "throttled": 0,
+    "unhealthy": 0,
+    "total": 0
+  },
+  "worker_list_present": true,
+  "worker_list_count": 0,
+  "result": "PASS"
+}

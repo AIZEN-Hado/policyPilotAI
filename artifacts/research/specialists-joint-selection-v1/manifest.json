@@ -1,0 +1,18 @@
+{
+  "files": [
+    {
+      "bytes": 67529,
+      "path": "policypilot-specialists-joint-selection-v1.tar.gz",
+      "sha256": "a48f1eeeee88b737969a470e98cf5a78e01a74751fe834c2154b0f76f7a2a4cf"
+    },
+    {
+      "bytes": 600,
+      "path": "preparation.json",
+      "sha256": "32e6f25594e0c1f1ee294c093e7f6af141a505f6891880f5d9e4121fb4d31b8a"
+    }
+  ],
+  "metadata": {
+    "experiment": "specialists-joint-selection-v1"
+  },
+  "version": 1
+}

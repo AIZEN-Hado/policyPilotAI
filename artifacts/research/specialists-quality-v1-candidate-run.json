@@ -1,0 +1,288 @@
+{
+  "status": "SYNTHETIC_GATE_FAILED",
+  "experiment": "specialists-quality-v1",
+  "inputs": {
+    "runtime_sha256": "ef51b1dc9d8bccabdfd72903a4ba5495a0c58a8da040b0d09a0e32ed391f57d8",
+    "evaluation_sha256": "0824c0400d3eb2529b6d11b280f5f80c0cc42582e01fd2b9421677e00da50dd3",
+    "training_manifest_sha256": "c092bf90efe1829df7fcbb1af26032cbca737f3ecf7fd7969c29e508bd8ad54a",
+    "holdout_manifest_sha256": "d0c6f7d3fc2b6c45833f17b1176876df9dece5d6e48e7cb1c43688d5675b20e0",
+    "config_sha256": "cce846af72661a79b34cdf234070df8d89e89da116f753ea3ebc71d7488b2074",
+    "validation_file_sha256": {
+      "validation-rank.jsonl": "645842467141b914032ef1757e6d88a7cdec67d48cf3930d8f84ed430592b533",
+      "validation-span.jsonl": "b9b6cb21a4778a4a30749aebe91fe04cbbdb635680dabc6313de454ce427c772"
+    }
+  },
+  "candidate": {
+    "run_id": "run-e14b110f44b94823a2763b2c6bcffcd8",
+    "archive": "/workspace/specialist-quality-runs/run-e14b110f44b94823a2763b2c6bcffcd8.tar.gz",
+    "sha256": "1c02f3071a4a3f2ed516aaa90550eac238ba897b561a8abbad3c6e852ef2fc3d",
+    "bytes": 2416813,
+    "independent_reload_predictions_match": true,
+    "training_started_at": "2026-11-20T15:07:17.442256+00:00",
+    "r2_readback_verified": false
+  },
+  "training": {
+    "stages": {
+      "baseline": {
+        "exit_code": 0,
+        "deadline_reached": false,
+        "wall_seconds": 0.808,
+        "sampled_peak_rss_bytes": 36184064,
+        "rss_scope": "child VmHWM samples; short exits may not be sampled",
+        "passed": true
+      },
+      "train": {
+        "exit_code": 0,
+        "deadline_reached": false,
+        "wall_seconds": 26.834,
+        "sampled_peak_rss_bytes": 2037325824,
+        "rss_scope": "child VmHWM samples; short exits may not be sampled",
+        "passed": true
+      },
+      "reload": {
+        "exit_code": 0,
+        "deadline_reached": false,
+        "wall_seconds": 3.222,
+        "sampled_peak_rss_bytes": 1496674304,
+        "rss_scope": "child VmHWM samples; short exits may not be sampled",
+        "passed": true
+      }
+    },
+    "updates": {
+      "rank": {
+        "epochs": [
+          {
+            "epoch": 1,
+            "loss": 0.8701202634133791,
+            "validation_score": 0.8333333333333334
+          },
+          {
+            "epoch": 2,
+            "loss": 0.3873824661499576,
+            "validation_score": 1
+          },
+          {
+            "epoch": 3,
+            "loss": 0.1908841257620799,
+            "validation_score": 1
+          },
+          {
+            "epoch": 4,
+            "loss": 0.1181741935740176,
+            "validation_score": 1
+          },
+          {
+            "epoch": 5,
+            "loss": 0.0764372450250544,
+            "validation_score": 0.9166666666666666
+          },
+          {
+            "epoch": 6,
+            "loss": 0.05246312254549641,
+            "validation_score": 0.9166666666666666
+          },
+          {
+            "epoch": 7,
+            "loss": 0.03558789600471133,
+            "validation_score": 0.9166666666666666
+          },
+          {
+            "epoch": 8,
+            "loss": 0.02525261789560318,
+            "validation_score": 0.9166666666666666
+          },
+          {
+            "epoch": 9,
+            "loss": 0.018822534990153815,
+            "validation_score": 0.9166666666666666
+          },
+          {
+            "epoch": 10,
+            "loss": 0.01478070353991107,
+            "validation_score": 0.9166666666666666
+          }
+        ],
+        "selected_epoch": 2,
+        "steps": 380
+      },
+      "span": {
+        "epochs": [
+          {
+            "epoch": 1,
+            "loss": 0.2711861832820646,
+            "validation_score": 0.6514816452896949
+          },
+          {
+            "epoch": 2,
+            "loss": 0.005842082483200904,
+            "validation_score": 0.6574443812980245
+          },
+          {
+            "epoch": 3,
+            "loss": 0.0017061942096060032,
+            "validation_score": 0.632597754548974
+          },
+          {
+            "epoch": 4,
+            "loss": 0.0009131720373047489,
+            "validation_score": 0.6322751322751322
+          },
+          {
+            "epoch": 5,
+            "loss": 0.000583286289624726,
+            "validation_score": 0.6324361628709455
+          },
+          {
+            "epoch": 6,
+            "loss": 0.0004089285621375893,
+            "validation_score": 0.6627527723418134
+          },
+          {
+            "epoch": 7,
+            "loss": 0.0003048883031356929,
+            "validation_score": 0.6602068003044912
+          },
+          {
+            "epoch": 8,
+            "loss": 0.0002364438691716607,
+            "validation_score": 0.6590434419381788
+          },
+          {
+            "epoch": 9,
+            "loss": 0.00018912046899084302,
+            "validation_score": 0.6580687830687831
+          },
+          {
+            "epoch": 10,
+            "loss": 0.0001545521419008283,
+            "validation_score": 0.6580687830687831
+          }
+        ],
+        "selected_epoch": 6,
+        "selection_metric": "macro_exact_span_f1",
+        "steps": 1360
+      }
+    },
+    "measurements": {
+      "cuda_device_name": "NVIDIA RTX PRO 4500 Blackwell",
+      "cuda_peak_allocated_bytes": 55185920,
+      "cuda_peak_reserved_bytes": 88080384,
+      "process_peak_rss_bytes": 2005114880
+    }
+  },
+  "validation": {
+    "span_exact": {
+      "f1": 0.6046511627906976,
+      "precision": 0.6137339055793991,
+      "recall": 0.5958333333333333,
+      "support": 960
+    },
+    "span_exact_by_label": {
+      "ADMISSION_DATE": {
+        "f1": 0.547945205479452,
+        "precision": 0.5405405405405406,
+        "recall": 0.5555555555555556,
+        "support": 288
+      },
+      "DISCHARGE_DATE": {
+        "f1": 0.6666666666666666,
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "support": 288
+      },
+      "MEMBER_ID": {
+        "f1": 0.47619047619047616,
+        "precision": 0.4838709677419355,
+        "recall": 0.46875,
+        "support": 128
+      },
+      "POLICY_ID": {
+        "f1": 0.2857142857142857,
+        "precision": 0.3333333333333333,
+        "recall": 0.25,
+        "support": 128
+      },
+      "ROOM_LIMIT": {
+        "f1": 1,
+        "precision": 1,
+        "recall": 1,
+        "support": 64
+      },
+      "SUM_INSURED": {
+        "f1": 1,
+        "precision": 1,
+        "recall": 1,
+        "support": 64
+      }
+    },
+    "rank_strict_top1_accuracy": 1
+  },
+  "holdout": {
+    "report": "specialists-quality-v1-heldout-evaluation.json",
+    "evaluated": true,
+    "target": 0.99,
+    "passes_synthetic_target": false,
+    "span_exact": {
+      "precision": 1,
+      "recall": 0.8333333333333334,
+      "f1": 0.9090909090909091,
+      "support": 384,
+      "correct": 320,
+      "predicted": 320,
+      "false_positives": 0,
+      "false_negatives": 64
+    },
+    "rank": {
+      "rows": 256,
+      "groups": 128,
+      "correct_groups": 112,
+      "missed_groups": 16,
+      "incorrect_top_groups": 16,
+      "tied_top_groups": 0,
+      "incomplete_groups": 0,
+      "strict_group_top1_accuracy": 0.875
+    },
+    "target_failures": {
+      "MEMBER_ID": [
+        "recall"
+      ],
+      "DISCHARGE_DATE": [
+        "recall"
+      ],
+      "ROOM_LIMIT": [
+        "recall"
+      ],
+      "ranking": [
+        "strict_group_top1_accuracy"
+      ]
+    },
+    "production_accuracy_established": false
+  },
+  "runpod": {
+    "training": {
+      "pod_id": "x1w8z6ijfackot",
+      "shape": "NVIDIA RTX PRO 4500 Blackwell",
+      "compute_hourly_usd": 0.72,
+      "created_at": "2026-11-20T15:06:37.2Z",
+      "stop_confirmed_at": "2026-11-20T15:07:53.445Z",
+      "pod_removed": true,
+      "network_volume": "c9iaje0u23",
+      "volume_retained": true,
+      "estimated_compute_usd": 0.0152,
+      "confirmed_charge_usd": null
+    },
+    "evaluation": {
+      "pod_id": "hx6vzpxdvth704",
+      "shape": "cpu3g",
+      "compute_hourly_usd": 0.16,
+      "created_at": "2026-11-20T15:08:34.893Z",
+      "stop_confirmed_at": "2026-11-20T15:09:18.809Z",
+      "pod_removed": true,
+      "network_volume": "c9iaje0u23",
+      "volume_retained": true,
+      "estimated_compute_usd": 0.002,
+      "confirmed_charge_usd": null
+    }
+  },
+  "live_deployment_performed": false
+}

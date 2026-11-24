@@ -1,0 +1,32 @@
+{
+  "kind": "offline_preparation_not_training",
+  "synthetic_only": true,
+  "dataset_counts": {
+    "train": 144,
+    "validation": 72,
+    "test": 72
+  },
+  "reference_checker": {
+    "validation": {
+      "cases": 72,
+      "reference_checker_passed": true,
+      "model_was_run": false
+    },
+    "test": {
+      "cases": 72,
+      "reference_checker_passed": true,
+      "model_was_run": false
+    }
+  },
+  "held_out_labels_bundled": false,
+  "test_prompts_bundled": false,
+  "generator_and_scorer_bundled": false,
+  "model_downloaded": false,
+  "gpu_used": false,
+  "provider_resources_changed": false,
+  "trained_model_verified": false,
+  "model_ram_verified": false,
+  "bundle_sha256": "1c02d256e8eb649b813f8d3c4ba5962ddca85fa90b2a9407928146128663544f",
+  "bundle_files": 15,
+  "limitations": "Original fictional text fixtures. Shared scenario templates; no PDF/OCR/layout or real-world accuracy benchmark. Not actuarial or clinical review."
+}

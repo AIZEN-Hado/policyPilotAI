@@ -1,0 +1,8 @@
+{
+  "kind": "owner_local_source_checkpoint",
+  "upload_to_gpu": false,
+  "includes_generator_and_scorer": true,
+  "includes_credentials_or_real_claims": false,
+  "runtime_gpu_bundle": "policypilot-training-v1.tar.gz",
+  "trained_model": false
+}

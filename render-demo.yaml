@@ -1,0 +1,48 @@
+# Free demonstration topology. No worker, GPU, endpoint or bucket is created here.
+# Eligibility, limits and provider-side validation remain required.
+services:
+  - type: web
+    name: policypilot-demo
+    runtime: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./pilot/Dockerfile
+    dockerContext: .
+    dockerCommand: sh /srv/deploy/render-start.sh web
+    healthCheckPath: /healthz
+    autoDeployTrigger: 'off'
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase: {name: policypilot-demo-db, property: connectionString}
+      - key: AUTH_MODE
+        value: session
+      - key: APP_ORIGIN
+        sync: false
+      - key: PILOT_USER
+        value: reviewer
+      - key: MODEL_OPERATOR
+        value: reviewer
+      - key: PILOT_PASSWORD_HASH
+        sync: false
+      - key: DOCUMENT_STORAGE
+        value: r2
+      - key: R2_ACCOUNT_ID
+        sync: false
+      - key: S3_BUCKET
+        sync: false
+      - key: AWS_ACCESS_KEY_ID
+        sync: false
+      - key: AWS_SECRET_ACCESS_KEY
+        sync: false
+      - key: INFERENCE_BACKEND
+        value: disabled
+      - key: PROCESSING_ENABLED
+        value: '0'
+databases:
+  - name: policypilot-demo-db
+    plan: free
+    region: singapore
+    databaseName: pilot
+    user: pilot
+    postgresMajorVersion: '16'
+    ipAllowList: []

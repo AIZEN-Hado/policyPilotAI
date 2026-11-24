@@ -1,0 +1,42 @@
+{
+  "operation": "35e0e3bf45ee",
+  "phase": "disabled_verified",
+  "registry_name": "policypilot-ghcr-35e0e3bf45ee",
+  "endpoint_name": "policypilot-demo-fd468331939a",
+  "registry_id": "cmwbwglxi000mqnesh01w6j76",
+  "endpoint_id": "tjkkm5pkp7lrej",
+  "jobs_submitted": 0,
+  "compute_started": false,
+  "reported_account_30day_amount_before_usd": "0.5064673366287025",
+  "conservative_prior_spend_usd": "0.6341043521679239",
+  "experiment_planning_ceiling_usd": "2.99",
+  "inference_allowance_usd": "2.00",
+  "remaining_total_allowance_usd": "2.3558956478320761",
+  "remaining_training_and_other_allowance_usd": "0.3558956478320761",
+  "historical_spend_excluded_usd": "0",
+  "removed_endpoint_ids": [
+    "f0giet4b94i8mc",
+    "req7g1wfm6v5hw"
+  ],
+  "verification_error": "Disabled endpoint read-back mismatch: ports",
+  "verification_stage": "verify endpoint configuration",
+  "endpoint_name_history": [
+    {
+      "name": "policypilot-demo-35e0e3bf45ee",
+      "reason": "duplicate_template_rejection",
+      "matching_template_ids": [],
+      "templates_changed": false,
+      "request_error": {
+        "stage": "create endpoint",
+        "status": 400,
+        "detail": "Provider POST failed: HTTP 400. Sanitized validation detail:\ntitle: Bad Request\ndetail: endpoint template names must be unique. check that you do not already have an endpoint with a similar template.\nNo automatic retry."
+      }
+    }
+  ],
+  "verified_at": "2026-11-11T09:45:29.073145+00:00",
+  "image": "ghcr.io/aizen-hado/policypilot-gpu@sha256:537c877f3c2fce36265cf360f4e9ff8e2ff92d19fe81680e5a55313672a105c2",
+  "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "conservative_serverless_usd_per_hour": "0.75",
+  "reported_account_30day_amount_after_usd": "0.5064673366287025",
+  "budget_authorization": "user_extra_usd1_compiler_fix_20261115"
+}

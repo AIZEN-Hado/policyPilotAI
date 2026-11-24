@@ -1,0 +1,135 @@
+{
+  "checked_at": "2026-11-19T21:56:10.549894+00:00",
+  "status": "RENDER_LIVE_AUTHENTICATED_SMOKE_PASSED_QUEUE_EMPTY",
+  "url": "https://policypilot-demo.onrender.com",
+  "service_id": "srv-dbq1kqu7bikc73bp4epg",
+  "deployment_id": "dep-dbvmu94ipgvc73dmr0mg",
+  "deployment_finished_at": "2026-11-19T21:50:53.229015Z",
+  "image_ref": "ghcr.io/aizen-hado/policypilot-api@sha256:b9bbb50fe4918487ae5da750b280baee57183b38111c49aa955a9583b655fecb",
+  "image_matches_publish_receipt": true,
+  "render_startup_complete": true,
+  "render_health_check_path_configured": false,
+  "database_read_verified": true,
+  "recent_migrations": {
+    "008_claim_form_kind.sql": "2026-11-19T21:50:46.688903Z",
+    "009_review_revision.sql": "2026-11-19T21:50:46.688903Z"
+  },
+  "cleanup_queue_at_check": {
+    "pending": 0,
+    "eligible": 0
+  },
+  "post_deploy_verification_pending": [
+    "Public health response and manual browser check of redesigned workspace and citation navigation",
+    "Direct R2 object absence check for the seven formerly queued uploads"
+  ],
+  "network_access": "This session could not resolve the public application, R2 endpoint or Runpod REST hostname.",
+  "local_release_receipt": "pdf-review-release-verification-20261119.json",
+  "git_bundle_verified": "policypilot-release.bundle",
+  "commits": 518,
+  "latest_cleanup_check": {
+    "checked_at": "2026-11-20T09:25:12.545576+00:00",
+    "previous_snapshot_pending": 7,
+    "pending": 0,
+    "eligible": 0,
+    "source": "Read-only Render PostgreSQL query",
+    "r2_objects_checked_directly": false
+  },
+  "authenticated_smoke": {
+    "recorded_at": "2026-11-19T22:13:05.156308+00:00",
+    "source": "Owner terminal output",
+    "passed": [
+      "PDF field review",
+      "admission-date citations",
+      "authentication",
+      "origin rejection",
+      "synthetic upload and original download",
+      "case deletion",
+      "logout"
+    ],
+    "inference_invoked": false
+  },
+  "pending_smoke_object_snapshot": {
+    "checked_at": "2026-11-19T22:14:53.718261+00:00",
+    "unreferenced_document_ids": [
+      "3496f7ff-162c-4297-a92a-a291a873a483",
+      "371b621d-7a03-4914-b8b9-a1208de10e64",
+      "43728df4-80cf-46be-80fb-d009bd233d1c",
+      "89aa6252-4356-4d20-8ab1-9fe42d0e5dcf",
+      "e3c0a2c9-f9e8-47d9-b9c0-9248a1f9f6fb",
+      "edca306f-5d93-4cdf-9d0a-4f1348fd2e94",
+      "f05891db-5d14-4686-bfa2-0f33e31a013f"
+    ],
+    "source": "Read-only Render PostgreSQL query"
+  },
+  "latest_source_bundle": {
+    "file": "policypilot-release.bundle",
+    "head": "9780d4d07c9059f0d25b7972318ec53791777bce",
+    "sha256": "edbef96e362809dba5e047c53b12bb0ffe9f3283d0f5c62a14eb6a9d09e33166",
+    "verified_clean_clone": false
+  },
+  "cleanup_command": "python deploy/smoke.py https://policypilot-demo.onrender.com --cleanup-only",
+  "research_data_preparation": {
+    "sources": [
+      "CMS DE-SynPUF Inpatient Claims Sample 1",
+      "FieldBench v0.4.2 synthetic CC0 insurance subset"
+    ],
+    "importer": "specialists/research_data.py",
+    "fixture_tests_passed": 3,
+    "specialist_tests_passed": 44,
+    "download_verified": true,
+    "source_imported": true,
+    "retrained": false,
+    "publisher_inputs": {
+      "cms-inpatient-sample1-v1": {
+        "baseline_runtime_integration": false,
+        "dataset": "cms-de-synpuf-inpatient-sample1",
+        "license": "US public domain",
+        "scope": "fictional claim text with rendered source-date spans",
+        "sha256": "ac25124184d22863aff538607097d2d0c880d19f7d58f882f9d31129c492d893",
+        "source_columns": {
+          "ADMISSION_DATE": "CLM_ADMSN_DT",
+          "DISCHARGE_DATE": "NCH_BENE_DSCHRG_DT"
+        },
+        "source_counts": {
+          "collapsed_repeat_stays": 19,
+          "source_rows": 66773
+        },
+        "source_sha256_supplied": false,
+        "source_url": "https://www.cms.gov/research-statistics-data-and-systems/downloadable-public-use-files/synpufs/downloads/de1_0_2008_to_2010_inpatient_claims_sample_1.zip",
+        "split_counts": {
+          "test": {
+            "beneficiaries": 126,
+            "span_rows": 128
+          },
+          "train": {
+            "beneficiaries": 503,
+            "span_rows": 512
+          },
+          "validation": {
+            "beneficiaries": 127,
+            "span_rows": 128
+          }
+        }
+      },
+      "fieldbench-v0.4.2": {
+        "baseline_runtime_integration": false,
+        "dataset": "fieldbench-v0.4.2",
+        "document_counts": {
+          "insurance_claims": 140,
+          "insurance_policies": 80
+        },
+        "license": "CC0 1.0",
+        "md5": "d4ceea03251584f0c8196472dd1efac6",
+        "scope": "held-out Markdown extraction values in the original FieldBench schema",
+        "sha256": "21cfd6ec039124dd2a49ac67705fb3c2b60bfa1bf6729c70c5c7c28086127d87",
+        "source_url": "https://zenodo.org/records/23065721"
+      }
+    }
+  },
+  "closeout_wrapper": {
+    "command": "sh deploy/closeout.sh",
+    "checked_at": "2026-11-20T08:52:51.204882+00:00",
+    "shell_and_command_double_verified": true,
+    "live_run_verified": false
+  }
+}

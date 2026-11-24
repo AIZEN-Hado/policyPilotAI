@@ -1,0 +1,161 @@
+{
+  "checked_at": "2026-11-10T19:30:50.262119+00:00",
+  "resources_created": false,
+  "docker_engine_ready": true,
+  "docker_buildx_ready": true,
+  "python_dependencies": {
+    "fastapi": false,
+    "httpx": false,
+    "psycopg": false,
+    "uvicorn": false,
+    "boto3": false
+  },
+  "free_disk_gb": 389.0,
+  "gpu_candidates": [
+    {
+      "gpu": "RTX 2000 Ada",
+      "pool": "AMPERE_16",
+      "vram_gb": 16,
+      "serverless_usd_per_hour": 0.58,
+      "stock": "NONE",
+      "data_centers": []
+    },
+    {
+      "gpu": "RTX A4000",
+      "pool": "AMPERE_16",
+      "vram_gb": 16,
+      "serverless_usd_per_hour": 0.58,
+      "stock": "LOW",
+      "data_centers": [
+        {
+          "id": "EU-RO-1",
+          "stock": "LOW"
+        }
+      ]
+    },
+    {
+      "gpu": "RTX 3090",
+      "pool": "AMPERE_24",
+      "vram_gb": 24,
+      "serverless_usd_per_hour": 0.75,
+      "stock": "NONE",
+      "data_centers": []
+    },
+    {
+      "gpu": "L4",
+      "pool": "AMPERE_24",
+      "vram_gb": 24,
+      "serverless_usd_per_hour": 0.75,
+      "stock": "LOW",
+      "data_centers": [
+        {
+          "id": "EU-RO-1",
+          "stock": "LOW"
+        },
+        {
+          "id": "EUR-IS-1",
+          "stock": "LOW"
+        },
+        {
+          "id": "US-MO-2",
+          "stock": "LOW"
+        }
+      ]
+    },
+    {
+      "gpu": "RTX A5000",
+      "pool": "AMPERE_24",
+      "vram_gb": 24,
+      "serverless_usd_per_hour": 0.75,
+      "stock": "HIGH",
+      "data_centers": [
+        {
+          "id": "CA-MTL-1",
+          "stock": "HIGH"
+        },
+        {
+          "id": "EU-SE-1",
+          "stock": "MEDIUM"
+        },
+        {
+          "id": "US-CA-2",
+          "stock": "LOW"
+        },
+        {
+          "id": "US-IL-1",
+          "stock": "MEDIUM"
+        }
+      ]
+    },
+    {
+      "gpu": "PRO 6000 MIG 24GB",
+      "pool": "AMPERE_24",
+      "vram_gb": 24,
+      "serverless_usd_per_hour": 0.75,
+      "stock": "MEDIUM",
+      "data_centers": [
+        {
+          "id": "EUR-IS-2",
+          "stock": "LOW"
+        },
+        {
+          "id": "US-NE-1",
+          "stock": "LOW"
+        },
+        {
+          "id": "US-PA-1",
+          "stock": "LOW"
+        },
+        {
+          "id": "US-WA-1",
+          "stock": "LOW"
+        }
+      ]
+    },
+    {
+      "gpu": "RTX 4090",
+      "pool": "ADA_24",
+      "vram_gb": 24,
+      "serverless_usd_per_hour": 1.34,
+      "stock": "HIGH",
+      "data_centers": [
+        {
+          "id": "CA-MTL-3",
+          "stock": "LOW"
+        },
+        {
+          "id": "EU-CZ-1",
+          "stock": "LOW"
+        },
+        {
+          "id": "EU-RO-1",
+          "stock": "MEDIUM"
+        },
+        {
+          "id": "EUR-IS-2",
+          "stock": "LOW"
+        },
+        {
+          "id": "EUR-NO-1",
+          "stock": "MEDIUM"
+        },
+        {
+          "id": "US-CA-2",
+          "stock": "LOW"
+        },
+        {
+          "id": "US-IL-1",
+          "stock": "HIGH"
+        },
+        {
+          "id": "US-NC-1",
+          "stock": "LOW"
+        },
+        {
+          "id": "US-TX-3",
+          "stock": "MEDIUM"
+        }
+      ]
+    }
+  ]
+}

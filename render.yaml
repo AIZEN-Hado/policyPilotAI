@@ -1,0 +1,85 @@
+# Preparation only. Review hosting costs and inference separately before applying.
+# No GPU, model endpoint, or storage bucket is provisioned by this Blueprint.
+services:
+  - type: web
+    name: policypilot-web
+    runtime: docker
+    region: singapore
+    plan: 0.5c-512mb
+    dockerfilePath: ./pilot/Dockerfile
+    dockerContext: .
+    dockerCommand: sh /srv/deploy/render-start.sh web
+    healthCheckPath: /healthz
+    autoDeployTrigger: 'off'
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: policypilot-db
+          property: connectionString
+      - key: AUTH_MODE
+        value: session
+      - key: APP_ORIGIN
+        sync: false
+      - key: PILOT_USER
+        value: reviewer
+      - key: PILOT_PASSWORD_HASH
+        sync: false
+      - key: DOCUMENT_STORAGE
+        value: r2
+      - key: R2_ACCOUNT_ID
+        sync: false
+      - key: S3_BUCKET
+        sync: false
+      - key: AWS_ACCESS_KEY_ID
+        sync: false
+      - key: AWS_SECRET_ACCESS_KEY
+        sync: false
+      - key: INFERENCE_BACKEND
+        value: disabled
+      - key: PROCESSING_ENABLED
+        value: '0'
+  - type: worker
+    name: policypilot-worker
+    runtime: docker
+    region: singapore
+    plan: 1c-2g
+    dockerfilePath: ./pilot/Dockerfile
+    dockerContext: .
+    dockerCommand: sh /srv/deploy/render-start.sh worker
+    autoDeployTrigger: 'off'
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: policypilot-db
+          property: connectionString
+      - key: AUTH_MODE
+        value: session
+      - key: APP_ORIGIN
+        fromService: {type: web, name: policypilot-web, envVarKey: APP_ORIGIN}
+      - key: PILOT_USER
+        value: reviewer
+      - key: PILOT_PASSWORD_HASH
+        fromService: {type: web, name: policypilot-web, envVarKey: PILOT_PASSWORD_HASH}
+      - key: DOCUMENT_STORAGE
+        value: r2
+      - key: R2_ACCOUNT_ID
+        fromService: {type: web, name: policypilot-web, envVarKey: R2_ACCOUNT_ID}
+      - key: S3_BUCKET
+        fromService: {type: web, name: policypilot-web, envVarKey: S3_BUCKET}
+      - key: AWS_ACCESS_KEY_ID
+        fromService: {type: web, name: policypilot-web, envVarKey: AWS_ACCESS_KEY_ID}
+      - key: AWS_SECRET_ACCESS_KEY
+        fromService: {type: web, name: policypilot-web, envVarKey: AWS_SECRET_ACCESS_KEY}
+      - key: INFERENCE_BACKEND
+        value: disabled
+      - key: PROCESSING_ENABLED
+        value: '0'
+databases:
+  - name: policypilot-db
+    region: singapore
+    plan: 0.1c-256mb
+    diskSizeGB: 1
+    postgresMajorVersion: '16'
+    databaseName: pilot
+    user: pilot
+    ipAllowList: []

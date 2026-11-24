@@ -1,0 +1,37 @@
+{
+  "evidence_source": "Runpod terminal output supplied by the user",
+  "run_directory": "/workspace/specialist-runs/run-0abe95e6bd4843208c812a9799194998",
+  "training_completed": true,
+  "archive_sha256": "3be489352f797be201e069f8dc33d77ca4e145eec257cf41a9238d865805add2",
+  "r2": {
+    "bucket": "policypilot-staging",
+    "key": "specialists/sha256/3be489352f797be201e069f8dc33d77ca4e145eec257cf41a9238d865805add2.tar.gz",
+    "sha256": "3be489352f797be201e069f8dc33d77ca4e145eec257cf41a9238d865805add2",
+    "bytes": 2325184,
+    "r2_readback_verified": true,
+    "recorded_at": "2026-11-17T22:45:00.041905+00:00"
+  },
+  "provider_shutdown_verified": false,
+  "held_out_test_evaluated": true,
+  "held_out_test_quality_verified": false,
+  "held_out": {
+    "evidence_source": "Colab summary supplied by the user",
+    "archive_sha256": "3be489352f797be201e069f8dc33d77ca4e145eec257cf41a9238d865805add2",
+    "split": "held_out_synthetic_english",
+    "span_exact_f1": {
+      "rules": 0.0,
+      "network": 0.17712691771269176
+    },
+    "rank_top1_accuracy": {
+      "rules": 0.25,
+      "network": 0.75
+    },
+    "runtime": {
+      "device": "cpu",
+      "torch": "2.14.1+cpu",
+      "elapsed_seconds": 5.893,
+      "process_peak_rss_bytes": 372158464
+    },
+    "deployment_status": "Field extraction requires improvement. Ranking merits further testing as a reviewer aid."
+  }
+}

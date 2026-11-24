@@ -1,0 +1,12 @@
+{
+  "endpoint_id": "tjkkm5pkp7lrej",
+  "recorded_at": "2026-11-15T14:37:46.103158+00:00",
+  "before_image": "ghcr.io/aizen-hado/policypilot-gpu@sha256:5c4c20537587ab0317ac7515b7fcf94f9d5e1cd0abfa983c52783ed10f7e733e",
+  "desired_image": "ghcr.io/aizen-hado/policypilot-gpu@sha256:537c877f3c2fce36265cf360f4e9ff8e2ff92d19fe81680e5a55313672a105c2",
+  "apply_requested": true,
+  "write_attempted": true,
+  "provider_verified": true,
+  "local_receipts_verified": true,
+  "jobs_submitted": 0,
+  "reservations_changed": false
+}

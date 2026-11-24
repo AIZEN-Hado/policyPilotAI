@@ -1,0 +1,18 @@
+{
+  "files": [
+    {
+      "bytes": 668,
+      "path": "preparation.json",
+      "sha256": "0ba51e787536b118278b53ca65abf2de8e7cc0a970f508e5dce669e9b8bebc88"
+    },
+    {
+      "bytes": 77768,
+      "path": "specialists-self-learning-calibration-v1-holdout.tar.gz",
+      "sha256": "6d1b0b6453e870e03af63540fe91e123f2821debc71b6595144b4f2f3cf1e2a5"
+    }
+  ],
+  "metadata": {
+    "experiment": "specialists-self-learning-calibration-v1"
+  },
+  "version": 1
+}

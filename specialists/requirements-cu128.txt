@@ -1,0 +1,4 @@
+# Remote Pod only. Review its GPU driver and existing environment before installing.
+# No transformers, Hugging Face model, bitsandbytes or generative-model dependency.
+--index-url https://download.pytorch.org/whl/cu128
+torch==2.7.1+cu128

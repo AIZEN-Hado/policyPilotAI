@@ -1,0 +1,19 @@
+{
+  "endpoint_id": "tjkkm5pkp7lrej",
+  "worker_id": "4j7vz8qc17crnj",
+  "recorded_at": "2026-11-15T12:35:51.472376+00:00",
+  "resources_changed": false,
+  "requests_submitted": 0,
+  "raw_logs_saved": false,
+  "log_sources": [
+    {
+      "source": "system",
+      "records_seen": 0,
+      "events": [],
+      "raw_logs_saved": false,
+      "read_complete": false,
+      "read_verified": false,
+      "http_status": 404
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "files": [
+    {
+      "bytes": 128936,
+      "path": "policypilot-specialists-self-learning-v1-evaluation.tar.gz",
+      "sha256": "91a4a80d0d35683ab93bb543ec2c18f52950f721ae7c38c1841140068ab51ea0"
+    },
+    {
+      "bytes": 814359,
+      "path": "policypilot-specialists-self-learning-v1-runtime.tar.gz",
+      "sha256": "4d0cec6c29abd3ec01c858b28e8c0fcb16b4f0463e89419e977b7ac9ccfc26be"
+    },
+    {
+      "bytes": 1815,
+      "path": "preparation.json",
+      "sha256": "c05eca90528203b9f6e019c4fd051cc1ea007cd3960446173854db36870f8336"
+    }
+  ],
+  "metadata": {
+    "experiment": "specialists-self-learning-v1"
+  },
+  "version": 1
+}

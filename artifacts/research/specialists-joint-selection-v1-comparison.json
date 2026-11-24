@@ -1,0 +1,248 @@
+{
+  "experiment": "specialists-joint-selection-v1",
+  "experiment_archive_sha256": "a48f1eeeee88b737969a470e98cf5a78e01a74751fe834c2154b0f76f7a2a4cf",
+  "scope": "synthetic_development_only",
+  "checkpoint_sha256": "1c02f3071a4a3f2ed516aaa90550eac238ba897b561a8abbad3c6e852ef2fc3d",
+  "training_manifest_sha256": "c092bf90efe1829df7fcbb1af26032cbca737f3ecf7fd7969c29e508bd8ad54a",
+  "config_sha256": "cce846af72661a79b34cdf234070df8d89e89da116f753ea3ebc71d7488b2074",
+  "comparison": {
+    "greedy": {
+      "rows": 512,
+      "unscored_rows": 0,
+      "exact_span": {
+        "precision": 0.6137339055793991,
+        "recall": 0.5958333333333333,
+        "f1": 0.6046511627906976,
+        "support": 960,
+        "correct": 572,
+        "predicted": 932,
+        "false_positives": 360,
+        "false_negatives": 388
+      },
+      "exact_span_by_label": {
+        "POLICY_ID": {
+          "precision": 0.3333333333333333,
+          "recall": 0.25,
+          "f1": 0.2857142857142857,
+          "support": 128,
+          "correct": 32,
+          "predicted": 96,
+          "false_positives": 64,
+          "false_negatives": 96
+        },
+        "MEMBER_ID": {
+          "precision": 0.4838709677419355,
+          "recall": 0.46875,
+          "f1": 0.47619047619047616,
+          "support": 128,
+          "correct": 60,
+          "predicted": 124,
+          "false_positives": 64,
+          "false_negatives": 68
+        },
+        "ADMISSION_DATE": {
+          "precision": 0.5405405405405406,
+          "recall": 0.5555555555555556,
+          "f1": 0.547945205479452,
+          "support": 288,
+          "correct": 160,
+          "predicted": 296,
+          "false_positives": 136,
+          "false_negatives": 128
+        },
+        "DISCHARGE_DATE": {
+          "precision": 0.6666666666666666,
+          "recall": 0.6666666666666666,
+          "f1": 0.6666666666666666,
+          "support": 288,
+          "correct": 192,
+          "predicted": 288,
+          "false_positives": 96,
+          "false_negatives": 96
+        },
+        "ROOM_LIMIT": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 64,
+          "correct": 64,
+          "predicted": 64,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "SUM_INSURED": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 64,
+          "correct": 64,
+          "predicted": 64,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      }
+    },
+    "joint": {
+      "rows": 512,
+      "unscored_rows": 0,
+      "exact_span": {
+        "precision": 0.6666666666666666,
+        "recall": 0.6625,
+        "f1": 0.664576802507837,
+        "support": 960,
+        "correct": 636,
+        "predicted": 954,
+        "false_positives": 318,
+        "false_negatives": 324
+      },
+      "exact_span_by_label": {
+        "POLICY_ID": {
+          "precision": 0.3333333333333333,
+          "recall": 0.25,
+          "f1": 0.2857142857142857,
+          "support": 128,
+          "correct": 32,
+          "predicted": 96,
+          "false_positives": 64,
+          "false_negatives": 96
+        },
+        "MEMBER_ID": {
+          "precision": 0.4838709677419355,
+          "recall": 0.46875,
+          "f1": 0.47619047619047616,
+          "support": 128,
+          "correct": 60,
+          "predicted": 124,
+          "false_positives": 64,
+          "false_negatives": 68
+        },
+        "ADMISSION_DATE": {
+          "precision": 0.6037735849056604,
+          "recall": 0.6666666666666666,
+          "f1": 0.6336633663366337,
+          "support": 288,
+          "correct": 192,
+          "predicted": 318,
+          "false_positives": 126,
+          "false_negatives": 96
+        },
+        "DISCHARGE_DATE": {
+          "precision": 0.7777777777777778,
+          "recall": 0.7777777777777778,
+          "f1": 0.7777777777777778,
+          "support": 288,
+          "correct": 224,
+          "predicted": 288,
+          "false_positives": 64,
+          "false_negatives": 64
+        },
+        "ROOM_LIMIT": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 64,
+          "correct": 64,
+          "predicted": 64,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "SUM_INSURED": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 64,
+          "correct": 64,
+          "predicted": 64,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      }
+    },
+    "changes": {
+      "rows_changed": 32,
+      "gold_recovered": 64,
+      "gold_lost": 0
+    },
+    "by_family": {
+      "cms-inpatient-validation-v1": {
+        "greedy": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 256,
+          "correct": 256,
+          "predicted": 256,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "joint": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 256,
+          "correct": 256,
+          "predicted": 256,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "prairie-ledger": {
+        "greedy": {
+          "precision": 0.328042328042328,
+          "recall": 0.3522727272727273,
+          "f1": 0.33972602739726027,
+          "support": 352,
+          "correct": 124,
+          "predicted": 378,
+          "false_positives": 254,
+          "false_negatives": 228
+        },
+        "joint": {
+          "precision": 0.328042328042328,
+          "recall": 0.3522727272727273,
+          "f1": 0.33972602739726027,
+          "support": 352,
+          "correct": 124,
+          "predicted": 378,
+          "false_positives": 254,
+          "false_negatives": 228
+        }
+      },
+      "willow-margin": {
+        "greedy": {
+          "precision": 0.6442953020134228,
+          "recall": 0.5454545454545454,
+          "f1": 0.5907692307692308,
+          "support": 352,
+          "correct": 192,
+          "predicted": 298,
+          "false_positives": 106,
+          "false_negatives": 160
+        },
+        "joint": {
+          "precision": 0.8,
+          "recall": 0.7272727272727273,
+          "f1": 0.7619047619047619,
+          "support": 352,
+          "correct": 256,
+          "predicted": 320,
+          "false_positives": 64,
+          "false_negatives": 96
+        }
+      }
+    },
+    "evaluation_criterion_met": true
+  },
+  "runpod": {
+    "pod_id": "wjdtsf3ytrnuvv",
+    "shape": "cpu3g",
+    "compute_hourly_usd": 0.08,
+    "created_at": "2026-11-20T15:40:12.71Z",
+    "stop_confirmed_at": "2026-11-20T15:40:56.352Z",
+    "pod_removed": true,
+    "network_volume": "c9iaje0u23",
+    "volume_retained": true,
+    "estimated_compute_usd": 0.00097,
+    "confirmed_charge_usd": null
+  }
+}

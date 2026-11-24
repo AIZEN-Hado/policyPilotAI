@@ -1,0 +1,97 @@
+{
+  "added_rows": {
+    "test": {
+      "rank": 452,
+      "span": 432
+    },
+    "train": {
+      "rank": 1752,
+      "span": 640
+    },
+    "validation": {
+      "rank": 216,
+      "span": 60
+    }
+  },
+  "config_sha256": "87a3c743b54b96b4e145890740b1fb7490104968d3bb5c84116a89e99466dc85",
+  "counts": {
+    "test": {
+      "rank": 452,
+      "span": 432
+    },
+    "train": {
+      "rank": 3640,
+      "span": 2816
+    },
+    "validation": {
+      "rank": 728,
+      "span": 572
+    }
+  },
+  "evaluation": {
+    "bytes": 73847,
+    "path": "policypilot-specialists-public-policy-v1-evaluation.tar.gz",
+    "sha256": "05aadc20ec9ca2357ffeef907af2d6c84f0e6c8127519eabb92e3585c6f95dee"
+  },
+  "experiment": "specialists-public-policy-v1",
+  "heldout_public_rank_groups": 5,
+  "holdout_manifest_sha256": "05454ab5162d5f5f97e1f5caaa6d4b2e69467457c65cd0ae764feb89d9b971c1",
+  "holdout_rank_groups": 149,
+  "holdout_span_support": {
+    "ADMISSION_DATE": 144,
+    "DISCHARGE_DATE": 144,
+    "MEMBER_ID": 144,
+    "POLICY_ID": 144,
+    "ROOM_LIMIT": 144,
+    "SUM_INSURED": 144
+  },
+  "model_execution_performed": false,
+  "public_source": {
+    "heldout_documents": [
+      "bronze_expatriate.md",
+      "bronze_senior.md",
+      "gold_expatriate.md",
+      "gold_senior.md",
+      "platinum_expatriate.md",
+      "platinum_senior.md",
+      "silver_expatriate.md",
+      "silver_senior.md"
+    ],
+    "license": "MIT",
+    "snapshot_sha256": "475035a7373f1f981cbfa7e1f958c6c224697554a48b77c4bf7552abc59ba50c",
+    "source": "https://github.com/ahmedabuzaid15-git/insurance-document-rag",
+    "train_documents": [
+      "bronze_individual.md",
+      "bronze_student.md",
+      "gold_individual.md",
+      "gold_student.md",
+      "platinum_individual.md",
+      "platinum_student.md",
+      "silver_individual.md",
+      "silver_student.md"
+    ],
+    "unused_unanswerable_questions": 3,
+    "validation_documents": [
+      "bronze_family.md",
+      "gold_family.md",
+      "platinum_family.md",
+      "silver_family.md"
+    ]
+  },
+  "reference": {
+    "archive": "/workspace/specialist-quality-runs/run-e14b110f44b94823a2763b2c6bcffcd8.tar.gz",
+    "config_sha256": "cce846af72661a79b34cdf234070df8d89e89da116f753ea3ebc71d7488b2074",
+    "sha256": "1c02f3071a4a3f2ed516aaa90550eac238ba897b561a8abbad3c6e852ef2fc3d",
+    "training_manifest_sha256": "c092bf90efe1829df7fcbb1af26032cbca737f3ecf7fd7969c29e508bd8ad54a"
+  },
+  "runtime": {
+    "bytes": 230568,
+    "path": "policypilot-specialists-public-policy-v1-runtime.tar.gz",
+    "sha256": "3eae9e9d5515a8c617484237c9ddb71e831452d565b5d0ea00dde1ff1eb50b40"
+  },
+  "training_manifest_sha256": "cbdf75908f184ad2ad7027a0c79f66b83bd4fc2f26332f3746f621062055af09",
+  "training_steps": {
+    "rank": 730,
+    "span": 1760
+  }
+}

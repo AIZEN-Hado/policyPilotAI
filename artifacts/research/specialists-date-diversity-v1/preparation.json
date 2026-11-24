@@ -1,0 +1,39 @@
+{
+  "added_gold_spans": {
+    "ADMISSION_DATE": 288,
+    "DISCHARGE_DATE": 256
+  },
+  "added_layout_families": 12,
+  "added_span_rows": 384,
+  "added_without_current_stay_dates": 64,
+  "config_sha256": "ca943c762760ae1e385779086af38565e832f0aa4c24e5d774d8ac32bb89e45c",
+  "counts": {
+    "train": {
+      "rank": 1024,
+      "span": 1664
+    },
+    "validation": {
+      "rank": 512,
+      "span": 512
+    }
+  },
+  "experiment": "specialists-date-diversity-v1",
+  "model_execution_performed": false,
+  "prior_training_manifest_sha256": "3a44bf598e8190bb4e81f972f2891c5fd688d1334b60196f9e72258ca6329dc3",
+  "reserved_holdout_archive_sha256": "11b876d0d9a4df846ac6e75b0f2931ce0f54f7b16d04a14249352a01dcb02244",
+  "runtime": {
+    "bytes": 140090,
+    "path": "policypilot-specialists-date-diversity-v1-runtime.tar.gz",
+    "sha256": "029b89e167d765a013313aaa6f859974d7d1fd928eb2c1ddcf169414b6e5497c"
+  },
+  "training_manifest_sha256": "33d9e8d0a8a46922f75b7d165165f6138876c0372bc0c1bb99c024a2fc2d7b7c",
+  "training_steps": {
+    "rank": 240,
+    "span": 1040
+  },
+  "unchanged_data_sha256": {
+    "train-rank.jsonl": "7163c79d2104f89601e7d2fbccfc460c4b6d2dc71cc0a88c441172aa3716cbd6",
+    "validation-rank.jsonl": "645842467141b914032ef1757e6d88a7cdec67d48cf3930d8f84ed430592b533",
+    "validation-span.jsonl": "b9b6cb21a4778a4a30749aebe91fe04cbbdb635680dabc6313de454ce427c772"
+  }
+}

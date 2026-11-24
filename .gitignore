@@ -1,0 +1,22 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+data/vectors/
+data/outputs/
+data/policypilot.db
+*.db
+.DS_Store
+
+# Private pilot deployment secrets and operator backups
+deploy/.env
+deploy/cloud.env
+deploy/backups/
+
+# Frozen local commit queue and its independent Git object database.
+artifacts/commit-schedule/
+
+# Local release history and portable copy.
+artifacts/policypilot-release.git/
+artifacts/policypilot-release.bundle

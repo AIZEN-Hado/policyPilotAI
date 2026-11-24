@@ -1,0 +1,13 @@
+{
+  "pilot/core.py": "97fc6f833a8e36064d72592006f8504f8f4f69ba0a481d8e66078ed3a5f454c7",
+  "pilot/extract.py": "a8c99c57781d647d5943c90d24654fd96cbeb70d24620aa9810f913a6914f308",
+  "pilot/worker.py": "a77c6a5cf6acd9e28832379719cebb16fb2e5b51f4642e987ce17f739ceed0b1",
+  "pilot/review_prompt.py": "ad13b4aec4a85e54a9a955817ecee6ec736ba2bf3ebdaef71e4e6d33cee8d83d",
+  "pilot/static/app.js": "d65fa63f905016bb15d8fd38d3ad24ae775d993f8c4e83d3f29a06e4c956f7e6",
+  "pilot/tests/test_core.py": "b3d3c0ba1d15d509b53a99ad993c8178466e1b86c89af31ff4ca53c6ddf31d03",
+  "pilot/tests/test_extract.py": "6bab58d7c3255328ef1ae2d1db1f6c5ffbb70d9ead837559e954eaf1b71dc24b",
+  "pilot/tests/test_worker_context.py": "a1c5cdb46de84a62bccf83adc2e6b6cf0a79756dfb43d4154329cb2a2d7c1812",
+  "pilot/VERIFICATION.md": "28b273590fd4f02a3f76fc55060e526ba883a30cd8abb90c52fc1e88b389f017",
+  "docs/IMPLEMENTATION_PLAN.md": "dee334f2eb41e421ad4327838c16c79348e588c664462e7552d1764471d0342f",
+  "docs/PRETRAINED_PARSER_PLAN.md": "df623e84a94547a13267cb6474d286fecf32b3fae74ca5cd0ed0556bb06dcb2a"
+}

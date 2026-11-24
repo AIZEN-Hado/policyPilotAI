@@ -1,0 +1,22 @@
+{
+  "endpoint_id": "tjkkm5pkp7lrej",
+  "recorded_at": "2026-11-15T14:38:54.583288+00:00",
+  "read_only": true,
+  "resources_changed": false,
+  "requests_submitted": 0,
+  "reservations_changed": false,
+  "billing_may_lag": true,
+  "account_30day_reported_usd": "0.6198162269574823",
+  "endpoint_last_120_hour_buckets_reported_usd": "0.06331500061787665",
+  "nonzero_hour_buckets": [
+    {
+      "start_time_utc": "2026-11-14T21:00:00+00:00",
+      "total_usd": "0.05193229205906391"
+    },
+    {
+      "start_time_utc": "2026-11-15T13:00:00+00:00",
+      "total_usd": "0.011382708558812737"
+    }
+  ],
+  "automatic_refund_or_budget_reset": false
+}

@@ -1,0 +1,21 @@
+{
+  "namespace": "aizen-hado",
+  "version": "v0.1.0-demo.20261110T202218Z",
+  "images": [
+    {
+      "name": "policypilot-api",
+      "tag": "ghcr.io/aizen-hado/policypilot-api:v0.1.0-demo.20261110T202218Z",
+      "reference": "ghcr.io/aizen-hado/policypilot-api@sha256:b96be03174328f6fe9a32d223761456c91830310be76e44eecc2b264cf66b0a2",
+      "image_id": "sha256:b96be03174328f6fe9a32d223761456c91830310be76e44eecc2b264cf66b0a2",
+      "visibility": "private"
+    },
+    {
+      "name": "policypilot-gpu",
+      "tag": "ghcr.io/aizen-hado/policypilot-gpu:v0.1.0-demo.20261110T202218Z",
+      "reference": "ghcr.io/aizen-hado/policypilot-gpu@sha256:537c877f3c2fce36265cf360f4e9ff8e2ff92d19fe81680e5a55313672a105c2",
+      "image_id": "sha256:537c877f3c2fce36265cf360f4e9ff8e2ff92d19fe81680e5a55313672a105c2",
+      "visibility": "private"
+    }
+  ],
+  "compute_started": false
+}

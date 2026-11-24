@@ -1,0 +1,2576 @@
+{
+  "version": "exemplars-1.0",
+  "case_family_id": "SYN-C003",
+  "split": "development_exemplar",
+  "canonical_case": {
+    "id": "SYN-C003",
+    "name": "Nisha Verma",
+    "age": 51,
+    "city": "Jaipur",
+    "hospital": "SYN Sandstone Care Hospital",
+    "policy": "SYN-P303",
+    "member": "SYN-M303-A",
+    "product": "SYN-FAM-2026-V1",
+    "family": true,
+    "layout": 2,
+    "admission": "2026-10-03",
+    "discharge": "2026-10-07",
+    "diagnosis": "Community-acquired pneumonia",
+    "course": "Admitted with fever and cough. Investigations and inpatient treatment recorded. Clinical improvement noted before discharge. Admission recorded by the inpatient desk on 3 October 2026.",
+    "room": 4,
+    "roomrate": 2800,
+    "copay": 10,
+    "deductible": 5000,
+    "endorsement": false,
+    "items": [
+      [
+        "Room - twin sharing",
+        4,
+        2800
+      ],
+      [
+        "Nursing services",
+        4,
+        800
+      ],
+      [
+        "Physician reviews",
+        6,
+        900
+      ],
+      [
+        "Chest imaging",
+        1,
+        2200
+      ],
+      [
+        "Laboratory investigations",
+        1,
+        4800
+      ],
+      [
+        "Inpatient pharmacy",
+        1,
+        9600
+      ],
+      [
+        "Respiratory support charges",
+        2,
+        1200
+      ],
+      [
+        "Procedure materials",
+        1,
+        1800
+      ],
+      [
+        "Patient registration",
+        1,
+        300
+      ]
+    ],
+    "total": 40900,
+    "expected": null,
+    "deposit": 20000,
+    "prior": null
+  },
+  "documents": [
+    {
+      "file": "01_schedule.pdf",
+      "pages": 1,
+      "sha256": "390e1b940300ec29699cb971b2c541703648452b38c61ec3e3f4bb1cb27e28bc",
+      "representation": "native_text",
+      "source_spans": [
+        {
+          "page": 1,
+          "text": "SYN Meridian Benefits",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            25,
+            261.34000000000003,
+            45
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Policy schedule / member certificate",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            54,
+            330.16,
+            70
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Case SYN-C003  |  Jaipur  |  Records: records@example.invalid",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            99,
+            342.56,
+            110
+          ]
+        },
+        {
+          "page": 1,
+          "text": "CONTRACT IDENTIFICATION",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            149,
+            182.6,
+            162
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Patient: Nisha Verma / age 51",
+          "field": "patient",
+          "bbox_top_left_pt": [
+            40,
+            168,
+            219.8,
+            181
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Member / policy: SYN-M303-A / SYN-P303",
+          "field": "identity",
+          "bbox_top_left_pt": [
+            40,
+            184,
+            275.6,
+            197
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Product identifier: SYN-FAM-2026-V1",
+          "field": "schedule.Product identifier",
+          "bbox_top_left_pt": [
+            40,
+            200,
+            257.0,
+            213
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Contract type: Family floater",
+          "field": "schedule.Contract type",
+          "bbox_top_left_pt": [
+            40,
+            216,
+            219.8,
+            229
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Coverage period: 2026-01-01 to 2026-12-31 inclusive",
+          "field": "schedule.Coverage period",
+          "bbox_top_left_pt": [
+            40,
+            232,
+            356.2,
+            245
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Continuous coverage since: 2023-01-01",
+          "field": "schedule.Continuous coverage since",
+          "bbox_top_left_pt": [
+            40,
+            248,
+            269.4,
+            261
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Sum insured: INR 10,00,000.00",
+          "field": "schedule.Sum insured",
+          "bbox_top_left_pt": [
+            40,
+            264,
+            219.8,
+            277
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Currency: INR",
+          "field": "schedule.Currency",
+          "bbox_top_left_pt": [
+            40,
+            280,
+            120.6,
+            293
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Wording version: 2026.1",
+          "field": "schedule.Wording version",
+          "bbox_top_left_pt": [
+            40,
+            296,
+            182.6,
+            309
+          ]
+        },
+        {
+          "page": 1,
+          "text": "INSURED MEMBERS",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            328,
+            133.0,
+            341
+          ]
+        },
+        {
+          "page": 1,
+          "text": "SYN-M303-A | Nisha Verma | Self | Active throughout coverage period",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            347,
+            455.4,
+            360
+          ]
+        },
+        {
+          "page": 1,
+          "text": "SYN-M303-B | Rohan Verma | Spouse | Active throughout coverage period",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            363,
+            467.8,
+            376
+          ]
+        },
+        {
+          "page": 1,
+          "text": "SELECTED BENEFIT TERMS",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            395,
+            176.4,
+            408
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Room benefit: single standard room; daily cap INR 4,000.00.",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            414,
+            405.8,
+            427
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Per-admission deductible: INR 5,000.00. Copayment: 10 percent after deductible.",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            430,
+            529.8,
+            443
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Endorsements attached: none recorded for this certificate.",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            446,
+            399.6,
+            459
+          ]
+        },
+        {
+          "page": 1,
+          "text": "RECORD ADMINISTRATION",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            478,
+            170.2,
+            491
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Fictional contract for software testing only. No premium has been collected. Member and",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            497,
+            555,
+            510
+          ]
+        },
+        {
+          "page": 1,
+          "text": "issuer identifiers cannot be used with any insurer or public registry.",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            513,
+            474.0,
+            526
+          ]
+        },
+        {
+          "page": 1,
+          "text": "SYNTHETIC - NOT VALID FOR CLAIM SUBMISSION",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            803,
+            248.32,
+            814
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Fictional issuer and patient | SYN-C003 | Page 1",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            817,
+            248.32,
+            827
+          ]
+        }
+      ]
+    },
+    {
+      "file": "02_wording.pdf",
+      "pages": 2,
+      "sha256": "2d27c2bbec773a79bfc8d7098f70ba5433fae9b3b96780c6805e9862adbe8255",
+      "representation": "native_text",
+      "source_spans": [
+        {
+          "page": 1,
+          "text": "SYN Meridian Benefits",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            25,
+            261.34000000000003,
+            45
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Policy wording / version 2026.1",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            54,
+            289.86,
+            70
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Case SYN-C003  |  Jaipur  |  Records: records@example.invalid",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            99,
+            342.56,
+            110
+          ]
+        },
+        {
+          "page": 1,
+          "text": "1. SCOPE AND DEFINITIONS",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            149,
+            188.8,
+            162
+          ]
+        },
+        {
+          "page": 1,
+          "text": "An eligible admission is inpatient treatment of illness during the scheduled coverage period",
+          "field": "clause.1",
+          "bbox_top_left_pt": [
+            40,
+            168,
+            555,
+            181
+          ]
+        },
+        {
+          "page": 1,
+          "text": "for a listed member. The schedule, this wording and applicable dated endorsements form the",
+          "field": "clause.1",
+          "bbox_top_left_pt": [
+            40,
+            184,
+            555,
+            197
+          ]
+        },
+        {
+          "page": 1,
+          "text": "fictional contract.",
+          "field": "clause.1",
+          "bbox_top_left_pt": [
+            40,
+            200,
+            157.8,
+            213
+          ]
+        },
+        {
+          "page": 1,
+          "text": "2. ELIGIBLE INPATIENT EXPENSES",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            232,
+            226.0,
+            245
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Billed room accommodation, nursing, treating clinician fees, anaesthesia, theatre,",
+          "field": "clause.2",
+          "bbox_top_left_pt": [
+            40,
+            251,
+            548.4,
+            264
+          ]
+        },
+        {
+          "page": 1,
+          "text": "investigations, inpatient pharmacy and procedure materials are eligible when supported by",
+          "field": "clause.2",
+          "bbox_top_left_pt": [
+            40,
+            267,
+            555,
+            280
+          ]
+        },
+        {
+          "page": 1,
+          "text": "the admission record and final itemized bill. This fixture imposes no separate clinical",
+          "field": "clause.2",
+          "bbox_top_left_pt": [
+            40,
+            283,
+            555,
+            296
+          ]
+        },
+        {
+          "page": 1,
+          "text": "sublimit.",
+          "field": "clause.2",
+          "bbox_top_left_pt": [
+            40,
+            299,
+            95.8,
+            312
+          ]
+        },
+        {
+          "page": 1,
+          "text": "3. ADMINISTRATIVE EXCLUSION",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            331,
+            207.4,
+            344
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Patient registration charges are excluded. No other administrative exclusion may be",
+          "field": "clause.3",
+          "bbox_top_left_pt": [
+            40,
+            350,
+            554.6,
+            363
+          ]
+        },
+        {
+          "page": 1,
+          "text": "inferred. Missing evidence is a request for verification, not an excluded expense.",
+          "field": "clause.3",
+          "bbox_top_left_pt": [
+            40,
+            366,
+            548.4,
+            379
+          ]
+        },
+        {
+          "page": 1,
+          "text": "4. ROOM BENEFIT",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            398,
+            133.0,
+            411
+          ]
+        },
+        {
+          "page": 1,
+          "text": "For individual certificates, single standard room is paid at actual cost. For family",
+          "field": "clause.4",
+          "bbox_top_left_pt": [
+            40,
+            417,
+            555,
+            430
+          ]
+        },
+        {
+          "page": 1,
+          "text": "certificates the cap is INR 4,000.00 per billed day unless changed by endorsement. Deduct",
+          "field": "clause.4",
+          "bbox_top_left_pt": [
+            40,
+            433,
+            555,
+            446
+          ]
+        },
+        {
+          "page": 1,
+          "text": "only room charges above the cap; no proportionate reduction of other items applies in this",
+          "field": "clause.4",
+          "bbox_top_left_pt": [
+            40,
+            449,
+            555,
+            462
+          ]
+        },
+        {
+          "page": 1,
+          "text": "fixture.",
+          "field": "clause.4",
+          "bbox_top_left_pt": [
+            40,
+            465,
+            89.6,
+            478
+          ]
+        },
+        {
+          "page": 1,
+          "text": "5. DEDUCTIBLE AND COPAYMENT",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            497,
+            207.4,
+            510
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Individual certificates have no deductible or copayment. Family certificates have an INR",
+          "field": "clause.5",
+          "bbox_top_left_pt": [
+            40,
+            516,
+            555,
+            529
+          ]
+        },
+        {
+          "page": 1,
+          "text": "5,000.00 per-admission deductible, followed by a 10 percent copayment on the remaining",
+          "field": "clause.5",
+          "bbox_top_left_pt": [
+            40,
+            532,
+            555,
+            545
+          ]
+        },
+        {
+          "page": 1,
+          "text": "eligible amount. These are fictional product terms, not general rules for Indian insurance.",
+          "field": "clause.5",
+          "bbox_top_left_pt": [
+            40,
+            548,
+            555,
+            561
+          ]
+        },
+        {
+          "page": 1,
+          "text": "SYNTHETIC - NOT VALID FOR CLAIM SUBMISSION",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            803,
+            248.32,
+            814
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Fictional issuer and patient | SYN-C003 | Page 1",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            817,
+            248.32,
+            827
+          ]
+        },
+        {
+          "page": 2,
+          "text": "SYN Meridian Benefits",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            25,
+            261.34000000000003,
+            45
+          ]
+        },
+        {
+          "page": 2,
+          "text": "Policy wording / version 2026.1",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            54,
+            289.86,
+            70
+          ]
+        },
+        {
+          "page": 2,
+          "text": "Case SYN-C003  |  Jaipur  |  Records: records@example.invalid",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            99,
+            342.56,
+            110
+          ]
+        },
+        {
+          "page": 2,
+          "text": "6. WAITING PERIOD",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            149,
+            145.4,
+            162
+          ]
+        },
+        {
+          "page": 2,
+          "text": "A 30-day initial waiting period applies from continuous coverage inception. The listed",
+          "field": "clause.6",
+          "bbox_top_left_pt": [
+            40,
+            168,
+            555,
+            181
+          ]
+        },
+        {
+          "page": 2,
+          "text": "exemplar members began continuous coverage on 2023-01-01. No additional disease-specific",
+          "field": "clause.6",
+          "bbox_top_left_pt": [
+            40,
+            184,
+            555,
+            197
+          ]
+        },
+        {
+          "page": 2,
+          "text": "waiting period is defined for these fixture admissions.",
+          "field": "clause.6",
+          "bbox_top_left_pt": [
+            40,
+            200,
+            381.0,
+            213
+          ]
+        },
+        {
+          "page": 2,
+          "text": "7. UTILIZATION AND BENEFIT CEILING",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            232,
+            250.8,
+            245
+          ]
+        },
+        {
+          "page": 2,
+          "text": "The annual ceiling is the sum insured less previously paid benefits across listed members.",
+          "field": "clause.7",
+          "bbox_top_left_pt": [
+            40,
+            251,
+            555,
+            264
+          ]
+        },
+        {
+          "page": 2,
+          "text": "Family cover shares that ceiling. No restoration benefit is provided. Unknown utilization",
+          "field": "clause.7",
+          "bbox_top_left_pt": [
+            40,
+            267,
+            555,
+            280
+          ]
+        },
+        {
+          "page": 2,
+          "text": "blocks a final payable amount.",
+          "field": "clause.7",
+          "bbox_top_left_pt": [
+            40,
+            283,
+            226.0,
+            296
+          ]
+        },
+        {
+          "page": 2,
+          "text": "8. ORDER OF OPERATIONS",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            315,
+            176.4,
+            328
+          ]
+        },
+        {
+          "page": 2,
+          "text": "First reconcile the supported gross bill. Remove registration and any room-cap excess.",
+          "field": "clause.8",
+          "bbox_top_left_pt": [
+            40,
+            334,
+            555,
+            347
+          ]
+        },
+        {
+          "page": 2,
+          "text": "Subtract the deductible, flooring at zero. Apply the copayment to that balance. Round to",
+          "field": "clause.8",
+          "bbox_top_left_pt": [
+            40,
+            350,
+            555,
+            363
+          ]
+        },
+        {
+          "page": 2,
+          "text": "paise, half up. Finally cap the amount at verified remaining annual cover.",
+          "field": "clause.8",
+          "bbox_top_left_pt": [
+            40,
+            366,
+            498.8,
+            379
+          ]
+        },
+        {
+          "page": 2,
+          "text": "9. ENDORSEMENT PRECEDENCE",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            398,
+            195.0,
+            411
+          ]
+        },
+        {
+          "page": 2,
+          "text": "An endorsement applies only to its named policy and effective period. Its explicitly",
+          "field": "clause.9",
+          "bbox_top_left_pt": [
+            40,
+            417,
+            555,
+            430
+          ]
+        },
+        {
+          "page": 2,
+          "text": "replaced clause takes precedence; all unrelated terms remain unchanged.",
+          "field": "clause.9",
+          "bbox_top_left_pt": [
+            40,
+            433,
+            480.2,
+            446
+          ]
+        },
+        {
+          "page": 2,
+          "text": "10. EVIDENCE AND REVIEW",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            465,
+            182.6,
+            478
+          ]
+        },
+        {
+          "page": 2,
+          "text": "Require a matching schedule, itemized final bill, payment evidence and admission/discharge",
+          "field": "clause.10",
+          "bbox_top_left_pt": [
+            40,
+            484,
+            555,
+            497
+          ]
+        },
+        {
+          "page": 2,
+          "text": "record. Contradictory dates or incomplete bill pages require clarification. An assessment is",
+          "field": "clause.10",
+          "bbox_top_left_pt": [
+            40,
+            500,
+            555,
+            513
+          ]
+        },
+        {
+          "page": 2,
+          "text": "a draft until an authorized human review; it is not a payment instruction.",
+          "field": "clause.10",
+          "bbox_top_left_pt": [
+            40,
+            516,
+            498.8,
+            529
+          ]
+        },
+        {
+          "page": 2,
+          "text": "SYNTHETIC - NOT VALID FOR CLAIM SUBMISSION",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            803,
+            248.32,
+            814
+          ]
+        },
+        {
+          "page": 2,
+          "text": "Fictional issuer and patient | SYN-C003 | Page 2",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            817,
+            248.32,
+            827
+          ]
+        }
+      ]
+    },
+    {
+      "file": "04_claim_form.pdf",
+      "pages": 1,
+      "sha256": "878f9e83588fdf61c8ee17a8caf8916809d8efaa564a4833242eeb99445cc994",
+      "representation": "native_text",
+      "source_spans": [
+        {
+          "page": 1,
+          "text": "SYN Meridian Benefits",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            25,
+            261.34000000000003,
+            45
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Reimbursement claim form",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            54,
+            233.44,
+            70
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Case SYN-C003  |  Jaipur  |  Records: records@example.invalid",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            99,
+            342.56,
+            110
+          ]
+        },
+        {
+          "page": 1,
+          "text": "A / MEMBER DECLARATION",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            149,
+            176.4,
+            162
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Patient: Nisha Verma / age 51",
+          "field": "patient",
+          "bbox_top_left_pt": [
+            40,
+            168,
+            219.8,
+            181
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Member / policy: SYN-M303-A / SYN-P303",
+          "field": "identity",
+          "bbox_top_left_pt": [
+            40,
+            184,
+            275.6,
+            197
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Contact: patient@example.invalid / phone not collected in synthetic fixture",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            200,
+            505.0,
+            213
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Other insurance declared: None",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            216,
+            226.0,
+            229
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Bank/KYC details: Not supplied; no payment execution in this fixture",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            232,
+            461.6,
+            245
+          ]
+        },
+        {
+          "page": 1,
+          "text": "B / HOSPITALIZATION",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            264,
+            157.8,
+            277
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Hospital: SYN Sandstone Care Hospital",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            283,
+            269.4,
+            296
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Admission: 2026-10-02",
+          "field": "claim.admission",
+          "bbox_top_left_pt": [
+            40,
+            299,
+            170.2,
+            312
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Discharge: 2026-10-07",
+          "field": "claim.discharge",
+          "bbox_top_left_pt": [
+            40,
+            315,
+            170.2,
+            328
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Diagnosis as recorded: Community-acquired pneumonia",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            331,
+            356.2,
+            344
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Admission type: Emergency",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            347,
+            195.0,
+            360
+          ]
+        },
+        {
+          "page": 1,
+          "text": "C / EXPENSE STATEMENT",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            379,
+            170.2,
+            392
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Inpatient expenses claimed: INR 40,900.00",
+          "field": "claimed_total",
+          "bbox_top_left_pt": [
+            40,
+            398,
+            294.2,
+            411
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Pre-hospitalization: INR 0.00 | Post-hospitalization: INR 0.00 | Other: INR 0.00",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            414,
+            536.0,
+            427
+          ]
+        },
+        {
+          "page": 1,
+          "text": "D / ATTACHMENT CHECKLIST",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            446,
+            188.8,
+            459
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Schedule; wording; discharge summary; final hospital bill; payment receipt. Endorsement",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            465,
+            555,
+            478
+          ]
+        },
+        {
+          "page": 1,
+          "text": "included where applicable. Supporting investigation record attached.",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            481,
+            461.6,
+            494
+          ]
+        },
+        {
+          "page": 1,
+          "text": "E / DECLARATION",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            513,
+            133.0,
+            526
+          ]
+        },
+        {
+          "page": 1,
+          "text": "This record represents a fictional submission for software evaluation. No real signature,",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            532,
+            555,
+            545
+          ]
+        },
+        {
+          "page": 1,
+          "text": "bank mandate or legal declaration has been collected.",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            548,
+            368.6,
+            561
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Submission date: 2026-10-12",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            564,
+            207.4,
+            577
+          ]
+        },
+        {
+          "page": 1,
+          "text": "SYNTHETIC - NOT VALID FOR CLAIM SUBMISSION",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            803,
+            248.32,
+            814
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Fictional issuer and patient | SYN-C003 | Page 1",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            817,
+            248.32,
+            827
+          ]
+        }
+      ]
+    },
+    {
+      "file": "05_discharge.pdf",
+      "pages": 1,
+      "sha256": "2876d2d1be4e0286731f11df3dfdf4faedbd68961b63ae107690c031d8638f12",
+      "representation": "native_text",
+      "source_spans": [
+        {
+          "page": 1,
+          "text": "SYN SANDSTONE CARE HOSPITAL",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            24,
+            274.36,
+            41
+          ]
+        },
+        {
+          "page": 1,
+          "text": "INPATIENT SERVICES / RECORD COPY",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            53,
+            218.56,
+            65
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Discharge summary",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            79,
+            208.64,
+            98
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Case SYN-C003  |  Jaipur  |  Records: records@example.invalid",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            109,
+            342.56,
+            120
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Patient: Nisha Verma / age 51",
+          "field": "patient",
+          "bbox_top_left_pt": [
+            40,
+            142,
+            219.8,
+            155
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Member / policy: SYN-M303-A / SYN-P303",
+          "field": "identity",
+          "bbox_top_left_pt": [
+            40,
+            158,
+            275.6,
+            171
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Inpatient record: SYN-IP003",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            174,
+            207.4,
+            187
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Admission: 2026-10-03",
+          "field": "hospital.admission",
+          "bbox_top_left_pt": [
+            40,
+            190,
+            170.2,
+            203
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Discharge: 2026-10-07",
+          "field": "hospital.discharge",
+          "bbox_top_left_pt": [
+            40,
+            206,
+            170.2,
+            219
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Discharge status: Stable / home",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            222,
+            232.2,
+            235
+          ]
+        },
+        {
+          "page": 1,
+          "text": "DIAGNOSIS",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            254,
+            95.8,
+            267
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Community-acquired pneumonia",
+          "field": "diagnosis",
+          "bbox_top_left_pt": [
+            40,
+            273,
+            213.6,
+            286
+          ]
+        },
+        {
+          "page": 1,
+          "text": "PRESENTATION AND INPATIENT COURSE",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            305,
+            244.6,
+            318
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Admitted with fever and cough. Investigations and inpatient treatment recorded. Clinical",
+          "field": "course",
+          "bbox_top_left_pt": [
+            40,
+            324,
+            555,
+            337
+          ]
+        },
+        {
+          "page": 1,
+          "text": "improvement noted before discharge. Admission recorded by the inpatient desk on 3 October",
+          "field": "course",
+          "bbox_top_left_pt": [
+            40,
+            340,
+            555,
+            353
+          ]
+        },
+        {
+          "page": 1,
+          "text": "2026.",
+          "field": "course",
+          "bbox_top_left_pt": [
+            40,
+            356,
+            71.0,
+            369
+          ]
+        },
+        {
+          "page": 1,
+          "text": "INVESTIGATIONS",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            388,
+            126.8,
+            401
+          ]
+        },
+        {
+          "page": 1,
+          "text": "See attached investigation record. Findings are fictional narrative content and have not",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            407,
+            555,
+            420
+          ]
+        },
+        {
+          "page": 1,
+          "text": "been clinically validated.",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            423,
+            201.2,
+            436
+          ]
+        },
+        {
+          "page": 1,
+          "text": "FOLLOW-UP RECORD",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            455,
+            139.2,
+            468
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Outpatient review was advised. Medication names and dosing are intentionally omitted; this",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            474,
+            555,
+            487
+          ]
+        },
+        {
+          "page": 1,
+          "text": "fixture is not a treatment guide.",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            490,
+            244.6,
+            503
+          ]
+        },
+        {
+          "page": 1,
+          "text": "RECORD AUTHORIZATION",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            522,
+            164.0,
+            535
+          ]
+        },
+        {
+          "page": 1,
+          "text": "SYN-CLINICIAN-01 / synthetic record author; no medical registration or signature",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            541,
+            536.0,
+            554
+          ]
+        },
+        {
+          "page": 1,
+          "text": "represented.",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            557,
+            114.4,
+            570
+          ]
+        },
+        {
+          "page": 1,
+          "text": "SYNTHETIC - NOT VALID FOR CLAIM SUBMISSION",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            803,
+            248.32,
+            814
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Fictional issuer and patient | SYN-C003 | Page 1",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            817,
+            248.32,
+            827
+          ]
+        }
+      ]
+    },
+    {
+      "file": "06_bill.pdf",
+      "pages": 1,
+      "sha256": "30fc225c454bca5bfcd454b2935986a784e1e5674890416fa274d741364dcbd3",
+      "representation": "image_only_scan",
+      "source_spans": [
+        {
+          "page": 1,
+          "text": "SYN SANDSTONE CARE HOSPITAL",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            40,
+            24,
+            274.36,
+            41
+          ]
+        },
+        {
+          "page": 1,
+          "text": "INPATIENT SERVICES / RECORD COPY",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            40,
+            53,
+            218.56,
+            65
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Final inpatient bill",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            40,
+            79,
+            238.4,
+            98
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Case SYN-C003  |  Jaipur  |  Records: records@example.invalid",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            40,
+            109,
+            342.56,
+            120
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Patient: Nisha Verma / age 51",
+          "field": "patient",
+          "canonical_bbox_top_left_pt": [
+            40,
+            142,
+            219.8,
+            155
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Member / policy: SYN-M303-A / SYN-P303",
+          "field": "identity",
+          "canonical_bbox_top_left_pt": [
+            40,
+            158,
+            275.6,
+            171
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Bill number: SYN-BILL003",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            40,
+            174,
+            188.8,
+            187
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Service period: 2026-10-03 to 2026-10-07",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            40,
+            190,
+            288.0,
+            203
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Final invoice total: INR 40,900.00",
+          "field": "bill.total",
+          "canonical_bbox_top_left_pt": [
+            40,
+            206,
+            250.8,
+            219
+          ]
+        },
+        {
+          "page": 1,
+          "text": "All amounts in INR. No tax or discount is modeled in this fictional invoice.",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            40,
+            222,
+            511.2,
+            235
+          ]
+        },
+        {
+          "page": 1,
+          "text": "SERVICE CHARGES / SHEET 1 OF 2",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            40,
+            254,
+            226.0,
+            267
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Description",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            40,
+            274,
+            101.38,
+            286
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Qty",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            270,
+            274,
+            286.74,
+            286
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Rate",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            315,
+            274,
+            337.32,
+            286
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Amount",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            395,
+            274,
+            428.48,
+            286
+          ]
+        },
+        {
+          "page": 1,
+          "text": "No.",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            505,
+            274,
+            521.74,
+            286
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Room - twin sharing",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            40,
+            299,
+            146.01999999999998,
+            311
+          ]
+        },
+        {
+          "page": 1,
+          "text": "4",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            270,
+            299,
+            275.58,
+            311
+          ]
+        },
+        {
+          "page": 1,
+          "text": "2,800.00",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            315,
+            299,
+            359.64,
+            311
+          ]
+        },
+        {
+          "page": 1,
+          "text": "11,200.00",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            395,
+            299,
+            445.22,
+            311
+          ]
+        },
+        {
+          "page": 1,
+          "text": "1",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            505,
+            299,
+            510.58,
+            311
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Nursing services",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            40,
+            324,
+            129.28,
+            336
+          ]
+        },
+        {
+          "page": 1,
+          "text": "4",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            270,
+            324,
+            275.58,
+            336
+          ]
+        },
+        {
+          "page": 1,
+          "text": "800.00",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            315,
+            324,
+            348.48,
+            336
+          ]
+        },
+        {
+          "page": 1,
+          "text": "3,200.00",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            395,
+            324,
+            439.64,
+            336
+          ]
+        },
+        {
+          "page": 1,
+          "text": "2",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            505,
+            324,
+            510.58,
+            336
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Physician reviews",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            40,
+            349,
+            134.86,
+            361
+          ]
+        },
+        {
+          "page": 1,
+          "text": "6",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            270,
+            349,
+            275.58,
+            361
+          ]
+        },
+        {
+          "page": 1,
+          "text": "900.00",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            315,
+            349,
+            348.48,
+            361
+          ]
+        },
+        {
+          "page": 1,
+          "text": "5,400.00",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            395,
+            349,
+            439.64,
+            361
+          ]
+        },
+        {
+          "page": 1,
+          "text": "3",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            505,
+            349,
+            510.58,
+            361
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Chest imaging",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            40,
+            374,
+            112.54,
+            386
+          ]
+        },
+        {
+          "page": 1,
+          "text": "1",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            270,
+            374,
+            275.58,
+            386
+          ]
+        },
+        {
+          "page": 1,
+          "text": "2,200.00",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            315,
+            374,
+            359.64,
+            386
+          ]
+        },
+        {
+          "page": 1,
+          "text": "2,200.00",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            395,
+            374,
+            439.64,
+            386
+          ]
+        },
+        {
+          "page": 1,
+          "text": "4",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            505,
+            374,
+            510.58,
+            386
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Laboratory investigations",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            40,
+            399,
+            179.5,
+            411
+          ]
+        },
+        {
+          "page": 1,
+          "text": "1",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            270,
+            399,
+            275.58,
+            411
+          ]
+        },
+        {
+          "page": 1,
+          "text": "4,800.00",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            315,
+            399,
+            359.64,
+            411
+          ]
+        },
+        {
+          "page": 1,
+          "text": "4,800.00",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            395,
+            399,
+            439.64,
+            411
+          ]
+        },
+        {
+          "page": 1,
+          "text": "5",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            505,
+            399,
+            510.58,
+            411
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Inpatient pharmacy",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            40,
+            424,
+            140.44,
+            436
+          ]
+        },
+        {
+          "page": 1,
+          "text": "1",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            270,
+            424,
+            275.58,
+            436
+          ]
+        },
+        {
+          "page": 1,
+          "text": "9,600.00",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            315,
+            424,
+            359.64,
+            436
+          ]
+        },
+        {
+          "page": 1,
+          "text": "9,600.00",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            395,
+            424,
+            439.64,
+            436
+          ]
+        },
+        {
+          "page": 1,
+          "text": "6",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            505,
+            424,
+            510.58,
+            436
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Remaining services and invoice reconciliation on sheet 2.",
+          "field": "bill.continuation",
+          "canonical_bbox_top_left_pt": [
+            40,
+            456,
+            393.4,
+            469
+          ]
+        },
+        {
+          "page": 1,
+          "text": "SYNTHETIC - NOT VALID FOR CLAIM SUBMISSION",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            40,
+            803,
+            248.32,
+            814
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Fictional issuer and patient | SYN-C003 | Page 1",
+          "field": null,
+          "canonical_bbox_top_left_pt": [
+            40,
+            817,
+            248.32,
+            827
+          ]
+        }
+      ],
+      "degradation": {
+        "dpi": 120,
+        "rotation_degrees": 0.65,
+        "blur_sigma": 0.45,
+        "jpeg_quality": 62,
+        "seed": null,
+        "deterministic": true
+      },
+      "coordinate_note": "Source spans describe the canonical pre-rotation page; not exact scan coordinates. Do not score scan localization with these boxes."
+    },
+    {
+      "file": "07_receipts.pdf",
+      "pages": 1,
+      "sha256": "e754e617decc214754b11b5bb06fae6b8b1d824c077308e291df1259ed55bb1c",
+      "representation": "native_text",
+      "source_spans": [
+        {
+          "page": 1,
+          "text": "SYN SANDSTONE CARE HOSPITAL",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            24,
+            274.36,
+            41
+          ]
+        },
+        {
+          "page": 1,
+          "text": "INPATIENT SERVICES / RECORD COPY",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            53,
+            218.56,
+            65
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Payment receipt / consolidated ledger",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            79,
+            407.04,
+            98
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Case SYN-C003  |  Jaipur  |  Records: records@example.invalid",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            109,
+            342.56,
+            120
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Patient: Nisha Verma / age 51",
+          "field": "patient",
+          "bbox_top_left_pt": [
+            40,
+            142,
+            219.8,
+            155
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Member / policy: SYN-M303-A / SYN-P303",
+          "field": "identity",
+          "bbox_top_left_pt": [
+            40,
+            158,
+            275.6,
+            171
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Receipt",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            175,
+            79.06,
+            187
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Date",
+          "field": null,
+          "bbox_top_left_pt": [
+            145,
+            175,
+            167.32,
+            187
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Description",
+          "field": null,
+          "bbox_top_left_pt": [
+            235,
+            175,
+            296.38,
+            187
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Amount",
+          "field": null,
+          "bbox_top_left_pt": [
+            405,
+            175,
+            438.48,
+            187
+          ]
+        },
+        {
+          "page": 1,
+          "text": "SYN-C003-R1",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            200,
+            101.38,
+            212
+          ]
+        },
+        {
+          "page": 1,
+          "text": "2026-10-03",
+          "field": null,
+          "bbox_top_left_pt": [
+            145,
+            200,
+            200.8,
+            212
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Admission deposit",
+          "field": null,
+          "bbox_top_left_pt": [
+            235,
+            200,
+            329.86,
+            212
+          ]
+        },
+        {
+          "page": 1,
+          "text": "INR 20,000.00",
+          "field": null,
+          "bbox_top_left_pt": [
+            405,
+            200,
+            477.54,
+            212
+          ]
+        },
+        {
+          "page": 1,
+          "text": "SYN-C003-R2",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            225,
+            101.38,
+            237
+          ]
+        },
+        {
+          "page": 1,
+          "text": "2026-10-07",
+          "field": null,
+          "bbox_top_left_pt": [
+            145,
+            225,
+            200.8,
+            237
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Final collection",
+          "field": null,
+          "bbox_top_left_pt": [
+            235,
+            225,
+            324.28,
+            237
+          ]
+        },
+        {
+          "page": 1,
+          "text": "INR 20,900.00",
+          "field": null,
+          "bbox_top_left_pt": [
+            405,
+            225,
+            477.54,
+            237
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Total paid: INR 40,900.00",
+          "field": "receipt.total",
+          "bbox_top_left_pt": [
+            40,
+            257,
+            195.0,
+            270
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Refund: INR 0.00",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            273,
+            139.2,
+            286
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Outstanding balance: INR 0.00",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            289,
+            219.8,
+            302
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Payment mode: synthetic ledger entry. No bank account, transaction network identifier or",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            305,
+            555,
+            318
+          ]
+        },
+        {
+          "page": 1,
+          "text": "actual transfer is represented.",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            321,
+            232.2,
+            334
+          ]
+        },
+        {
+          "page": 1,
+          "text": "SYNTHETIC - NOT VALID FOR CLAIM SUBMISSION",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            803,
+            248.32,
+            814
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Fictional issuer and patient | SYN-C003 | Page 1",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            817,
+            248.32,
+            827
+          ]
+        }
+      ]
+    },
+    {
+      "file": "08_investigation.pdf",
+      "pages": 1,
+      "sha256": "9d6f59b77829bd1421db3e2802021d50daaa6f6130b4e035542cc27187cf5446",
+      "representation": "native_text",
+      "source_spans": [
+        {
+          "page": 1,
+          "text": "SYN SANDSTONE CARE HOSPITAL",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            24,
+            274.36,
+            41
+          ]
+        },
+        {
+          "page": 1,
+          "text": "INPATIENT SERVICES / RECORD COPY",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            53,
+            218.56,
+            65
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Investigation record",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            79,
+            238.4,
+            98
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Case SYN-C003  |  Jaipur  |  Records: records@example.invalid",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            109,
+            342.56,
+            120
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Patient: Nisha Verma / age 51",
+          "field": "patient",
+          "bbox_top_left_pt": [
+            40,
+            142,
+            219.8,
+            155
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Member / policy: SYN-M303-A / SYN-P303",
+          "field": "identity",
+          "bbox_top_left_pt": [
+            40,
+            158,
+            275.6,
+            171
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Record date: 2026-10-03",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            174,
+            182.6,
+            187
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Requesting service: Inpatient treating team",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            190,
+            306.6,
+            203
+          ]
+        },
+        {
+          "page": 1,
+          "text": "RECORDED EXAMINATION",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            222,
+            164.0,
+            235
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Chest imaging: narrative finding of pulmonary opacity recorded for inpatient clinical",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            241,
+            555,
+            254
+          ]
+        },
+        {
+          "page": 1,
+          "text": "correlation.",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            257,
+            114.4,
+            270
+          ]
+        },
+        {
+          "page": 1,
+          "text": "LIMITATIONS",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            289,
+            108.2,
+            302
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Fictional supporting narrative. No real image, laboratory measurement or clinical",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            308,
+            542.2,
+            321
+          ]
+        },
+        {
+          "page": 1,
+          "text": "interpretation is supplied. This document tests linkage and evidence handling, not",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            324,
+            548.4,
+            337
+          ]
+        },
+        {
+          "page": 1,
+          "text": "diagnostic accuracy.",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            340,
+            164.0,
+            353
+          ]
+        },
+        {
+          "page": 1,
+          "text": "SYNTHETIC - NOT VALID FOR CLAIM SUBMISSION",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            803,
+            248.32,
+            814
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Fictional issuer and patient | SYN-C003 | Page 1",
+          "field": null,
+          "bbox_top_left_pt": [
+            40,
+            817,
+            248.32,
+            827
+          ]
+        }
+      ]
+    }
+  ],
+  "review_status": "engineering_checked_not_clinically_validated",
+  "expected": {
+    "state": "REQUIRES_MORE_INFO",
+    "draft_payable_paise": null,
+    "final_payment_authorized": false,
+    "missing_or_conflicting": [
+      "bill_sheet_2_absent",
+      "claim_admission_2026-10-02_vs_hospital_2026-10-03",
+      "prior_utilization_absent"
+    ],
+    "reference_calculation": "No definitive payable amount: incomplete bill, conflicting dates, unknown utilization. Payment receipt alone cannot reconstruct missing evidence."
+  }
+}

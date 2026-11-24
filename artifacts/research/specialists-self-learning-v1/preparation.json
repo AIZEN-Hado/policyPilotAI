@@ -1,0 +1,59 @@
+{
+  "config_sha256": "a8298d727266067d4edba1be5d016d72ac839be32e779cbf4b8d92007a260140",
+  "counts": {
+    "test": {
+      "rank": 1248,
+      "span": 520
+    },
+    "train": {
+      "rank": 8286,
+      "span": 6280
+    },
+    "validation": {
+      "rank": 1976,
+      "span": 1248
+    }
+  },
+  "evaluation": {
+    "bytes": 128936,
+    "path": "policypilot-specialists-self-learning-v1-evaluation.tar.gz",
+    "sha256": "91a4a80d0d35683ab93bb543ec2c18f52950f721ae7c38c1841140068ab51ea0"
+  },
+  "experiment": "specialists-self-learning-v1",
+  "holdout_manifest_sha256": "18af268654900864a7586d9aab01937b5fc9eee67b56a69d2a3b9a43660a3358",
+  "holdout_rank_groups": 312,
+  "holdout_span_support": {
+    "ADMISSION_DATE": 246,
+    "DISCHARGE_DATE": 264,
+    "MEMBER_ID": 250,
+    "POLICY_ID": 250,
+    "ROOM_LIMIT": 244,
+    "SUM_INSURED": 246
+  },
+  "holdout_unique_questions": 129,
+  "maximum_steps_per_self_training_round": {
+    "rank": 288,
+    "span": 711
+  },
+  "model_execution_performed": false,
+  "reference": {
+    "archive": "/workspace/specialist-benefit-evidence-v1-runs/run-b10c31f2fdc4493b9731e23709c03cc2.tar.gz",
+    "config_sha256": "23d0772c27998347aaf881addc08b358817d2c6390c37c5ec3bfda246dc1fb5e",
+    "sha256": "d08f721fbede2b8c05df62b71df675996e771f76bda328afca44cb263f072d84",
+    "training_manifest_sha256": "7537a55381eac44b19b9059efadd1929ab17e88474c408fbecc6b6b9b4af32d9"
+  },
+  "runtime": {
+    "bytes": 814359,
+    "path": "policypilot-specialists-self-learning-v1-runtime.tar.gz",
+    "sha256": "4d0cec6c29abd3ec01c858b28e8c0fcb16b4f0463e89419e977b7ac9ccfc26be"
+  },
+  "teacher_steps": {
+    "rank": 924,
+    "span": 2364
+  },
+  "training_manifest_sha256": "b50b63ada0e3091a812f0f60ea152d114529c0ed60444b0aa9548f4b2387e067",
+  "unlabeled_units": {
+    "rank": 600,
+    "span": 1300
+  }
+}

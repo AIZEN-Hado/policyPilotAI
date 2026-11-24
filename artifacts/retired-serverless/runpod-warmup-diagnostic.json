@@ -1,0 +1,52 @@
+{
+  "endpoint_id": "tjkkm5pkp7lrej",
+  "recorded_at": "2026-11-15T13:49:13.797232+00:00",
+  "model_kind": "upstream_baseline_not_fine_tuned",
+  "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "start_attempted": true,
+  "generation_verified": false,
+  "provider_shutdown_verified": true,
+  "app_shutdown_verified": true,
+  "rss_bytes": null,
+  "result": "CHECK",
+  "account_billing_before_usd": "0.6084335183986695",
+  "gpu_rate_usd_per_hour": "0.75",
+  "deadline_seconds": 360,
+  "financial_hard_cap": false,
+  "prior_compute_reserved_usd": "0.529376",
+  "last_app_status": {
+    "configured": true,
+    "enabled": true,
+    "can_start": true,
+    "operator": true,
+    "state": "error",
+    "startup_protocol": "invoke-worker-v2",
+    "compute_allowance_usd": "0.7",
+    "demo_inference_allowance_usd": "1.0",
+    "demo_compute_reserved_usd": "0.648126"
+  },
+  "last_app_state": "error",
+  "failure": "warmup_failed_or_uncertain",
+  "failure_stage": "warmup_status_read",
+  "observed_worker_ids": [
+    "p96kpy0cd8vwma"
+  ],
+  "worker_observation_file": "runpod-diagnostic-workers.json",
+  "shutdown_app_status": {
+    "configured": true,
+    "enabled": false,
+    "can_start": true,
+    "operator": true,
+    "state": "off",
+    "startup_protocol": "invoke-worker-v2",
+    "compute_allowance_usd": "0.7",
+    "demo_inference_allowance_usd": "1.0",
+    "demo_compute_reserved_usd": "0.648126"
+  },
+  "watchdog": {},
+  "elapsed_seconds": 251.09,
+  "account_billing_after_usd": "0.6084335183986695",
+  "reported_billing_delta_usd": "0",
+  "reported_billing_within_allowance": true,
+  "billing_may_lag": true
+}

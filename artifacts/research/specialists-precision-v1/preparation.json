@@ -1,0 +1,35 @@
+{
+  "config_sha256": "2c1db2801943f55623200eb2927233e5f4b3b8d07716a3c2024ca79d4cb187a4",
+  "counts": {
+    "test": {
+      "rank": 256,
+      "span": 256
+    },
+    "train": {
+      "rank": 1024,
+      "span": 1280
+    },
+    "validation": {
+      "rank": 512,
+      "span": 512
+    }
+  },
+  "evaluation": {
+    "path": "policypilot-specialists-precision-v1-evaluation.tar.gz",
+    "sha256": "11b876d0d9a4df846ac6e75b0f2931ce0f54f7b16d04a14249352a01dcb02244"
+  },
+  "experiment": "specialists-precision-v1",
+  "holdout_manifest_sha256": "d0c6f7d3fc2b6c45833f17b1176876df9dece5d6e48e7cb1c43688d5675b20e0",
+  "model_execution_performed": false,
+  "runtime": {
+    "path": "policypilot-specialists-precision-v1-runtime.tar.gz",
+    "sha256": "304b02a19ba14961696fead2f656558de248444ca33a2dedfa1d64423a70479a"
+  },
+  "synthetic_target": 0.99,
+  "training_epochs_per_task": 10,
+  "training_manifest_sha256": "3a44bf598e8190bb4e81f972f2891c5fd688d1334b60196f9e72258ca6329dc3",
+  "training_steps": {
+    "rank": 240,
+    "span": 800
+  }
+}
