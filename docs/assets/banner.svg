@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" role="img" aria-labelledby="t d">
+  <title id="t">PolicyPilot</title>
+  <desc id="d">Animated banner: a claim PDF is scanned and its fields are cited back to source pages.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1f3a"/><stop offset="0.6" stop-color="#12366b"/><stop offset="1" stop-color="#0e7c86"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5eead4" stop-opacity="0"/><stop offset="0.5" stop-color="#5eead4" stop-opacity="0.9"/><stop offset="1" stop-color="#5eead4" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="page"><rect x="860" y="48" width="200" height="236" rx="10"/></clipPath>
+  </defs>
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <g opacity="0.12" stroke="#fff">
+    <path d="M0 80H1200M0 160H1200M0 240H1200"/><path d="M200 0V320M400 0V320M600 0V320M800 0V320M1000 0V320"/>
+  </g>
+  <g fill="#5eead4">
+    <circle cx="120" cy="60" r="3"><animate attributeName="cy" values="60;40;60" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="520" cy="270" r="4" opacity=".6"><animate attributeName="cy" values="270;250;270" dur="5s" repeatCount="indefinite"/></circle>
+    <circle cx="760" cy="70" r="3" opacity=".7"><animate attributeName="cy" values="70;90;70" dur="3.5s" repeatCount="indefinite"/></circle>
+  </g>
+  <!-- shield mark -->
+  <g transform="translate(70 92)">
+    <path d="M40 0 L80 14 V58 C80 86 60 104 40 112 C20 104 0 86 0 58 V14 Z" fill="#fff" fill-opacity=".12" stroke="#5eead4" stroke-width="3"/>
+    <path d="M22 56 L36 70 L60 40" fill="none" stroke="#5eead4" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="70" stroke-dashoffset="70">
+      <animate attributeName="stroke-dashoffset" values="70;0;0;70" keyTimes="0;0.3;0.8;1" dur="4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <text x="180" y="150" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="76" font-weight="700" fill="#fff" letter-spacing="1">PolicyPilot</text>
+  <text x="184" y="196" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" fill="#cfeff0">Evidence-first review of synthetic health insurance claims</text>
+  <text x="184" y="236" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="20" fill="#9fd8dc">PDF fields &#183; page citations &#183; reviewer acknowledgement</text>
+  <!-- document -->
+  <g>
+    <rect x="860" y="48" width="200" height="236" rx="10" fill="#f8fafc"/>
+    <g fill="#cbd5e1">
+      <rect x="882" y="74" width="120" height="10" rx="3"/><rect x="882" y="100" width="156" height="8" rx="3"/>
+      <rect x="882" y="120" width="140" height="8" rx="3"/><rect x="882" y="140" width="156" height="8" rx="3"/>
+      <rect x="882" y="176" width="156" height="8" rx="3"/><rect x="882" y="196" width="110" height="8" rx="3"/>
+      <rect x="882" y="216" width="150" height="8" rx="3"/><rect x="882" y="236" width="130" height="8" rx="3"/>
+    </g>
+    <g fill="none" stroke="#0e7c86" stroke-width="2.5">
+      <rect x="878" y="94" width="164" height="20" rx="4" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.25;0.35;0.85;1" dur="4s" repeatCount="indefinite"/></rect>
+      <rect x="878" y="170" width="164" height="20" rx="4" opacity="0"><animate attributeName="opacity" values="0;0;0;1;1;0" keyTimes="0;0.4;0.5;0.6;0.85;1" dur="4s" repeatCount="indefinite"/></rect>
+    </g>
+    <g clip-path="url(#page)">
+      <rect x="860" y="-60" width="200" height="60" fill="url(#scan)">
+        <animate attributeName="y" values="30;250;30" dur="4s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+  <!-- citation chip -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="600">
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.35;0.45;0.85;1" dur="4s" repeatCount="indefinite"/>
+      <rect x="1070" y="86" width="110" height="30" rx="15" fill="#5eead4"/>
+      <text x="1086" y="107" fill="#0b1f3a">p.2 &#8226; cited</text>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;0;1;1;0" keyTimes="0;0.5;0.6;0.65;0.85;1" dur="4s" repeatCount="indefinite"/>
+      <rect x="1070" y="162" width="110" height="30" rx="15" fill="#fbbf24"/>
+      <text x="1086" y="183" fill="#0b1f3a">conflict</text>
+    </g>
+  </g>
+</svg>

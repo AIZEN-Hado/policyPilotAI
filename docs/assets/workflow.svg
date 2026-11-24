@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 170" width="100%" role="img" aria-labelledby="t">
+  <title id="t">PolicyPilot workflow: open case, attach PDFs, review fields, check citations, acknowledge</title>
+  <style>
+    text{font-family:Segoe UI,Helvetica,Arial,sans-serif;font-size:15px;font-weight:600;fill:#0b1f3a}
+    .n{fill:#e6f6f7;stroke:#0e7c86;stroke-width:2}
+    .l{stroke:#0e7c86;stroke-width:3;stroke-dasharray:8 8;animation:d 1s linear infinite}
+    @keyframes d{to{stroke-dashoffset:-16}}
+    .p{fill:#0e7c86;animation:g 5s ease-in-out infinite}
+    .p:nth-of-type(2){animation-delay:1s}.p:nth-of-type(3){animation-delay:2s}.p:nth-of-type(4){animation-delay:3s}.p:nth-of-type(5){animation-delay:4s}
+    @keyframes g{0%,100%{r:6;opacity:.35}10%,20%{r:11;opacity:1}}
+  </style>
+  <line class="l" x1="90" y1="85" x2="910" y2="85"/>
+  <g class="n">
+    <rect x="20" y="45" width="140" height="80" rx="12"/><rect x="215" y="45" width="140" height="80" rx="12"/>
+    <rect x="410" y="45" width="140" height="80" rx="12"/><rect x="605" y="45" width="140" height="80" rx="12"/>
+    <rect x="800" y="45" width="140" height="80" rx="12"/>
+  </g>
+  <circle class="p" cx="90" cy="30" r="6"/><circle class="p" cx="285" cy="30" r="6"/><circle class="p" cx="480" cy="30" r="6"/><circle class="p" cx="675" cy="30" r="6"/><circle class="p" cx="870" cy="30" r="6"/>
+  <g text-anchor="middle">
+    <text x="90" y="80">1. Open</text><text x="90" y="100">case</text>
+    <text x="285" y="80">2. Attach</text><text x="285" y="100">PDFs</text>
+    <text x="480" y="80">3. Review</text><text x="480" y="100">fields</text>
+    <text x="675" y="80">4. Follow</text><text x="675" y="100">citations</text>
+    <text x="870" y="80">5. Record</text><text x="870" y="100">ack</text>
+  </g>
+</svg>

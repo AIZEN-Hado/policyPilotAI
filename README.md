@@ -1,6 +1,27 @@
+<p align="center"><img src="docs/assets/banner.svg" alt="PolicyPilot banner" width="100%"></p>
+
+<p align="center">
+  <a href="https://policypilot-demo.onrender.com"><b>Hosted workspace</b></a> &middot;
+  <a href="deploy/RENDER_IMAGE_DEMO.md">Deploy</a> &middot;
+  <a href="docs/SYNTHETIC_DATA_SPEC.md">Synthetic data</a> &middot;
+  <a href="docs/SPECIALIST_NETWORK_PLAN.md">Evaluation</a>
+</p>
+
+<p align="center">
+  <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white">
+  <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-16-336791?logo=postgresql&logoColor=white">
+  <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white">
+  <img alt="Render" src="https://img.shields.io/badge/Render-46E3B7?logo=render&logoColor=black">
+  <img alt="Data" src="https://img.shields.io/badge/data-synthetic%20only-orange">
+</p>
+
 # PolicyPilot
 
 PolicyPilot is a web application for reviewing synthetic health insurance claims. A reviewer opens a case, attaches the policy schedule and claim evidence, and checks dates, identifiers and benefit limits against the original PDF pages. The reviewer records an acknowledgement after checking the evidence.
+
+## How it works
+
+<img src="docs/assets/workflow.svg" alt="Workflow: open case, attach PDFs, review fields, follow citations, record acknowledgement" width="100%">
 
 ## Try a case
 
